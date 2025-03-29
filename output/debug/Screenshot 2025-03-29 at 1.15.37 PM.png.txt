@@ -1,0 +1,9 @@
+Skills added by the job poster
+
+@ Artificial intelligence (Al)
+Machine Learning +
+TensorFlow +
+Computer Vision +
+Deep Learning +
+Sensor Fusion +
+Opencv +

@@ -1,0 +1,9 @@
+Skills added by the job poster
+
+@ Extract, Transform, Load (ETL)
+
+@ Python (Programming Language)
+Large Language Models (LLM) +
+Continuous Integration and Continuous Delivery (Cl/CD) +
+‘Amazon Web Services (AWS) +
+Identity and Access Management (IAM) +

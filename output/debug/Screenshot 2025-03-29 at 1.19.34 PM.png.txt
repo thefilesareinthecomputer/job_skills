@@ -1,0 +1,15 @@
+Skills added by the job poster
+
+@ Artificial intelligence (Al)
+
+@ Databases
+
+@ Microsoft Azure
+PyTorch +
+Large Language Models (LLM) +
+Machine Tools +
+Continuous Integration and Continuous Delivery (Cl/CD) +
+Microsoft Azure Machine Learning +
+Generative Al +
+Azure Kubernetes Service (AKS) +
+Azure Al Studio +

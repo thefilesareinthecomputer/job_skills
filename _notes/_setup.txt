@@ -1,0 +1,44 @@
+cd /Users/aw/Desktop/github_repositories
+
+mkdir job_skills
+
+cd job_skills
+
+python3.11 -m venv venv_job_skills
+
+source venv_job_skills/bin/activate
+ 
+pip install --upgrade pip pip-check-reqs wheel python-dotenv
+
+pip install {ADDITIONAL_PACKAGES}
+
+pip freeze > requirements.txt
+
+echo "venv_job_skills/
+venv/
+__pycache__/
+*.pyc
+*/migrations/*
+db.sqlite3
+.env
+staticfiles/" > .gitignore
+
+cat .gitignore
+
+git init
+
+gh auth status
+
+gh auth login
+
+gh repo create job_skills --private
+
+git remote add origin https://github.com/thefilesareinthecomputer/job_skills
+
+git remote -v
+
+git add .
+
+git commit -m "Initial commit"
+
+git push -u origin main

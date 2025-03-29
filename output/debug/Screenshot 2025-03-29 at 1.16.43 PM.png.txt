@@ -1,0 +1,11 @@
+Skills added by the job poster
+
+@ Python (Programming Language)
+Machine Learning +
+DevOps +
+‘Amazon Web Services (AWS) +
+Ops +
+Containerization +
+AWS Lambda +
+Kubernetes +
+AWS SageMaker +

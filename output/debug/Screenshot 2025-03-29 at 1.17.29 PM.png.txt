@@ -1,0 +1,8 @@
+Skills added by the job poster
+
+@ Artificial intelligence (Al)
+PyTorch +
+Large Language Models (LLM) +
+Neural Networks +
+Transformers +
+Biology +

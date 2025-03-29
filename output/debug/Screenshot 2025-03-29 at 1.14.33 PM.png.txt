@@ -1,0 +1,12 @@
+Skills added by the job poster
+
+@ Natural Language Processing (NLP)
+
+@ Python (Programming Language)
+PyTorch +
+Computer Vision +
+Machine Learning +
+TensorFlow +
+‘Amazon Web Services (AWS) +
+Kubernetes +
+MLOps +

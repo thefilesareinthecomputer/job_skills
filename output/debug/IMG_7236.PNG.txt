@@ -1,0 +1,18 @@
+3:45 ll SF &)
+e Preferences and skills match
+Preferences 4
+@ Remote
+@ Contract
+Skills added by the job poster
+@ Python (Programming Language)
+@ Graph Databases +
+@ LangChain +
+@ Prompt Engineering +
+@ Java +
+@ Spring Framework +
+@ Neo4j +
+@ Retrieval-Augmented Generation (RAG) +
+@ Problem Solving +
+@ tama +
+
+—

@@ -1,0 +1,10 @@
+Skills added by the job poster
+Tableau +
+Machine Learning +
+DevOps +
+‘Amazon Web Services (AWS) +
+PySpark +
+Databricks Products +
+Microsoft Copilot +
+Azure Databricks +
+AWS SageMaker +
