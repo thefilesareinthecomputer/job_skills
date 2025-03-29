@@ -1,0 +1,8 @@
+venv_job_skills/
+venv/
+__pycache__/
+*.pyc
+*/migrations/*
+db.sqlite3
+.env
+staticfiles/
