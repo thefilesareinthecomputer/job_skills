@@ -1,6 +1,0 @@
-Skills added by the job poster
-
-@ Python (Programming Language)
-Machine Tools +
-Machine Learning +
-c# +

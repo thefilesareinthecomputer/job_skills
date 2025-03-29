@@ -1,9 +1,0 @@
-Skills added by the job poster
-
-@ Artificial intelligence (Al)
-PyTorch +
-Large Language Models (LLM) +
-‘Amazon Web Services (AWS) +
-Prompt Engineering +
-Containerization +
-Distributed Systems +

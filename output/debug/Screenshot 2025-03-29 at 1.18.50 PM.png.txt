@@ -1,9 +1,0 @@
-Skills added by the job poster
-
-@ ata Engineering
-
-@ Natural Language Processing (NLP)
-Large Language Models (LLM) +
-Machine Learning +
-Microsoft Azure Machine Learning +
-Git +

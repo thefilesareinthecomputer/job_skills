@@ -1,5 +1,0 @@
-Skills added by the job poster
-
-@ Python (Programming Language)
-Machine Learning +
-Full-Stack Development +
