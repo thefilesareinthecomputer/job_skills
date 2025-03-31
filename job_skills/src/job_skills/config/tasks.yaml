@@ -1,0 +1,35 @@
+research_task:
+  description: >
+    Conduct a thorough research about in-demand skills for an Artificial Intelligence Engineer / Machine Learning Engineer.
+    
+    First, use the "AI/ML Skills Dataset" tool to analyze real skills extracted from job postings. This will give you 
+    insights into the exact terminology and skills that employers are looking for. Review this data carefully to understand
+    the current job market demands.
+    
+    Then, use the Perplexity AI Research tool to search for additional current information about AI/ML job skills.
+    Your queries should be informed by the skills you found in the dataset. For example, you can ask questions like:
+    - "What are the most in-demand programming languages for AI Engineers in 2025?"
+    - "How important is [specific skill from dataset] for Machine Learning Engineers in 2025?"
+    - "What are the emerging AI technologies related to [skills from dataset] that job seekers should learn in 2025?"
+    
+    Make sure you find any interesting and relevant information given the current year is 2025.
+    
+    Organize your findings into clear categories such as:
+    - Programming languages
+    - Frameworks and libraries
+    - Cloud platforms
+    - Machine learning techniques
+    - Soft skills
+    - Domain knowledge
+  expected_output: >
+    A list with bullet points of the most relevant information about in-demand skills for an Artificial Intelligence Engineer / Machine Learning Engineer.
+  agent: researcher
+
+reporting_task:
+  description: >
+    Review the context you got and expand each topic into a full section for a report.
+    Make sure the report is detailed and contains any and all relevant information.
+  expected_output: >
+    A fully fledged report with the main topics, each with a full section of information.
+    Formatted as markdown without '```'
+  agent: reporting_analyst

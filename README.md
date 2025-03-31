@@ -1,82 +1,159 @@
-# LinkedIn Job Skills Analyzer
+# Job Skills Analysis Platform
 
-## Overview
+![Job Skills Analysis](https://img.shields.io/badge/AI-Job%20Skills%20Analysis-blue)
+![Python](https://img.shields.io/badge/Python-3.9%2B-brightgreen)
+![CrewAI](https://img.shields.io/badge/CrewAI-Latest-orange)
+![License](https://img.shields.io/badge/License-MIT-green)
 
-The LinkedIn Job Skills Analyzer is a Python tool that extracts, analyzes, and visualizes skills from LinkedIn job postings. It uses Optical Character Recognition (OCR) to extract text from screenshots of LinkedIn job listings, identifies the skills listed by job posters, and generates insights about the most in-demand skills in your job market.
+A sophisticated AI-powered platform for analyzing and researching in-demand skills for AI Engineers and Machine Learning Engineers. This project leverages advanced AI agents, real job posting data, and cutting-edge research tools to provide comprehensive insights into the current job market.
 
-## Features
+## 🚀 Features
 
-- **Automated Skill Extraction**: Extract skills from LinkedIn job posting screenshots
-- **Intelligent Parsing**: Specifically targets the "Skills added by the job poster" section
-- **Skill Normalization**: Standardizes variations of the same skill (e.g., "Python Programming" → "Python")
-- **OCR Error Correction**: Handles common OCR misreadings and artifacts
-- **Data Visualization**: Creates a bar chart of the most frequently occurring skills
-- **CSV Export**: Saves all extracted skills with their occurrence counts for further analysis
+- **AI Agent Collaboration**: Utilizes CrewAI to orchestrate specialized AI agents that work together to research and analyze job skills
+- **Real Job Posting Data**: Analyzes actual job postings to extract the most in-demand skills with occurrence metrics
+- **OCR Integration**: Extracts text from job posting images using Optical Character Recognition
+- **Perplexity API Integration**: Accesses up-to-date information about AI/ML job skills, technologies, and trends
+- **Customizable Research**: Allows for targeted queries about specific skills or comprehensive market analysis
 
-## Requirements
+## 🛠️ Architecture
 
-- Python 3.6+
-- Tesseract OCR engine
-- Python packages listed in `requirements.txt`
+The platform is built around a multi-agent system using CrewAI:
 
-## Installation
+1. **Research Agent**: Specialized in talent market analysis and skill forecasting
+   - Accesses the Skills CSV dataset
+   - Utilizes Perplexity AI for up-to-date research
+   - Analyzes trends and patterns in job requirements
 
-1. **Clone the repository**:
+2. **Reporting Analyst**: Transforms research into actionable insights
+   - Creates comprehensive reports on in-demand skills
+   - Provides strategic recommendations for skill development
+   - Formats findings for easy consumption
+
+## 📊 Tools
+
+### Skills CSV Tool
+
+Provides access to a dataset of real AI/ML skills extracted from job postings:
+
+- Ranks skills by occurrence in actual job listings
+- Supports both broad overview and targeted skill queries
+- Displays the exact terminology used by employers
+
+### Perplexity AI Research Tool
+
+Connects to Perplexity AI to provide current information from across the web:
+
+- Researches specific skills and technologies
+- Analyzes job market trends
+- Identifies learning resources and certification paths
+- Provides context on emerging technologies
+
+### OCR Integration
+
+Extracts text from job posting images:
+
+- Processes screenshots of job listings
+- Identifies skills and requirements from visual content
+- Integrates findings with other data sources
+
+## 🔧 Setup and Installation
+
+1. **Clone the repository**
    ```bash
-   git clone https://github.com/yourusername/linkedin-job-skills-analyzer.git
-   cd linkedin-job-skills-analyzer
+   git clone https://github.com/yourusername/job_skills.git
+   cd job_skills
    ```
 
-2. **Create and activate a virtual environment** (recommended):
+2. **Create and activate a virtual environment**
    ```bash
    python -m venv venv_job_skills
-   # On Windows
-   venv_job_skills\Scripts\activate
-   # On macOS/Linux
-   source venv_job_skills/bin/activate
+   source venv_job_skills/bin/activate  # On Windows: venv_job_skills\Scripts\activate
    ```
 
-3. **Install Python dependencies**:
+3. **Install dependencies**
    ```bash
    pip install -r requirements.txt
    ```
 
-4. **Install Tesseract OCR**:
-   - **macOS**: `brew install tesseract`
-   - **Windows**: Download from [UB-Mannheim's GitHub](https://github.com/UB-Mannheim/tesseract/wiki)
-   - **Linux**: `sudo apt-get install tesseract-ocr`
-
-5. **Configure the environment**:
-   - Create a `.env` file in the project root
-   - Set `IMAGES_PATH` to the folder containing your LinkedIn screenshots
+4. **Set up environment variables**
+   Create a `.env` file in the root directory with the following variables:
    ```
-   IMAGES_PATH=~/Desktop/job_skills_images/
+   SKILLS_CSV_PATH="/path/to/your/skill_analysis.csv"
+   IMAGES_PATH="/path/to/your/job_skills_images/"
+   TESSERACT_PATH="/path/to/tesseract"
+   OPENAI_API_KEY="your_openai_api_key"
+   PERPLEXITY_API_KEY="your_perplexity_api_key"
+   MODEL="gpt-4o-mini"  # Or your preferred model
    ```
 
-## Usage
-
-1. **Collect LinkedIn job posting screenshots**:
-   - Take screenshots of the "Skills added by the job poster" section from LinkedIn job postings
-   - Save them to your designated images folder (default: `~/Desktop/job_skills_images/`)
-
-2. **Run the analyzer**:
+5. **Run the application**
    ```bash
-   python main.py
+   python -m job_skills.main
    ```
 
-3. **View the results**:
-   - A bar chart will be displayed and saved to `output/top_skills.png`
-   - A CSV file with all skills and their frequencies will be saved to `output/skill_analysis.csv`
-   - Debug information is saved to `output/debug/` for troubleshooting
+## 📝 Usage
 
-## How It Works
+### Running a Research Task
 
-1. **Image Processing**: The script loads each image and passes it to Tesseract OCR
-2. **Text Extraction**: Tesseract extracts text from the images
-3. **Skill Identification**: The script identifies the "Skills added by the job poster" section and extracts individual skills
-4. **Normalization**: Skills are normalized to handle variations and correct OCR errors
-5. **Analysis**: The script counts occurrences of each skill and ranks them by frequency
-6. **Visualization**: A bar chart is generated showing the most common skills
-7. **Export**: Results are saved to CSV for further analysis
+```python
+from job_skills import JobSkills
 
-## Project Structure 
+# Initialize the crew
+job_skills_crew = JobSkills()
+
+# Run the crew to generate a comprehensive skills report
+result = job_skills_crew.crew.kickoff()
+
+# The report will be saved to report.md
+print(f"Report generated: {result}")
+```
+
+### Sample Queries
+
+- Get all skills: `"List all skills"`
+- Search for specific skills: `"Python"` or `"Machine Learning"`
+- Research emerging trends: `"What are the emerging AI skills for 2024?"`
+
+## 🧪 Testing
+
+Run the test suite to verify all components are working correctly:
+
+```bash
+python -m job_skills.tests.test_skills_csv_tool
+```
+
+## 📈 Example Output
+
+The platform generates comprehensive reports like this:
+
+```markdown
+# AI/ML Skills Analysis Report
+
+## Top Skills by Demand
+1. **Machine Learning** (105 occurrences)
+2. **Python** (99 occurrences)
+3. **Artificial Intelligence (AI)** (75 occurrences)
+...
+
+## Emerging Technologies
+- Large Language Models (LLMs)
+- Generative AI
+- MLOps
+
+## Recommendations for Skill Development
+...
+```
+
+## 🤝 Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+## 📄 License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+## 🙏 Acknowledgements
+
+- [CrewAI](https://github.com/joaomdmoura/crewAI) for the multi-agent orchestration framework
+- [Perplexity AI](https://www.perplexity.ai/) for providing the research API
+- [Tesseract OCR](https://github.com/tesseract-ocr/tesseract) for image text extraction 
