@@ -1,18 +1,24 @@
 research_task:
   description: >
-    Conduct a thorough research about in-demand skills for an Artificial Intelligence Engineer / Machine Learning Engineer.
+    Conduct a thorough research project about in-demand skills for an Artificial Intelligence Engineer / Machine Learning Engineer.
     
-    First, use the "AI/ML Skills Dataset" tool to analyze real skills extracted from job postings. This will give you 
-    insights into the exact terminology and skills that employers are looking for. Review this data carefully to understand
-    the current job market demands.
+    First, use the "AI/ML Skills Dataset" csv tool to analyze our list of real skills extracted from job postings. 
+    This will give you insights into the exact terminology and skills that employers are looking for. 
+    Review this data carefully to understand the current job market demands.
+    IMPORTANT: 
+    When using the AI/ML Skills Dataset tool, provide a simple string query like "list all skills" or "list top 25 skills" as the query parameter. 
+    This tool will accept the following substrings as a query to see the top 50 skills: "list all", "show all", "all skills", "get all", "all", "top 50".
+    Do not use a dictionary or complex structure as your input to the tool. Only use a simple string query.
     
-    Then, use the Perplexity AI Research tool to search for additional current information about AI/ML job skills.
+    Then, after you've examined the results of the skills list, 
+    you will use the Perplexity AI Research tool to search for additional current information about AI/ML job skills.
     Your queries should be informed by the skills you found in the dataset. For example, you can ask questions like:
-    - "What are the most in-demand programming languages for AI Engineers in 2025?"
-    - "How important is [specific skill from dataset] for Machine Learning Engineers in 2025?"
+    - "What are the most in-demand skills for AI Engineers and Machine Learning Engineers in 2025?"
+    - "How important are the following skills for Machine Learning Engineers in 2025? [specific skills from dataset]."
     - "What are the emerging AI technologies related to [skills from dataset] that job seekers should learn in 2025?"
+    - "What are the best learning resources for the following skills? [specific skills from dataset]."
     
-    Make sure you find any interesting and relevant information given the current year is 2025.
+    Make sure you find any interesting and relevant information given the current year is 2025 and the user is searching for skills for an AI/ML Engineer.
     
     Organize your findings into clear categories such as:
     - Programming languages
@@ -21,6 +27,7 @@ research_task:
     - Machine learning techniques
     - Soft skills
     - Domain knowledge
+    - Specific examples of how the skill is used in a real-world project
   expected_output: >
     A list with bullet points of the most relevant information about in-demand skills for an Artificial Intelligence Engineer / Machine Learning Engineer.
   agent: researcher
@@ -28,7 +35,12 @@ research_task:
 reporting_task:
   description: >
     Review the context you got and expand each topic into a full section for a report.
-    Make sure the report is detailed and contains any and all relevant information.
+    Make sure the report is detailed and contains any and all relevant information. 
+    For all skills in the report, provide specific examples of how the skill is used in a real-world project. 
+    Make sure to provide examples of the most common technologies and tools used to execute each skill. 
+    For each skill, provide a list of the most popular resources (books, courses, projects, certifications) for learning the skill.
+    This report should function as a comprehensive guide for the user to learn the most in-demand skills for an Artificial Intelligence Engineer / Machine Learning Engineer. 
+    This report should also function as a learning resource for the user to prepare for interviews. 
   expected_output: >
     A fully fledged report with the main topics, each with a full section of information.
     Formatted as markdown without '```'

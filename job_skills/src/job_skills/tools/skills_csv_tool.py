@@ -19,7 +19,7 @@ class SkillsCSVTool(BaseTool):
         "Access a dataset of real AI/ML skills extracted from job postings. "
         "This tool provides information about in-demand skills for AI Engineers and ML Engineers "
         "based on actual job listings. Use this to understand the exact terminology and skills "
-        "that employers are looking for before conducting further research."
+        "that current employers on job boards are looking for before conducting further research."
     )
     args_schema: Type[BaseModel] = SkillsCSVToolInput
     
@@ -79,21 +79,21 @@ class SkillsCSVTool(BaseTool):
             result += f"Found CSV with columns: {', '.join(columns)}\n\n"
             
             # If query is for listing all skills or general information
-            if "list all" in query.lower() or "show all" in query.lower() or "all skills" in query.lower() or "get all" in query.lower():
+            if "list all" in query.lower() or "show all" in query.lower() or "all skills" in query.lower() or "all" in query.lower() or "skills" in query.lower() or "top 50" in query.lower():
                 result += "## Top AI/ML Skills by Occurrence\n\n"
                 
                 # Sort by occurrences (descending)
                 if 'occurrences' in columns:
                     df = df.sort_values('occurrences', ascending=False)
                 
-                # Get the top 25 skills
-                top_skills = df.head(25)
+                # Get the top 50 skills
+                top_skills = df.head(50)
                 for index, row in top_skills.iterrows():
                     result += self._format_row(row, columns)
                 
                 # Add note about total skills
                 if len(df) > 25:
-                    result += f"\n*Showing top 25 skills out of {len(df)} total skills.*\n"
+                    result += f"\n*Showing top 50 skills out of {len(df)} total skills.*\n"
             # Otherwise, filter based on the query
             else:
                 # Convert all columns to string for searching
@@ -134,7 +134,7 @@ class SkillsCSVTool(BaseTool):
         
         # For the actual file structure with 'skill' and 'occurrences'
         if 'skill' in columns and 'occurrences' in columns:
-            skill_info += f"**{row['skill']}** ({row['occurrences']} occurrences)\n"
+            skill_info += f"{row['skill']} ({row['occurrences']} occurrences)\n"
         else:
             # Fallback for other column structures
             details = []

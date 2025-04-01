@@ -5,7 +5,7 @@
 ![CrewAI](https://img.shields.io/badge/CrewAI-Latest-orange)
 ![License](https://img.shields.io/badge/License-MIT-green)
 
-A sophisticated AI-powered platform for analyzing and researching in-demand skills for AI Engineers and Machine Learning Engineers. This project leverages advanced AI agents, real job posting data, and cutting-edge research tools to provide comprehensive insights into the current job market.
+An AI-powered platform for analyzing and researching in-demand skills for AI Engineers and Machine Learning Engineers. This project uses crewAI to orchestrate specialized AI agents, gathers skills data from real job posts, augments the skills data with perplexity search, generates a report that provides comprehensive insights into the current job market.
 
 ## 🚀 Features
 
@@ -14,6 +14,7 @@ A sophisticated AI-powered platform for analyzing and researching in-demand skil
 - **OCR Integration**: Extracts text from job posting images using Optical Character Recognition
 - **Perplexity API Integration**: Accesses up-to-date information about AI/ML job skills, technologies, and trends
 - **Customizable Research**: Allows for targeted queries about specific skills or comprehensive market analysis
+- **Report Generation**: Generates a comprehensive report on in-demand skills, trends, learning paths, and recommendations for skill development
 
 ## 🛠️ Architecture
 
@@ -39,6 +40,14 @@ Provides access to a dataset of real AI/ML skills extracted from job postings:
 - Supports both broad overview and targeted skill queries
 - Displays the exact terminology used by employers
 
+### OCR Integration
+
+Extracts text from job posting images:
+
+- Processes screenshots of job listings
+- Identifies skills and requirements from visual content
+- Integrates findings with other data sources
+
 ### Perplexity AI Research Tool
 
 Connects to Perplexity AI to provide current information from across the web:
@@ -48,19 +57,11 @@ Connects to Perplexity AI to provide current information from across the web:
 - Identifies learning resources and certification paths
 - Provides context on emerging technologies
 
-### OCR Integration
-
-Extracts text from job posting images:
-
-- Processes screenshots of job listings
-- Identifies skills and requirements from visual content
-- Integrates findings with other data sources
-
 ## 🔧 Setup and Installation
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/yourusername/job_skills.git
+   git clone https://github.com/thefilesareinthecomputer/job_skills.git
    cd job_skills
    ```
 

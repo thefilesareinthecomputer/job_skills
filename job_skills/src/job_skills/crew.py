@@ -11,22 +11,6 @@ load_dotenv()
 # you can use the @before_kickoff and @after_kickoff decorators
 # https://docs.crewai.com/concepts/crews#example-crew-class-with-decorators
 
-# perplexity_llm = LLM(
-#     provider="perplexity",
-#     api_key=os.getenv("PERPLEXITY_API_KEY"),
-#     model="perplexity/sonar-deep-research",
-#     base_url="https://api.perplexity.ai/",
-#     endpoint="/chat/completions",
-#     additional_kwargs={"stop": None}
-# )
-
-# perplexity_llm = LLM(
-#     api_key=os.getenv("PERPLEXITY_API_KEY"),
-#     model="sonar-deep-research",  # Use the model that worked in your test
-#     base_url="https://api.perplexity.ai",  # Base URL without the /chat/completions part
-#     provider="perplexity"  # Explicitly specify the provider
-# )
-
 @CrewBase
 class JobSkills():
     """JobSkills crew"""
@@ -83,3 +67,36 @@ class JobSkills():
             verbose=True,
             # process=Process.hierarchical, # In case you wanna use that instead https://docs.crewai.com/how-to/Hierarchical/
         )
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# perplexity_llm = LLM(
+#     provider="perplexity",
+#     api_key=os.getenv("PERPLEXITY_API_KEY"),
+#     model="perplexity/sonar-deep-research",
+#     base_url="https://api.perplexity.ai/",
+#     endpoint="/chat/completions",
+#     additional_kwargs={"stop": None}
+# )
+
+# perplexity_llm = LLM(
+#     api_key=os.getenv("PERPLEXITY_API_KEY"),
+#     model="sonar-deep-research",  # Use the model that worked in your test
+#     base_url="https://api.perplexity.ai",  # Base URL without the /chat/completions part
+#     provider="perplexity"  # Explicitly specify the provider
+# )
