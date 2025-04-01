@@ -41,6 +41,8 @@ reporting_task:
     For each skill, provide a list of the most popular resources (books, courses, projects, certifications) for learning the skill.
     This report should function as a comprehensive guide for the user to learn the most in-demand skills for an Artificial Intelligence Engineer / Machine Learning Engineer. 
     This report should also function as a learning resource for the user to prepare for interviews. 
+    Direct the reader to the official documentation of the skill if available. 
+    Direct the reader to the most popular resources for learning the skill if available.  
   expected_output: >
     A fully fledged report with the main topics, each with a full section of information.
     Formatted as markdown without '```'
