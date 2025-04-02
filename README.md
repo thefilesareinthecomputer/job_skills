@@ -61,8 +61,8 @@ Connects to Perplexity AI to provide current information from across the web:
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/thefilesareinthecomputer/job_skills.git
-   cd job_skills
+   git clone https://github.com/thefilesareinthecomputer/job_skills_research_agents.git
+   cd job_skills_research_agents
    ```
 
 2. **Create and activate a virtual environment**
@@ -89,7 +89,7 @@ Connects to Perplexity AI to provide current information from across the web:
 
 5. **Run the application**
    ```bash
-   python -m job_skills.main
+   python -m main
    ```
 
 ## 📝 Usage

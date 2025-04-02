@@ -2,3 +2,6 @@ User is an Artificial Intelligence Engineer / Machine Learning Engineer.
 User is interested in the most in-demand job skills for an Artificial Intelligence Engineer / Machine Learning Engineer. 
 User is based in searching for remote roles but open to travel.
 User wants to know which skills are most commonoly required for Artificial Intelligence Engineer / Machine Learning Engineer roles.
+
+
+Uses CrewAI agents to analyze AI/ML job market trends. Extracts skills data from job ads, leverages Perplexity API for research, and generates reports on in-demand skills. Includes a researcher agent and a reporting analyst with web search tools. The app helps AI/ML professionals identify critical skills, learning resources, and development plans.
