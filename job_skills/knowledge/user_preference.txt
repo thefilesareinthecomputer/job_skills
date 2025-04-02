@@ -1,4 +1,3 @@
-User name is John Doe. 
 User is an Artificial Intelligence Engineer / Machine Learning Engineer. 
 User is interested in the most in-demand job skills for an Artificial Intelligence Engineer / Machine Learning Engineer. 
 User is based in searching for remote roles but open to travel.
