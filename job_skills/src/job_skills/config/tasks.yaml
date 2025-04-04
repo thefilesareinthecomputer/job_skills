@@ -1,49 +1,187 @@
 research_task:
   description: >
-    Conduct a thorough research project about in-demand skills for an Artificial Intelligence Engineer / Machine Learning Engineer.
-    
-    First, use the "AI/ML Skills Dataset" csv tool to analyze our list of real skills extracted from job postings. 
+    You will focus on uncovering the latest and most in-demand skills for Artificial Intelligence Engineer and Machine Learning Engineer roles. 
+    You will prioritize the most relevant and high-demand / high-income skills and present them clearly and concisely.
+    You will focus on ranking the most in-demand skills for Artificial Intelligence Engineer and Machine Learning Engineer roles. 
+    You will categorize skills into clear groups (possibly category examples - programming languages, frameworks, libraries / packages, methodologies, techniques, domain knowledge, soft skills, etc.). 
+    For each skill, you will indicate the relative importance, the implications to earning potential, and the expected growth trajectories over the next few years.
+    You will also mention any major headlines / updates / developments to the skills that are relevant to the report.
+    The year is 2025. Your report must be up to date with the latest skills and trends in the AI/ML space.
+    You are creating a comprehensive list of skills, grouped by category, that will become the basis of a research project about in-demand skills for an Artificial Intelligence Engineer / Machine Learning Engineer.
+    You will be using the "AI/ML Skills Dataset" csv tool to analyze our list of real skills extracted from job postings. 
+    You will be examining this list, augmenting it with your own recommendations, and then organizing the skills into categories.
+
+    First, use the perplexity tool to orient and ground yourself in recent updates about trends and the most relevant skills for an Artificial Intelligence Engineer / Machine Learning Engineer.
+
+    Then, use the "AI/ML Skills Dataset" csv tool to read and analyze our list of real-world skills that were extracted from job postings in Q1 2025. 
     This will give you insights into the exact terminology and skills that employers are looking for. 
+    This dataset also ranks the most in-demand skills by occurrence in job postings. It will show you how polular the skills are in the job market.
     Review this data carefully to understand the current job market demands.
-    IMPORTANT: 
-    When using the AI/ML Skills Dataset tool, provide a simple string query like "list all skills" or "list top 25 skills" as the query parameter. 
-    This tool will accept the following substrings as a query to see the top 50 skills: "list all", "show all", "all skills", "get all", "all", "top 50".
-    Do not use a dictionary or complex structure as your input to the tool. Only use a simple string query.
+    IMPORTANT
+    When using the AI/ML Skills Dataset tool, provide your query as a dictionary with a query key, for example - `{"query": "list all skills"} or {"query": "top 50"}`.
+    The tool will accept the following strings within each query to see the top 50 skills - "list all", "show all", "all skills", "get all", "all", "top 50".
     
-    Then, after you've examined the results of the skills list, 
-    you will use the Perplexity AI Research tool to search for additional current information about AI/ML job skills.
-    Your queries should be informed by the skills you found in the dataset. For example, you can ask questions like:
-    - "What are the most in-demand skills for AI Engineers and Machine Learning Engineers in 2025?"
-    - "How important are the following skills for Machine Learning Engineers in 2025? [specific skills from dataset]."
-    - "What are the emerging AI technologies related to [skills from dataset] that job seekers should learn in 2025?"
-    - "What are the best learning resources for the following skills? [specific skills from dataset]."
+    Make sure you include any interesting and relevant information given the current year is 2025 and the user needs practical real-world examples for skills for an AI/ML Engineer.
     
-    Make sure you find any interesting and relevant information given the current year is 2025 and the user is searching for skills for an AI/ML Engineer.
-    
-    Organize your findings into clear categories such as:
+    Organize all of the skills you find into clear groups / categories such as
     - Programming languages
-    - Frameworks and libraries
-    - Cloud platforms
+    - Programming concepts
+    - Web frameworks and libraries
+    - Testing and validation tools
+    - ETL, data pipeline, data transformation,and data processing tools
+    - Automation and orchestration tools
+    - ML / AI frameworks, packages, and libraries
     - Machine learning techniques
-    - Soft skills
+    - Deep learning techniques
+    - Model training and evaluation techniques
+    - Model deployment and operational tools
+    - Neural networks
+    - Prediction and forecasting techniques
+    - Forecasting and prediction models and machine learning models
+    - Optimization techniques
+    - Cloud platforms
+    - Containerization and virtualization tools
+    - Deployment workflows, CI/CD, MLops, and operational tools
     - Domain knowledge
-    - Specific examples of how the skill is used in a real-world project
+
+    The grouped list of skills should be organized into the categories listed in the description, or similar categories as you see fit.
+    The list should follow a logical progression of skills that an AI/ML Engineer would need to learn to be successful in their career.
+    The skills hsould be listed in the order in which they should be learned, so that foundational skills are listed first, and more complex skills are listed last.
   expected_output: >
-    A list with bullet points of the most relevant information about in-demand skills for an Artificial Intelligence Engineer / Machine Learning Engineer.
+    A grouped list of bullet points containing at least 50 of the most relevant in-demand skills for an Artificial Intelligence Engineer / Machine Learning Engineer.
+    The list of skills should be organized into the categories listed in the description, or similar categories as you see fit.
+    The grouped list of skills should be organized into the categories listed in the description, or similar categories as you see fit.
+    The list should follow a logical progression of skills that an AI/ML Engineer would need to learn to be successful in their career.
+    The skills should be listed in the order in which they should be learned, so that foundational skills are listed first, and more complex skills are listed last.
   agent: researcher
 
 reporting_task:
   description: >
-    Review the context you got and expand each topic into a full section for a report.
-    Make sure the report is detailed and contains any and all relevant information. 
+    For each skill, you will include both quick wins for immediate improvement and long-term development strategies.
+    You will tailor your recommendations to different career stages (entry-level, mid-career, senior) and provide guidance on which skills to prioritize based on specific career goals.
+    You will examine large amounts of data and provide insights on what skills are most in demand for Artificial Intelligence Engineer and Machine Learning Engineer roles. 
+    You will go beyond a surface level overview and provide a deep dive into each of the skills that are most in demand. 
+    You will also provide a roadmap and set of instructions for job seekers to improve their skills and prepare for interviews. 
+    For each skill in the report, you will provide a definition, examples, practical use cases, and resources for the job seeker to learn about each skill and improve their expertise in each area. 
+    For each skill identified in the research:
+      1. You provide a clear, concise definition of the skill, containing a high level of technical detail explaining the skill and its practical importance to the job role
+      2. You explain why the skill is valuable in the real-world, and how to use the skill in production-grade, enterprise-grade AI/ML workflows - with specific examples of how the skill is used in practice
+      3. You outline a progressive learning path from beginner to advanced mastery
+      4. You recommend specific resources (training courses, portfolio projects, certifications) with a preference for no-cost or low-cost resources
+      5. You suggest methods to demonstrate proficiency to potential employers (portfolio projects, GitHub contributions, etc.)
+    You will teach the user what each skill is and how it is used in the real world, and how to use it to advance their career.
+
+    Review the context you got (the list of skills provided by the researcher) and expand each skill into a full section of information (more instructions below).
     For all skills in the report, provide specific examples of how the skill is used in a real-world project. 
     Make sure to provide examples of the most common technologies and tools used to execute each skill. 
-    For each skill, provide a list of the most popular resources (books, courses, projects, certifications) for learning the skill.
+    Some skills are the names of technologies - i.e. "Python" or "SQL" or "AWS" - and you should provide examples of how the skill is used in a real-world project.
+    Some skills are more complex than others, and you should provide examples of how the skill is used in a real-world project.
+    For each skill, provide a list of accessible resources (documentation, courses, projects, certifications) for learning the skill.
     This report should function as a comprehensive guide for the user to learn the most in-demand skills for an Artificial Intelligence Engineer / Machine Learning Engineer. 
     This report should also function as a learning resource for the user to prepare for interviews. 
     Direct the reader to the official documentation of the skill if available. 
     Direct the reader to the most popular resources for learning the skill if available.  
+    Tell the reader how to demonstrate proficiency in the skill.
+    If the skill is a technology, provide a link to the official documentation of the skill.
+    If the skill is a technology, provide information on how to install it and set it up.
+
+    First, use the perplexity tool to get a better sense of how engineers are using the most relevant skills for an Artificial Intelligence Engineer / Machine Learning Engineer in 2025.
+
+    Then, use the "AI/ML Skills Dataset" csv tool, which you can use to read our list of real skills extracted from job postings. 
+    The data in this csv is what the researcher used as the foundation to create the list of skills.
+    You are being given access to the list as well as the researcher's report.
+    Make sure that all important skills from the original list are included in the report.
+    This data will give you insights into the exact terminology and skills that employers are looking for - the csv list of skills was extracted from real-world job postings in Q1 2025. 
+    This dataset also ranks the most in-demand skills by occurrence in job postings. It will show you how polular the skills are in the job market.
+    Review this data carefully to understand the current job market demands.
+    Examine this list alongside the output from the researcher agent on your team.
+    IMPORTANT: 
+    When using the AI/ML Skills Dataset tool, provide your query as a dictionary with a query key, for example: {"query": "list all skills"} or {"query": "top 50"}.
+    The tool will accept the following strings within each query to see the top 50 skills: "list all", "show all", "all skills", "get all", "all", "top 50".
+    
   expected_output: >
-    A fully fledged report with the main topics, each with a full section of information.
-    Formatted as markdown without '```'
+    A fully fledged report with all of the main topics from the researcher agent's output - the section for each skill should be expanded upon with a full section of information.
+    For each skill, include details such as:
+    - Technologies in which the skill is used
+    - If the skill is a technology, provide a link to the official documentation of the skill
+    - If the skill is a technology, provide information on how to install it and set it up
+    - If the skill includes programming, include some code examples for commonly used tasks required by the skill
+    - If the skill involves deliverable code, explain how the code would be deployed / hosted / run / executed in production
+    - If the skill involves deliverable code, explain how the developer would go from developing it to deploying it into production    
+    - If the skill involves deliverable code, explain how the developer would test the code and validate it is working as expected
+    - If the skill involves deliverable code, explain how the developer would implement CI/CD for the project
+    - A description of what the skill is and how it is used, both in a general sense in layman's terms and in technical terms that an AI/ML Engineer would use in their work
+    - Examples of how the skill is used in a real-world project
+    - Popular resources for learning the skill
+    - Practical examples of the skill being applied in a real-world project
+    Formatted as markdown
   agent: reporting_analyst
+
+skill_instructor_task:
+  description: >
+    You are an expert in the field of AI/ML Engineering.
+    You are given a report containing lists of AI/ML Engineering skills and their corresponding explanations / resources. This report was created by the reporting analyst on your team.
+    You will enhance the report created by the reporting analyst with a detailed guide (instructions, technical details, and implementation examples) for each skill identified in the research. 
+    Include code examples or implementation instructions, highly detailed explanations of the skill's workflow, and practical use cases for each skill. 
+
+    First, use the perplexity tool to get a better sense of how engineers are can learn and use the most relevant skills for an Artificial Intelligence Engineer / Machine Learning Engineer in 2025.
+
+    Make sure that you provide information for every relevant skill in the list.
+    You can reference the main skills list by using the "AI/ML Skills Dataset" csv tool.
+    To use this tool, provide your query as a dictionary with a query key, for example: {"query": "list all skills"} or {"query": "top 50"}.
+    The tool will accept the following strings within each query to see the top 50 skills: "list all", "show all", "all skills", "get all", "all", "top 50".
+    Make sure that all of the relevant skills from the original list are included in the report.
+
+    For each skill in the report:
+      1. You will provide a comprehensive technical breakdown that goes beyond surface-level explanations
+      2. You will include multiple code examples showing both basic implementation and advanced usage patterns
+      3. You will explain common pitfalls and how to avoid them based on your extensive experience
+      4. You will demonstrate how the skill integrates with other technologies in the AI/ML ecosystem
+      5. You will outline specific industry use cases where this skill creates significant business value
+      6. You will provide debugging tips and performance optimization techniques
+      7. You will explain how to test and validate implementations using this skill
+    
+    Your code examples will be production-quality, following best practices for:
+      - Code organization and structure
+      - Error handling and edge cases
+      - Documentation and commenting
+      - Performance considerations
+      - Security considerations where applicable
+
+    You will tailor your explanations to different experience levels, providing:
+      - Entry-level examples that focus on fundamentals
+      - Intermediate examples that introduce more complex patterns
+      - Advanced examples that demonstrate cutting-edge techniques
+    
+    You will connect each skill to real job responsibilities by:
+      - Explaining how the skill is used in day-to-day work
+      - Showing how it fits into larger engineering workflows
+      - Demonstrating how it helps solve business problems
+
+    You will leverage the research conducted by the researcher and reporting analyst to create a detailed guide for each skill identified in the research. 
+    You will include code examples, highly detailed explanations of workflow, and practical use cases for each skill. 
+    You will provide a roadmap and set of instructions for job seekers to improve their skills and prepare for interviews. 
+
+    The year is 2025. Your guide must be up to date with the latest skills and trends in the AI/ML space, including:
+      - The latest frameworks and libraries
+      - Current best practices and design patterns
+      - Modern deployment and operational considerations
+      - Emerging techniques that are gaining industry adoption
+  expected_output: >
+    A detailed learning / developmentguide for each skill in the research list, formatted as markdown.
+    The guide should include instructions, technical details, and implementation examples for each skill.
+    For each skill, include details such as:
+    - Technologies in which the skill is used
+    - If the skill is a technology, provide a link to the official documentation of the skill
+    - If the skill is a technology, provide information on how to install it and set it up
+    - If the skill includes programming, include some code examples for commonly used tasks required by the skill
+    - If the skill involves deliverable code, explain how the code would be deployed / hosted / run / executed in production
+    - If the skill involves deliverable code, explain how the developer would go from developing it to deploying it into production    
+    - If the skill involves deliverable code, explain how the developer would test the code and validate it is working as expected
+    - If the skill involves deliverable code, explain how the developer would implement CI/CD for the project
+    - A description of what the skill is and how it is used, both in a general sense in layman's terms and in technical terms that an AI/ML Engineer would use in their work
+    - Examples of how the skill is used in a real-world project
+    - Popular resources for learning the skill
+    - Practical examples of the skill being applied in a real-world project
+    Formatted as markdown
+  agent: skill_instructor

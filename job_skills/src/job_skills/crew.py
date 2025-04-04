@@ -28,16 +28,25 @@ class JobSkills():
         return Agent(
             config=self.agents_config['researcher'],
             verbose=True,
-            tools=[SkillsCSVTool(), PerplexityTool()]  # Add both tools to the researcher
+            tools=[PerplexityTool(),SkillsCSVTool()] 
         )
 
     @agent
     def reporting_analyst(self) -> Agent:
         return Agent(
             config=self.agents_config['reporting_analyst'],
-            verbose=True
+            verbose=True,
+            tools=[PerplexityTool(), SkillsCSVTool()]
         )
 
+    @agent
+    def skill_instructor(self) -> Agent:
+        return Agent(
+            config=self.agents_config['skill_instructor'],
+            verbose=True,
+            tools=[PerplexityTool(), SkillsCSVTool()]
+        )
+        
     # To learn more about structured task outputs,
     # task dependencies, and task callbacks, check out the documentation:
     # https://docs.crewai.com/concepts/tasks#overview-of-a-task
@@ -45,13 +54,21 @@ class JobSkills():
     def research_task(self) -> Task:
         return Task(
             config=self.tasks_config['research_task'],
+            output_file='01_research.md'
         )
 
     @task
     def reporting_task(self) -> Task:
         return Task(
             config=self.tasks_config['reporting_task'],
-            output_file='report.md'
+            output_file='02_report.md'
+        )
+        
+    @task
+    def skill_instructor_task(self) -> Task:
+        return Task(
+            config=self.tasks_config['skill_instructor_task'],
+            output_file='03_skills_guide.md'
         )
 
     @crew

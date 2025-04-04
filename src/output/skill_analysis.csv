@@ -1,437 +1,518 @@
 skill,occurrences
+python,113
 machine learning,105
-python,99
-artificial intelligence (ai),75
-amazon web services (aws),47
-large language models (llms),45
-microsoft azure,32
-natural language processing (nlp),31
-data science,31
-computer science,23
+artificial intelligence (ai),81
+amazon web services (aws),56
+large language models (llms),48
+microsoft azure,37
+data science,35
+natural language processing (nlp),33
+pytorch,27
+computer science,24
 computer vision,23
-pytorch,22
+"extract, transform, load (etl)",21
 tensorflow,19
 deep learning,18
 generative ai,15
+data analysis,15
 software development,14
 data engineering,13
-data analysis,13
-prompt engineering,12
+microsoft power bi,13
 machine tools,12
-"extract, transform, load (etl)",11
+prompt engineering,12
+google cloud platform (gcp),11
+mlops,11
 problem solving,11
 algorithms,10
-mlops,10
+pandas (software),9
+full-stack development,9
+data warehousing,9
+sql,9
 neuro-linguistic programming (nlp),9
-pandas (software),8
+business intelligence (bi),9
 programming,8
-full-stack development,8
-pattern recognition,8
 retrieval-augmented generation (rag),8
-tableau,7
+pattern recognition,8
 analytical skills,7
+machine leeming,7
+tableau,7
 hadoop,7
 java,7
-microsoft power bi,7
-sql,7
-dashboards,6
 react.js,6
-data warehousing,6
-business intelligence (bi),6
-kubernetes,5
-salesforce.com,5
-node.js,5
-google cloud platform (gcp),5
-statistics,5
+kubernetes,6
+javascript,6
+dashboards,6
+snowflake,6
+databases,6
+mangers,6
+statistics,6
+data pipelines,5
 business analysis,5
+node.js,5
+salesforce.com,5
 distributed systems,5
-javascript,5
 image processing,4
-strategic thinking,4
+big data,4
 language modeling,4
-back-end web development,4
-databases,4
-typescript,4
-snowflake,4
 c++,4
-sar,4
+strategic thinking,4
+cloud computing,4
 django,4
+data governance,4
+data architecture,4
+sar,4
+typescript,4
+linux,4
+back-end web development,4
 language understanding (luis),4
-coding experience,3
-interactive voice response (ivr),3
-big data,3
-embedded systems,3
-linux,3
+data visualization,4
+devops,3
+system integration,3
+code review,3
 identity and access management (iam),3
 transcription,3
-cloud computing,3
-system integration,3
-automation,3
+‘apache spark 4b,3
 containerization,3
-data pipelines,3
-data architecture,3
-customer relationship management (crm),3
 transformers,3
-devops,3
+data management,3
+embedded systems,3
+customer relationship management (crm),3
+automation,3
+data modeling,3
+tensortiow,3
 communication,3
 apache spark,3
-code review,3
-performance reviews,2
+coding experience,3
+interactive voice response (ivr),3
+"next,js",2
+model training,2
+technical documentation,2
+ops,2
+pyspark,2
+relational databases,2
+demabaelnss 4b,2
+software development life cycle (sdlc),2
+fine tuning,2
 software as a service (saas),2
+object detection,2
+computer sclence 4b,2
 underwriting,2
-oracle database,2
+sensors,2
+.net framework,2
+business insights,2
+bata science,2
+insurance,2
+api development,2
+query languages,2
+oracle cloud,2
 model development,2
 strategy,2
-query languages,2
-startups,2
-critical thinking,2
-model training,2
-budgeting,2
-programming languages,2
-scrum,2
-fine tuning,2
-git,2
-nosql.,2
-.net framework,2
-pyspark,2
-data governance,2
-ops,2
-information systems,2
-microsoft sql server,2
-object detection,2
-oracle cloud,2
-relational databases,2
-api development,2
-react native,2
-data modeling,2
-stakeholder management,2
-cross-functional team leadership,2
-timelines,2
-thinking skills,2
-attention to detail,2
-technical documentation,2
-aiml,2
-sensors,2
 chatbots,2
-android,2
-program management,2
+solution architecture,2
 conversational ai,2
-general data protection regulation (gdpr),2
-visualization,2
 data structures,2
-"next,js",2
 generative adversarial networks (gans),2
-insurance,2
-manufacturing,2
+cloud applications,2
+general data protection regulation (gdpr),2
+nosql.,2
+git,2
+tebieau,2
+presentations,2
+google bigquery =p,2
+looker (software) =p,2
+kemet 4b,2
+lookml 4b,2
+pected predicts 4b,2
+‘analytical skills 4b,2
+scrum,2
+aiml,2
+je 4b,2
+programming languages,2
+stakeholder management,2
+database design,2
+cross-functional team leadership,2
+mathematics,2
+clarity,2
+tensorfiow,2
+deep neural networks (dnn),2
+predictive modeling,2
+vector databases,2
+microsoft sql server,2
+startups,2
+reinforcement learning,2
 robotics,2
-dax,2
+attention to detail,2
 computer engineering,2
+thinking skills,2
+langchain,2
+object-oriented programming (oop),2
+performance reviews,2
+project planning,2
+timelines,2
+biology,2
+budgeting,2
+program management,2
+php,2
+oracle database,2
+critical thinking,2
 swift (programming language),2
-business insights,2
-quantitative analytics,2
+android,2
 ios,2
-artificial neural networks,2
+high performance computing (hpc),2
+android development,2
+r (programming language),2
+analytics,2
+windows,2
+manufacturing,2
+information systems,2
+financial services,2
 desktop computers,2
 graphics processing unit,2
-high performance computing (hpc),2
-biology,2
-r (programming language),2
-deep neural networks (dnn),2
-vector databases,2
-android development,2
-predictive modeling,2
-windows,2
-mathematics,2
-tensorfiow,2
-reinforcement learning,2
-langchain,2
-project planning,2
-data management,2
-web content writing,1
-financial instruments,1
-data integration,1
-facial animation,1
-cloud development,1
-system performance,1
-technology solutions,1
-animation,1
-large-scale data processing,1
-web content creation,1
-community management,1
-cw,1
-graphics,1
-database design,1
-agile software development,1
-computer graphics,1
-data build tool (dbt) ab,1
-front-end coding,1
-documentation,1
-mulesoft anypoint platform,1
-data build tool (dbt),1
-applicant tracking systems,1
-technology management,1
-requirements gathering,1
-go-to-market strategy,1
-growth hacking,1
-web development,1
-user acceptance testing,1
-critical systems,1
-synthetic data generation,1
-infrastructure management,1
-sap erp 4,1
+artificial neural networks,2
+quantitative analytics,2
+react native,2
+visualization,2
+dax,2
+business requirements,1
+json 4b,1
+jems db,1
+knowledge graph-based recommendation,1
+amazon redshift,1
+data monitoring,1
+actuarial science,1
+thoughtspot,1
+decision sciences,1
+written communication,1
+creative ideation,1
+document processing,1
 ibm cognos analytics,1
-rest apis,1
-software architecture,1
-stored procedures,1
-oracle sql developer,1
-php,1
+digital supply chain,1
+php.,1
+‘systems design,1
+technical proficiency,1
+data reporting,1
+back-end web development db,1
+data quality,1
+systems design,1
+large-scale data processing,1
+agile software development,1
+‘athena,1
+go-to-market strategy,1
+infrastructure management,1
+web development,1
+community management,1
+growth hacking,1
+al strategy,1
+consulting,1
+data aggregation,1
+vue.js,1
 regulated industry,1
-gap analysis,1
+rest apis,1
+cenerative al,1
 life insurance,1
 insurance claims,1
-actuarial science,1
-disability insurance,1
-thoughtspot,1
-data reporting,1
-‘systems design,1
-document processing,1
-current state assessment,1
-creative ideation,1
-decision sciences,1
-supply chain management,1
-marketing strategy,1
-hex,1
-business requirements,1
-of,1
-amazon redshift,1
-vue.js,1
-systems design,1
-php.,1
-knowledge graph-based recommendation,1
-data visualization,1
-presentations,1
-design systems,1
-airflow,1
-intelligence systems,1
-neural networks,1
-video generation,1
-diffusion,1
-user experience design (ued),1
-apache,1
-applied research,1
-real world evidence (rwe),1
-product demonstration,1
-decision-making,1
-hl7 standards,1
-clu,1
-context,1
-microsoft power platform,1
-ai prompting,1
-presentation skills,1
-scikit-learn,1
-data validation,1
-business acumen,1
-solution architecture,1
-architectural design,1
-business solution,1
-visual communication,1
-technical discussions,1
-go (programming language),1
-redis,1
-smartsheet,1
-iceberg,1
-engineering documentation,1
-relational database,1
-strategic planning,1
-strategic initiatives,1
-technical support,1
-system architecture,1
-fingerprinting,1
-project management,1
-technical leadership,1
-promotional marketing,1
-mentoring,1
-marketing,1
-neodj ab,1
-cloud applications,1
-visio,1
-bata science,1
-scalability,1
-software development life cycle (sdlc),1
-digital supply chain,1
-written communication,1
+oracle sql developer,1
+(resmits db,1
 project management software,1
+business solution,1
+stored procedures,1
+front-end coding,1
+computer graphics,1
+web content creation,1
+web content writing,1
+facial animation,1
+animation,1
+graphics,1
+synthetic data generation,1
+technical leadership,1
+cloud development,1
+mentoring,1
+database systems db,1
+seripting ap,1
+scikit-learn,1
+agile development,1
+forefront,1
+etored ermcediinesy 4b,1
+dax 4b,1
+system performance,1
+disability insurance,1
 revenue cycle management,1
-co-marketing,1
-hive,1
-databricks products,1
-al agents,1
+xml 4b,1
+business relationship management,1
 software engineering practices,1
 software deployment,1
 continuous improvement,1
-pipeline construction,1
-kubeflow,1
-agile development,1
-technical direction,1
-business relationship management,1
-data storytelling,1
-technical proficiency,1
+product demonstration,1
+‘amazon athena,1
+presentation skills,1
+visual communication,1
+hive,1
+architectural design,1
+gap analysis,1
+redis,1
+mongodb,1
+‘application development,1
+) exmomastamen,1
+applied research,1
+data validation,1
+design systems,1
+business acumen,1
+learning management systems,1
+neural networks,1
+current state assessment,1
+critical systems,1
+‘amazon eks,1
+marketing strategy,1
+hex,1
+data build tool (dbt) ab,1
+aaiie methodologies,1
+o iia,1
+of,1
+software architecture,1
+promotional marketing,1
+applicant tracking systems,1
+technology solutions,1
+technology management,1
+data integration,1
+cw,1
+documentation,1
+requirements gathering,1
+user acceptance testing,1
+financial instruments,1
+go (programming language),1
 data streaming,1
+hl7 standards,1
+co-marketing,1
+sap erp 4,1
+clu,1
+context,1
+microsoft power platform,1
+technical support,1
+smartsheet,1
+project management,1
+visio,1
 chatgpt,1
-forefront,1
-key performance indicators,1
-osa,1
+data stewardship,1
 microsoft copilot,1
-performance metrics,1
+container orchestration,1
+databricks products,1
+kubeflow,1
+pipeline construction,1
+al agents,1
+scalability,1
+dynamo,1
+supply chain management,1
+strategic planning,1
+neodj ab,1
+real world evidence (rwe),1
+mulesoft anypoint platform,1
+flask,1
+airflow,1
+decision-making,1
+technical discussions,1
+system architecture,1
+engineering documentation,1
+relational database,1
+marketing,1
+strategic initiatives,1
+ai solutions,1
+ai prompting,1
+intelligence systems,1
+mobile robotics,1
+computer programming ar,1
+data integration 4b,1
+r (programming language) ap,1
+chatbot development 4b,1
+conversational language understanding ar,1
+video generation,1
+customer insight,1
+fingerprinting,1
+diffusion,1
+apache,1
+data build tool (dbt),1
+osa,1
+opencv,1
+motion planning,1
+customer experience,1
+branding & identity,1
+ux research,1
+user experience design (ued),1
+interaction design,1
 user interface design,1
+technical direction,1
 statistical analysis,1
 customer journeys,1
 qualtrics,1
-customer experience,1
-customer insight,1
-flask,1
-sharepoint,1
-ai solutions,1
+data storytelling,1
+production systems,1
+iceberg,1
+design thinking,1
 c# ap,1
+team leadership,1
 export operations,1
 power transmission,1
 gov 2.0,1
-interaction design,1
-ux research,1
-oracle applications,1
+product design,1
+wireframing,1
+technical architecture,1
+retannetesans 4b,1
 performance analysis,1
+‘apache spark db,1
+reytaimasatntzsm,1
+marketing analytics,1
 marketo,1
 sales,1
 marketing automation,1
 bert (language model),1
+user research,1
+numpy,1
 crt-3,1
-technical architecture,1
 cameras,1
-customer success,1
-team leadership,1
-batteries,1
-branding & identity,1
-django rest framework,1
-design thinking,1
-wireframing,1
-product design,1
-xgboost,1
-learning management systems,1
+algorithm development,1
+flow diagrams,1
+kanban,1
 prompt,1
-account management,1
-chemical engineering,1
-data migration,1
-version control,1
+art direction,1
+xgboost,1
+django rest framework,1
+batteries,1
+‘attention to detail 4b,1
 process automation,1
 protein engineering,1
 infrastructure,1
+customer success,1
 engineering,1
-clarity,1
-art direction,1
 voice of the customer,1
-p&l management,1
+relationship development,1
 doctrine (php),1
-c (programming language),1
+data services 4b,1
+data pipelines 4b,1
 data build too! (dbt),1
+chemical engineering,1
+account management,1
 mental health,1
-health information exchange,1
-healthcare consulting,1
-algorithm development,1
-digital transformation,1
-life sciences,1
+predictive analytics,1
+key performance indicators,1
+palantir 4b,1
+bansimaasss 4b,1
+insets detetoor sent 4b,1
+version control,1
+data migration,1
+petteerirecog non db,1
+spring framework,1
+web services 4b,1
 integration testing,1
 rivet,1
 workflow automation,1
 test automation,1
-data transformation,1
-relationship development,1
-edtech,1
-spring framework,1
-marketing analytics,1
+digital transformation,1
+healthcare consulting,1
+c (programming language),1
+health information exchange,1
+global delivery,1
+tama,1
+dashboards 4b,1
 graph databases,1
 c#,1
+edtech,1
 enterprise data management,1
 customer satisfaction,1
-global delivery,1
+life sciences,1
+data transformation,1
 neo4j,1
-mobile robotics,1
-tama,1
-xm,1
-cybersecurity,1
-comptia,1
-financial services,1
-sc clearance,1
-crm software,1
-user research,1
-motion planning,1
-marketing campaigns,1
-analytics,1
-software development methodologies,1
-looker (software),1
-object-oriented programming (oop),1
-production systems,1
-responsiveness,1
-robot operating system (ros),1
-vax,1
+p&l management,1
+wien @ammnteaton 4b,1
 slam,1
-information technology,1
-social media marketing,1
-reporting & analysis,1
-oracle erp implementations,1
-c,1
-angularjs,1
+microsoft office,1
+digital innovation,1
 data operations,1
+xm,1
+software development methodologies,1
+cloud computing ar,1
+epic systems,1
 localization,1
+firewalls,1
+mobile application development 4b,1
+biostatistics,1
+veep learning,1
+causal inference,1
+collaborative coding,1
+medical devices,1
+healthcare information technology (hit),1
+terraform,1
+modeling,1
+presentation skills 4b,1
+reactjs,1
+presentations 4b,1
+marketing campaigns,1
+sharepoint,1
+sc clearance,1
+comptia,1
+robot operating system (ros),1
+nodes,1
 agent-based modeling,1
+information technology,1
+vax,1
 visual basic for applications (vba),1
 cyber operations,1
-training systems,1
-firewalls,1
-social media advertising,1
 microsoft 365,1
 cisco systems products,1
 visual basic,1
-data infrastructure,1
+active directory,1
 dynamic host configuration protocol (dhcp),1
 ticketing systems,1
-microsoft office,1
+social media advertising,1
+reporting & analysis,1
+looker (software),1
+social media marketing,1
+cybersecurity,1
+eusnessdteumen 4b,1
 web applications,1
-application development,1
-active directory,1
-terraform,1
+google bigquery ap,1
+language processing,1
+c,1
+training systems,1
 fastapi,1
-digital innovation,1
-docker products,1
-infrastructure as code (lac),1
+it service management,1
+responsiveness,1
+ad tech,1
 engineering design,1
 conversational language understanding,1
+data infrastructure,1
 architecture,1
-business continuity management (bcm),1
-language processing,1
+docker products,1
+application development,1
 entrepreneurship,1
-o os,1
-ad tech,1
-mlflow,1
+reacts,1
 enterprise resource planning (erp),1
-opie,1
-data lakes,1
-scala,1
-reactjs,1
-continuous integration (cl),1
 it governance,1
-htmls:,1
+opie,1
+oracle erp implementations,1
+crm software,1
+oracle applications,1
+we: 4b,1
+programming languages 4b,1
+data lakes,1
+mlflow,1
+infrastructure as code (lac),1
+scala,1
+business continuity management (bcm),1
+angularjs,1
 disaster recovery,1
 business systems analysis,1
-predictive analytics,1
-opencv,1
 sensor fusion,1
-it service management,1
+htmls:,1
+xml,1
 asp.net mvc,1
 business continuity,1
 model-view-controller (mvc),1
-entity framework,1
 visual studio,1
 windows communication foundation (wcf),1
-numpy,1
-xml,1
+continuous integration (cl),1
+o os,1
+cloud-native architecture,1
+al software development,1
+typeseript,1
+performance metrics,1
+entity framework,1
 business-to-business (b2b),1

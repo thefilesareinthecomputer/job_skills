@@ -1,5 +1,5 @@
 from crewai.tools import BaseTool
-from typing import Type, Optional
+from typing import Type, Optional, Union
 from pydantic import BaseModel, Field
 import pandas as pd
 from pathlib import Path
@@ -59,9 +59,31 @@ class SkillsCSVTool(BaseTool):
         # Fallback to current directory
         return Path(os.getcwd()).resolve()
     
-    def _run(self, query: str) -> str:
+    def _parse_input(self, tool_input):
+        """Parse the input before validation."""
+        if isinstance(tool_input, str):
+            return {"query": tool_input}
+        return tool_input
+    
+    def _run(self, query) -> str:
         """Run the Skills CSV tool."""
         try:
+            # Handle different input formats
+            if isinstance(query, dict):
+                # If it's a dictionary, extract the query
+                if 'query' in query:
+                    query = query['query']
+                elif 'input' in query:
+                    query = query['input']
+                elif len(query) == 1:  # If there's only one key-value pair
+                    query = list(query.values())[0]
+                else:
+                    return "Error: Could not extract query from dictionary input. Please provide a simple string query."
+            
+            # Ensure query is a string
+            if not isinstance(query, str):
+                return f"Error: Expected string query but got {type(query)}. Please provide a simple string query."
+            
             # Check if the CSV file exists
             if not os.path.exists(self._csv_path):
                 return f"Error: CSV file not found at {self._csv_path}. Please ensure the file exists at this location."
@@ -79,7 +101,7 @@ class SkillsCSVTool(BaseTool):
             result += f"Found CSV with columns: {', '.join(columns)}\n\n"
             
             # If query is for listing all skills or general information
-            if "list all" in query.lower() or "show all" in query.lower() or "all skills" in query.lower() or "all" in query.lower() or "skills" in query.lower() or "top 50" in query.lower():
+            if "list all" in query.lower() or "show all" in query.lower() or "skill" in query.lower() or "all" in query.lower() or "skills" in query.lower() or "top 50" in query.lower() or "get all" in query.lower():
                 result += "## Top AI/ML Skills by Occurrence\n\n"
                 
                 # Sort by occurrences (descending)

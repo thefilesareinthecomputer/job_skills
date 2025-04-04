@@ -17,13 +17,8 @@ def run():
     """
     Run the crew.
     """
-    inputs = {
-        'topic': 'Most in-demand skills for an Artificial Intelligence Engineer / Machine Learning Engineer',
-        'current_year': str(datetime.now().year)
-    }
-    
     try:
-        JobSkills().crew().kickoff(inputs=inputs)
+        JobSkills().crew().kickoff()  # No inputs parameter
     except Exception as e:
         raise Exception(f"An error occurred while running the crew: {e}")
 

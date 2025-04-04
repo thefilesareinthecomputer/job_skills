@@ -66,7 +66,8 @@ def parse_skills(text):
         'preferences', 'remote', 'full-time', 'part-time', 'contract', 
         'temporary', 'permanent', 'hybrid', 'on-site', 'internship',
         'entry level', 'associate', 'mid-senior level', 'director',
-        'executive', '+', '++', '+++', 'match', 'matches', 'preference',
+        'executive', '+', '++', '+++', '++++', '+++++', '++++++', 
+        'match', 'matches', 'preference',
         'about the job', 'about this job', 'job description', 'qualifications'
     ]
     
@@ -407,9 +408,9 @@ def save_results(skill_counts):
     # Rename columns to match desired output format
     output_df.columns = ['skill', 'occurrences']
     
-    # Fix quotes in specific skills
-    output_df['skill'] = output_df['skill'].str.replace('"extract, transform, load (etl)"', 
-                                                       'extract, transform, load (etl)')
+    # # Fix quotes in specific skills
+    # output_df['skill'] = output_df['skill'].str.replace('"extract, transform, load (etl)"', 
+    #                                                    'extract, transform, load (etl)')
     
     output_file = 'src/output/skill_analysis.csv'
     

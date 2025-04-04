@@ -87,12 +87,13 @@ Connects to Perplexity AI to provide current information from across the web:
    MODEL="gpt-4o-mini"  # Or your preferred model
    ```
 
-5. **Run the application**
-   ```bash
-   python -m main
-   ```
-
 ## 📝 Usage
+
+### Run the application
+```bash
+python -m main
+python main.py
+```
 
 ### Running a Research Task
 
@@ -113,13 +114,15 @@ print(f"Report generated: {result}")
 
 - Get all skills: `"List all skills"`
 - Search for specific skills: `"Python"` or `"Machine Learning"`
-- Research emerging trends: `"What are the emerging AI skills for 2024?"`
+- Research emerging trends: `"What are the emerging AI skills for 2025 and beyond?"`
 
 ## 🧪 Testing
 
 Run the test suite to verify all components are working correctly:
 
 ```bash
+python -m job_skills.tests.test_perplexity_api
+python -m job_skills.tests.test_perplexity_tool
 python -m job_skills.tests.test_skills_csv_tool
 ```
 
