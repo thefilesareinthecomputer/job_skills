@@ -1,0 +1,22 @@
+=== WIKIPEDIA TOOL INTERACTION ===
+
+Timestamp: 20250406_023119
+
+=== INPUT ===
+Query: Hadoop
+
+=== OUTPUT ===
+# Wikipedia: Apache Hadoop
+
+Apache Hadoop ( ) is a collection of open-source software utilities for reliable, scalable, distributed computing. It provides a software framework for distributed storage and processing of big data using the MapReduce programming model. Hadoop was originally designed for computer clusters built from commodity hardware, which is still the common use. It has since also found use on clusters of higher-end hardware. All the modules in Hadoop are designed with a fundamental assumption that hardware failures are common occurrences and should be automatically handled by the framework.
+
+For more information: https://en.wikipedia.org/wiki/Apache_Hadoop
+
+## Other Relevant Articles
+
+1. MapReduce
+2. Data lake
+3. Apache Parquet
+4. Apache Avro
+
+

@@ -70,6 +70,14 @@ Connects to the Perplexity API to provide up-to-date information:
 - Provides context and details about specific skills
 - Logs all queries and responses to disk for future reference
 
+### HowDoI Tool
+
+Accesses Stack Overflow to find programming solutions:
+
+- Retrieves code examples and solutions for programming questions
+- Provides implementation details and best practices
+- Logs all queries and responses for future reference
+
 ## 📝 Research Logging System
 
 The platform includes a comprehensive logging system that:
@@ -129,6 +137,7 @@ python -m job_skills.tests.test_perplexity_api
 python -m job_skills.tests.test_perplexity_tool
 python -m job_skills.tests.test_skills_csv_tool
 python -m job_skills.tests.test_wikipedia_tool
+python -m job_skills.tests.test_howdoi_tool
 ```
 
 ## 📈 Example Output
@@ -193,9 +202,10 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 
 This project is licensed under the MIT License - see the LICENSE file for details.
 
-## 🙏 Acknowledgements
+## 📄 Acknowledgements
 
 - [CrewAI](https://github.com/joaomdmoura/crewAI) for the multi-agent orchestration framework
 - [Perplexity AI](https://www.perplexity.ai/) for providing the research API
 - [Tesseract OCR](https://github.com/tesseract-ocr/tesseract) for image text extraction 
 - [Wikipedia](https://www.wikipedia.org/) for providing the factual information
+- [HowDoI](https://github.com/gleitz/howdoi) for Stack Overflow code solutions

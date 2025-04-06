@@ -1,0 +1,15 @@
+=== HOWDOI TOOL INTERACTION ===
+
+Timestamp: 20250406_031753
+
+=== INPUT ===
+Query: python optimize code for performance
+
+=== OUTPUT ===
+# Stack Overflow Solution
+
+Query: 'python optimize code for performance'
+
+## Solution:
+
+ERROR: [91mSorry, couldn't find any help with that topic (use --explain to learn why)[0m

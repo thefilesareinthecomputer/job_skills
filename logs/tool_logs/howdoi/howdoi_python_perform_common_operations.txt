@@ -1,0 +1,16 @@
+=== HOWDOI TOOL INTERACTION ===
+
+Timestamp: 20250406_031751
+
+=== INPUT ===
+Query: python perform common operations
+
+=== OUTPUT ===
+# Stack Overflow Solution
+
+Query: 'python perform common operations'
+
+## Solution:
+
+a_l = ['62', '63', '66', '67']
+a_ls = ['66', '67']

@@ -1,0 +1,57 @@
+=== HOWDOI TOOL INTERACTION ===
+
+Timestamp: 20250406_031657
+
+=== INPUT ===
+Query: python scikit-learn classification example
+
+=== OUTPUT ===
+# Stack Overflow Solution
+
+Query: 'python scikit-learn classification example'
+
+## Solution:
+
+★  Answer from https://stackoverflow.com/questions/18210799/scikit-learn-sample-try-out-with-my-classifier-and-data ★
+scores = ['precision', 'recall']
+
+================================================================================
+
+★  Answer from https://stackoverflow.com/questions/61470271/sklearn-model-for-text-classification ★
+others
+
+================================================================================
+
+★  Answer from https://stackoverflow.com/questions/77655518/scikit-learn-models-for-binary-classification ★
+The well known methods are below:
+
+
+
+
+Logistic Regression
+
+
+Support Vector Machines (SVM)
+
+
+Decision Trees
+
+
+Random Forests
+
+
+Gradient Boosting Machines
+
+
+Neural Networks (MLPClassifier)
+
+
+K-nearest Neighbors (KNN)
+
+
+Naive Bayes
+
+
+
+
+Note that these methods can be extended and also applied on multi-label classification problems.

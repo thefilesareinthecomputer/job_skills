@@ -1,0 +1,15 @@
+=== HOWDOI TOOL INTERACTION ===
+
+Timestamp: 20250406_031655
+
+=== INPUT ===
+Query: Python machine learning example
+
+=== OUTPUT ===
+# Stack Overflow Solution
+
+Query: 'Python machine learning example'
+
+## Solution:
+
+ERROR: [91mSorry, couldn't find any help with that topic (use --explain to learn why)[0m

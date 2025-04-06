@@ -1,0 +1,58 @@
+=== HOWDOI TOOL INTERACTION ===
+
+Timestamp: 20250406_031702
+
+=== INPUT ===
+Query: python NLTK text classification example
+
+=== OUTPUT ===
+# Stack Overflow Solution
+
+Query: 'python NLTK text classification example'
+
+## Solution:
+
+★  Answer from https://stackoverflow.com/questions/40826144/classifying-text-documents-using-nltk ★
+The task of text classification is a Supervised Machine Learning problem. This means that you need to have labelled data. When you approached the movie_review problem, you used the +1/-1 labels to train your sentiment analysis system. 
+
+
+
+Getting back to your problem:
+
+
+
+
+
+
+If you have labels for your data, approach the problem in the same manner. I suggest you use the scikit-learn library. You can draw some inspiration from here: [Scikit-Learn for Text Classification](http://nlpforhackers.io/text-classification/)
+
+
+
+
+If you don't have labels, you can try an unsupervised learning approach. If you have any clue about how many categories(call the number K) you have, you can try a KMeans approach. This means, grouping the emails in K categories based on how similar they are. Similar emails will end up in similar buckets. Then inspect the clusters by hand and come up with a label. Assign new emails to the most similar cluster. If you need help with KMeans check this quick recipe: [Text Clustering Recipe](http://nlpforhackers.io/recipe-text-clustering/) 
+
+
+
+
+
+
+Suggestion: Getting labels for emails can be easier than you think. For example, Gmail lets you export your emails with folder information. If you have categorised your email, you can take advantage of this.
+
+================================================================================
+
+★  Answer from https://stackoverflow.com/questions/33102995/using-nlp-to-have-a-system-learn-to-categorize-text ★
+pickle
+
+================================================================================
+
+★  Answer from https://stackoverflow.com/questions/23178275/text-classification-in-python-nltk-sentence-based ★
+Ideally, it is said that the more you train your data, the 'better' your results are but it really depends after you've tested it and compared it to the real results you've prepared.
+
+
+So to answer your question, training the model with keywords may give you too broad results that may not be arguments. But really, you have to compare it to something, so I suggest you might want to also train your model with some sentence structure that arguments seem to follow (a pattern of some sort), it might eliminate the ones that are not arguments. Again, do this and then test it to see if you get higher accuracy than the previous model.
+
+
+To answer your next question: Which would be the best approach in terms of text classification accuracy and time to retrieve? It really depends on the data your using, I can't really answer this question because you have to perform cross-validation to see if your model achieves high accuracy. Obviously, the more features you are looking, the poorer your learning algorithm's performance. And if you are dealing with gigabytes of text to analyze, I suggest using Mapreduce to perform this job.
+
+
+You might want to check out SVMs as your learning model, test it out with the learning models (naive bayes, positive naive bayes and decision trees) and see which one performs better.

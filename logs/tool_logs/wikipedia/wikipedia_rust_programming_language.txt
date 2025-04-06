@@ -1,6 +1,6 @@
 === WIKIPEDIA TOOL INTERACTION ===
 
-Timestamp: 20250406_015318
+Timestamp: 20250406_030028
 
 === INPUT ===
 Query: Rust (programming language)
@@ -17,9 +17,9 @@ For more information: https://en.wikipedia.org/wiki/Rust_(programming_language)
 
 ## Other Relevant Articles
 
-1. Functional programming
+1. List of programming languages by type
 2. Zig (programming language)
-3. Comparison of programming languages
-4. List of programming languages by type
+3. Functional programming
+4. Comparison of programming languages
 
 

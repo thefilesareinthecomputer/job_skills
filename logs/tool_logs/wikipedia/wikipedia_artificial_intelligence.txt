@@ -1,0 +1,24 @@
+=== WIKIPEDIA TOOL INTERACTION ===
+
+Timestamp: 20250406_030913
+
+=== INPUT ===
+Query: Artificial Intelligence
+
+=== OUTPUT ===
+# Wikipedia: Artificial intelligence
+
+Artificial intelligence (AI) refers to the capability of computational systems to perform tasks typically associated with human intelligence, such as learning, reasoning, problem-solving, perception, and decision-making. It is a field of research in computer science that develops and studies methods and software that enable machines to perceive their environment and use learning and intelligence to take actions that maximize their chances of achieving defined goals. Such machines may be called AIs.
+High-profile applications of AI include advanced web search engines (e.g., Google Search); recommendation systems (used by YouTube, Amazon, and Netflix); virtual assistants (e.g., Google Assistant, Siri, and Alexa); autonomous vehicles (e.g., Waymo); generative and creative tools (e.g., ChatGPT and AI art); and superhuman play and analysis in strategy games (e.g., chess and Go). However, many AI applications are not perceived as AI: "A lot of cutting edge AI has filtered into general applications, often without being called AI because once something becomes useful enough and common enough it's not labeled AI anymore."
+Various subfields of AI research are centered around particular goals and the use of particular tools. The traditional goals of AI research include learning, reasoning, knowledge representation, planning, natural language processing, perception, and support for robotics. General intelligence—the ability to complete any task performed by a human on an at least equal le...
+
+For more information: https://en.wikipedia.org/wiki/Artificial_intelligence
+
+## Other Relevant Articles
+
+1. Artificial general intelligence
+2. A.I. Artificial Intelligence
+3. Generative artificial intelligence
+4. Applications of artificial intelligence
+
+

@@ -1,0 +1,24 @@
+=== WIKIPEDIA TOOL INTERACTION ===
+
+Timestamp: 20250406_030709
+
+=== INPUT ===
+Query: Gradient Boosting
+
+=== OUTPUT ===
+# Wikipedia: Gradient boosting
+
+Gradient boosting is a machine learning technique based on boosting in a functional space, where the target is pseudo-residuals instead of residuals as in traditional boosting. It gives a prediction model in the form of an ensemble of weak prediction models, i.e., models that make very few assumptions about the data, which are typically simple decision trees. When a decision tree is the weak learner, the resulting algorithm is called gradient-boosted trees; it usually outperforms random forest. As with other boosting methods, a gradient-boosted trees model is built in stages, but it generalizes the other methods by allowing optimization of an arbitrary differentiable loss function.
+
+
+
+For more information: https://en.wikipedia.org/wiki/Gradient_boosting
+
+## Other Relevant Articles
+
+1. Boosting (machine learning)
+2. XGBoost
+3. LightGBM
+4. CatBoost
+
+

@@ -1,0 +1,23 @@
+=== WIKIPEDIA TOOL INTERACTION ===
+
+Timestamp: 20250406_030126
+
+=== INPUT ===
+Query: Model monitoring
+
+=== OUTPUT ===
+# Wikipedia: New Relic
+
+New Relic, Inc. is an American web tracking and analytics company based in San Francisco. The company's cloud-based software allows websites and mobile apps to track user interactions and service operators' software and hardware performance.
+In November 2023, private equity firms Francisco Partners and TPG Inc. completed their acquisition of New Relic for approximately $6.5 billion.
+
+For more information: https://en.wikipedia.org/wiki/New_Relic
+
+## Other Relevant Articles
+
+1. Input hypothesis
+2. RMON
+3. ModelOps
+4. Holter monitor
+
+

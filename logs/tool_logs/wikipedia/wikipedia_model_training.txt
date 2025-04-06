@@ -1,0 +1,24 @@
+=== WIKIPEDIA TOOL INTERACTION ===
+
+Timestamp: 20250406_030114
+
+=== INPUT ===
+Query: Model training
+
+=== OUTPUT ===
+# Wikipedia: Training, validation, and test data sets
+
+In machine learning, a common task is the study and construction of algorithms that can learn from and make predictions on data. Such algorithms function by making data-driven predictions or decisions, through building a mathematical model from input data. These input data used to build the model are usually divided into multiple data sets. In particular, three data sets are commonly used in different stages of the creation of the model: training, validation, and test sets.
+The model is initially fit on a training data set, which is a set of examples used to fit the parameters (e.g. weights of connections between neurons in artificial neural networks) of the model. The model (e.g. a naive Bayes classifier) is trained on the training data set using a supervised learning method, for example using optimization methods such as gradient descent or stochastic gradient descent. In practice, the training data set often consists of pairs of an input vector (or scalar) and the corresponding output vector (or scalar), where the answer key is commonly denoted as the target (or label). The current model is run with the training data set and produces a result, which is then compared with the target, for each input vector in the training data set. Based on the result of the comparison and the specific learning algorithm being used, the parameters of the model are adjusted. The model fitting can include both variable selection and parameter estimation.
+Successively, the fitted model is used ...
+
+For more information: https://en.wikipedia.org/wiki/Training,_validation,_and_test_data_sets
+
+## Other Relevant Articles
+
+1. Foundation model
+2. Text-to-image model
+3. Transformer (deep learning architecture)
+4. Large language model
+
+

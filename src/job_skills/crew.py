@@ -5,6 +5,7 @@ from dotenv import load_dotenv
 from job_skills.tools.perplexity_tool import PerplexityTool
 from job_skills.tools.skills_csv_tool import SkillsCSVTool
 from job_skills.tools.wikipedia_tool import WikipediaTool
+from job_skills.tools.howdoi_tool import HowDoITool
 
 load_dotenv()
 
@@ -25,19 +26,21 @@ class JobSkills():
     # If you would like to add tools to your agents, you can learn more about it here:
     # https://docs.crewai.com/concepts/agents#agent-tools
     @agent
-    def researcher(self) -> Agent:
-        return Agent(
-            config=self.agents_config['researcher'],
-            verbose=True,
-            tools=[PerplexityTool(), WikipediaTool()] 
-        )
-
-    @agent
     def reporting_analyst(self) -> Agent:
         return Agent(
             config=self.agents_config['reporting_analyst'],
             verbose=True,
-            tools=[PerplexityTool(), WikipediaTool()]
+            # allow_delegation=True,
+            tools=[HowDoITool(), WikipediaTool(), PerplexityTool()]
+        )
+        
+    @agent
+    def researcher(self) -> Agent:
+        return Agent(
+            config=self.agents_config['researcher'],
+            verbose=True,
+            # allow_delegation=True,
+            tools=[HowDoITool(), WikipediaTool(), PerplexityTool()] 
         )
 
     @agent
@@ -45,45 +48,49 @@ class JobSkills():
         return Agent(
             config=self.agents_config['skill_instructor'],
             verbose=True,
-            tools=[PerplexityTool(), WikipediaTool()]
+            # allow_delegation=True,
+            tools=[HowDoITool(), WikipediaTool(), PerplexityTool()]
         )
         
     # To learn more about structured task outputs,
     # task dependencies, and task callbacks, check out the documentation:
     # https://docs.crewai.com/concepts/tasks#overview-of-a-task
     @task
-    def research_task(self) -> Task:
-        return Task(
-            config=self.tasks_config['research_task'],
-            output_file='01_research.md'
-        )
-
-    @task
     def reporting_task(self) -> Task:
         return Task(
             config=self.tasks_config['reporting_task'],
-            output_file='02_report.md'
+            output_file='01_report.md'
+        )
+        
+    @task
+    def research_task(self) -> Task:
+        return Task(
+            config=self.tasks_config['research_task'],
+            output_file='02_research.md'
         )
         
     @task
     def skill_instructor_task(self) -> Task:
         return Task(
             config=self.tasks_config['skill_instructor_task'],
-            output_file='03_skills_guide.md'
+            output_file='03_instructions.md'
         )
 
     @crew
     def crew(self) -> Crew:
         """Creates the JobSkills crew"""
-        # To learn how to add knowledge sources to your crew, check out the documentation:
-        # https://docs.crewai.com/concepts/knowledge#what-is-knowledge
-
+        # Create instances of your agents
+        researcher = self.researcher()
+        reporting_analyst = self.reporting_analyst()
+        skill_instructor = self.skill_instructor()
+        
         return Crew(
-            agents=self.agents, # Automatically created by the @agent decorator
-            tasks=self.tasks, # Automatically created by the @task decorator
+            manager_agent=reporting_analyst,
+            agents=[researcher, skill_instructor],
+            tasks=self.tasks,
+            # process=Process.hierarchical,
             process=Process.sequential,
             verbose=True,
-            # process=Process.hierarchical, # In case you wanna use that instead https://docs.crewai.com/how-to/Hierarchical/
         )
 
 

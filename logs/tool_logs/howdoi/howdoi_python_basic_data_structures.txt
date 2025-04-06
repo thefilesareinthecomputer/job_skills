@@ -1,0 +1,22 @@
+=== HOWDOI TOOL INTERACTION ===
+
+Timestamp: 20250406_031748
+
+=== INPUT ===
+Query: python basic data structures
+
+=== OUTPUT ===
+# Stack Overflow Solution
+
+Query: 'python basic data structures'
+
+## Solution:
+
+class Node(object):
+
+  __slots__ = 'data', 'left', 'right'
+
+  def __init__(self, data=None, left=None, right=None):
+    self.data  = data
+    self.left  = left
+    self.right = right

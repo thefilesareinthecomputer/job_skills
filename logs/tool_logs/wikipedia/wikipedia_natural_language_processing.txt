@@ -1,0 +1,25 @@
+=== WIKIPEDIA TOOL INTERACTION ===
+
+Timestamp: 20250406_030648
+
+=== INPUT ===
+Query: Natural Language Processing
+
+=== OUTPUT ===
+# Wikipedia: Natural language processing
+
+Natural language processing (NLP) is a subfield of computer science and especially artificial intelligence. It is primarily concerned with providing computers with the ability to process data encoded in natural language and is thus closely related to information retrieval, knowledge representation and computational linguistics, a subfield of linguistics.
+Major tasks in natural language processing are speech recognition, text classification, natural-language understanding, and natural-language generation.
+
+
+
+For more information: https://en.wikipedia.org/wiki/Natural_language_processing
+
+## Other Relevant Articles
+
+1. History of natural language processing
+2. Natural language
+3. Quantum natural language processing
+4. Outline of natural language processing
+
+

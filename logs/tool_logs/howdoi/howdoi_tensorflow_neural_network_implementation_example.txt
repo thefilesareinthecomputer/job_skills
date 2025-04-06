@@ -1,0 +1,34 @@
+=== HOWDOI TOOL INTERACTION ===
+
+Timestamp: 20250406_031705
+
+=== INPUT ===
+Query: tensorflow neural network implementation example
+
+=== OUTPUT ===
+# Stack Overflow Solution
+
+Query: 'tensorflow neural network implementation example'
+
+## Solution:
+
+★  Answer from https://stackoverflow.com/questions/57086301/custom-neural-network-implementation-on-mnist-using-tensorflow-2-0 ★
+# You already have tf.data.Dataset objects after load
+(x_train, y_train), (x_test, y_test) = tfds.load('mnist', split=['train', 'test'], 
+                                                  batch_size=-1, as_supervised=True)
+
+# But you are reshaping them in a strange manner...
+x_train = tf.reshape(x_train, shape=(x_train.shape[0], 784))
+x_test  = tf.reshape(x_test, shape=(x_test.shape[0], 784))
+
+# And building from slices...
+ds_train = tf.data.Dataset.from_tensor_slices((x_train, y_train))
+# Unreadable rescaling (there are built-ins for that)
+
+================================================================================
+
+★  Answer from https://stackoverflow.com/questions/65600884/tensorflow-implementation-of-andrew-ngs-cat-vs-non-cat-example-coursera ★
+W1 = np.random.randn(n_h, n_x) *0.01
+    b1 = np.zeros((n_h, 1))
+    W2 = np.random.randn(n_y, n_h) *0.01
+    b2 = np.zeros((n_y, 1))

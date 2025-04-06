@@ -1,0 +1,29 @@
+=== HOWDOI TOOL INTERACTION ===
+
+Timestamp: 20250406_031754
+
+=== INPUT ===
+Query: python error handling
+
+=== OUTPUT ===
+# Stack Overflow Solution
+
+Query: 'python error handling'
+
+## Solution:
+
+try:
+    msg_json = json.loads(message_string)
+    return (msg_json["task"], msg_json)
+except KeyError:
+    logger.error(
+        "Could not parse message: must provide 'task' property",
+        extra={"message_string": message_string},
+    )
+    return empty
+except Exception:
+    logger.exception(
+        "Error parsing JSON message. Did you accidentally double-escape it?",
+        extra={"message_string": message_string},
+    )
+    return empty

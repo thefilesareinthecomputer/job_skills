@@ -1,0 +1,24 @@
+=== WIKIPEDIA TOOL INTERACTION ===
+
+Timestamp: 20250406_030053
+
+=== INPUT ===
+Query: Data cleaning
+
+=== OUTPUT ===
+# Wikipedia: Data cleansing
+
+Data cleansing or data cleaning is the process of identifying and correcting (or removing) corrupt, inaccurate, or irrelevant records from a dataset, table, or database. It involves detecting incomplete, incorrect, or inaccurate parts of the data and then replacing, modifying, or deleting the affected data. Data cleansing can be performed interactively using data wrangling tools, or through batch processing often via scripts or a data quality firewall.
+After cleansing, a data set should be consistent with other similar data sets in the system. The inconsistencies detected or removed may have been originally caused by user entry errors, by corruption in transmission or storage, or by different data dictionary definitions of similar entities in different stores. Data cleaning differs from data validation in that validation almost invariably means data is rejected from the system at entry and is performed at the time of entry, rather than on batches of data.
+The actual process of data cleansing may involve removing typographical errors or validating and correcting values against a known list of entities. The validation may be strict (such as rejecting any address that does not have a valid postal code), or with fuzzy or approximate string matching (such as correcting records that partially match existing, known records). Some data cleansing solutions will clean data by cross-checking with a validated data set. A common data cleansing practice is data enhancement, where data is m...
+
+For more information: https://en.wikipedia.org/wiki/Data_cleansing
+
+## Other Relevant Articles
+
+1. Data analysis
+2. Data science
+3. Extract, transform, load
+4. Data mining
+
+

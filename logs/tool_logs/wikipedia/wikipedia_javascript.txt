@@ -1,6 +1,6 @@
 === WIKIPEDIA TOOL INTERACTION ===
 
-Timestamp: 20250406_015302
+Timestamp: 20250406_030018
 
 === INPUT ===
 Query: JavaScript
@@ -22,7 +22,7 @@ For more information: https://en.wikipedia.org/wiki/JavaScript
 
 1. JavaScript engine
 2. AppleScript
-3. WebKit
-4. List of JavaScript libraries
+3. Comparison of JavaScript-based web frameworks
+4. WebKit
 
 

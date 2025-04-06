@@ -1,0 +1,15 @@
+=== HOWDOI TOOL INTERACTION ===
+
+Timestamp: 20250406_031700
+
+=== INPUT ===
+Query: python NLP example using NLTK
+
+=== OUTPUT ===
+# Stack Overflow Solution
+
+Query: 'python NLP example using NLTK'
+
+## Solution:
+
+ERROR: [91mSorry, couldn't find any help with that topic (use --explain to learn why)[0m

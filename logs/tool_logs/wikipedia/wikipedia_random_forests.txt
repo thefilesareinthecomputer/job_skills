@@ -1,0 +1,26 @@
+=== WIKIPEDIA TOOL INTERACTION ===
+
+Timestamp: 20250406_030707
+
+=== INPUT ===
+Query: Random Forests
+
+=== OUTPUT ===
+# Wikipedia: Random forest
+
+Random forests or random decision forests is an ensemble learning method for classification, regression and other tasks that works by creating a multitude of decision trees during training. For classification tasks, the output of the random forest is the class selected by most trees. For regression tasks, the output is the average of the predictions of the trees. Random forests correct for decision trees' habit of overfitting to their training set.: 587–588 
+The first algorithm for random decision forests was created in 1995 by Tin Kam Ho using the random subspace method, which, in Ho's formulation, is a way to implement the "stochastic discrimination" approach to classification proposed by Eugene Kleinberg.
+An extension of the algorithm was developed by Leo Breiman and Adele Cutler, who registered "Random Forests" as a trademark in 2006 (as of 2019, owned by Minitab, Inc.). The extension combines Breiman's "bagging" idea and random selection of features, introduced first by Ho and later independently by Amit and Geman in order to construct a collection of decision trees with controlled variance.
+
+
+
+For more information: https://en.wikipedia.org/wiki/Random_forest
+
+## Other Relevant Articles
+
+1. Bootstrap aggregating
+2. Ensemble learning
+3. Machine learning
+4. Jackknife variance estimates for random forest
+
+
