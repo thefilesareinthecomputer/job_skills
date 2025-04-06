@@ -91,9 +91,7 @@ Connects to Perplexity AI to provide current information from across the web:
 
 ### Run the application
 ```bash
-python main
-python main.py
-crewai run --active
+crewai run
 ```
 
 ### Running a Research Task
