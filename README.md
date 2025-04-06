@@ -15,6 +15,7 @@ An AI-powered platform for analyzing and researching in-demand skills for AI Eng
 - **Perplexity API Integration**: Accesses up-to-date information about AI/ML job skills, technologies, and trends
 - **Customizable Research**: Allows for targeted queries about specific skills or comprehensive market analysis
 - **Report Generation**: Generates a comprehensive report on in-demand skills, trends, learning paths, and recommendations for skill development
+- **Research Logging**: Automatically saves all tool interactions and research results to disk for later analysis or use in RAG applications
 
 ## 🛠️ Architecture
 
@@ -30,7 +31,20 @@ The platform is built around a multi-agent system using CrewAI:
    - Provides strategic recommendations for skill development
    - Formats findings for easy consumption
 
+3. **Skill Coach**: Provides personalized recommendations for skill development
+   - Offers tailored learning paths and resources
+   - Helps users stay updated with the latest trends
+   - Provides feedback on skill proficiency
+
 ## 📊 Tools
+
+### OCR Integration
+
+Extracts text from job posting images:
+
+- Processes screenshots of job listings
+- Identifies skills and requirements from visual content
+- Logs ranked OCR results as CSV for later use
 
 ### Skills CSV Tool
 
@@ -40,78 +54,69 @@ Provides access to a dataset of real AI/ML skills extracted from job postings:
 - Supports both broad overview and targeted skill queries
 - Displays the exact terminology used by employers
 
-### OCR Integration
+### Wikipedia Search Tool
 
-Extracts text from job posting images:
+Accesses Wikipedia for factual information about technologies and concepts:
 
-- Processes screenshots of job listings
-- Identifies skills and requirements from visual content
-- Integrates findings with other data sources
+- Provides definitions and background information
+- Includes key sections and related articles
+- Logs all searches and results for later use
 
-### Perplexity AI Research Tool
+### Perplexity Research Tool
 
-Connects to Perplexity AI to provide current information from across the web:
+Connects to the Perplexity API to provide up-to-date information:
 
-- Researches specific skills and technologies
-- Analyzes job market trends
-- Identifies learning resources and certification paths
-- Provides context on emerging technologies
+- Researches current trends and emerging technologies
+- Provides context and details about specific skills
+- Logs all queries and responses to disk for future reference
 
-## 🔧 Setup and Installation
+## 📝 Research Logging System
 
-1. **Clone the repository**
-   ```bash
-   git clone https://github.com/thefilesareinthecomputer/job_skills_research_agents.git
-   cd job_skills_research_agents
-   ```
+The platform includes a comprehensive logging system that:
 
-2. **Create and activate a virtual environment**
-   ```bash
-   python -m venv venv_job_skills
-   source venv_job_skills/bin/activate  # On Windows: venv_job_skills\Scripts\activate
-   ```
+- **Saves All Research**: Every tool interaction is saved to disk with timestamps and query details
+- **Organized Structure**: Logs are organized by tool type in the `logs/tool_logs/` directory
+- **Query-Based Filenames**: Log files are named based on the actual queries for easy searching
+- **RAG-Ready Format**: Logs are stored in a format that's ready for use in Retrieval Augmented Generation systems
+- **Persistent Knowledge**: Research results can be reused across sessions or incorporated into other AI applications
 
-3. **Install dependencies**
-   ```bash
-   pip install -r requirements.txt
-   ```
+### Log Locations
 
-4. **Set up environment variables**
-   Create a `.env` file in the root directory with the following variables:
-   ```
-   SKILLS_CSV_PATH="/path/to/your/skill_analysis.csv"
-   IMAGES_PATH="/path/to/your/job_skills_images/"
-   TESSERACT_PATH="/path/to/tesseract"
-   OPENAI_API_KEY="your_openai_api_key"
-   PERPLEXITY_API_KEY="your_perplexity_api_key"
-   MODEL="gpt-4o-mini"  # Or your preferred model
-   ```
+- Perplexity API results: `logs/tool_logs/perplexity/{timestamp}_perplexity_{query}.txt`
+- Wikipedia search results: `logs/tool_logs/wikipedia/wikipedia_{query}.txt`
+- Other tool results: `logs/tool_logs/{tool_name}/{filename}`
 
-## 📝 Usage
+## 🧩 How to Use
+
+### Installation
+
+```bash
+git clone https://github.com/yourusername/job-skills-analysis.git
+cd job-skills-analysis
+pip install -e .
+```
+
+### Configuration
+
+Create a `.env` file with your API keys:
+
+```
+OPENAI_API_KEY=your_openai_api_key
+MODEL_NAME=gpt-4o-mini
+PERPLEXITY_API_KEY=your_perplexity_api_key
+PROJECT_ROOT=/path/to/your/project
+IMAGES_PATH=/path/to/your/images
+TESSERACT_PATH=/path/to/your/tesseract
+```
 
 ### Run the application
+
 ```bash
 crewai run
 ```
 
-### Running a Research Task
+### Example Queries
 
-```python
-from job_skills import JobSkills
-
-# Initialize the crew
-job_skills_crew = JobSkills()
-
-# Run the crew to generate a comprehensive skills report
-result = job_skills_crew.crew.kickoff()
-
-# The report will be saved to report.md
-print(f"Report generated: {result}")
-```
-
-### Sample Queries
-
-- Get all skills: `"List all skills"`
 - Search for specific skills: `"Python"` or `"Machine Learning"`
 - Research emerging trends: `"What are the emerging AI skills for 2025 and beyond?"`
 
@@ -123,6 +128,7 @@ Run the test suite to verify all components are working correctly:
 python -m job_skills.tests.test_perplexity_api
 python -m job_skills.tests.test_perplexity_tool
 python -m job_skills.tests.test_skills_csv_tool
+python -m job_skills.tests.test_wikipedia_tool
 ```
 
 ## 📈 Example Output
@@ -147,6 +153,38 @@ The platform generates comprehensive reports like this:
 ...
 ```
 
+## 🔄 Using Logged Research in RAG Applications
+
+The logged research data can be used in RAG (Retrieval Augmented Generation) applications:
+
+1. **Document Indexing**: Index the log files using tools like LangChain, LlamaIndex, or Pinecone
+2. **Knowledge Retrieval**: Use the indexed data to retrieve relevant information for new queries
+3. **Enhanced Generation**: Augment LLM responses with the retrieved information for more accurate and up-to-date answers
+
+Example RAG integration:
+
+```python
+from langchain.document_loaders import DirectoryLoader
+from langchain.text_splitter import RecursiveCharacterTextSplitter
+from langchain.embeddings import OpenAIEmbeddings
+from langchain.vectorstores import Chroma
+
+# Load the research logs
+loader = DirectoryLoader("logs/tool_logs/", glob="**/*.txt")
+documents = loader.load()
+
+# Split into chunks
+text_splitter = RecursiveCharacterTextSplitter(chunk_size=1000, chunk_overlap=100)
+texts = text_splitter.split_documents(documents)
+
+# Create vector store
+embeddings = OpenAIEmbeddings()
+db = Chroma.from_documents(texts, embeddings)
+
+# Retrieve relevant information for a query
+docs = db.similarity_search("What are the most in-demand AI skills?")
+```
+
 ## 🤝 Contributing
 
 Contributions are welcome! Please feel free to submit a Pull Request.
@@ -160,3 +198,4 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 - [CrewAI](https://github.com/joaomdmoura/crewAI) for the multi-agent orchestration framework
 - [Perplexity AI](https://www.perplexity.ai/) for providing the research API
 - [Tesseract OCR](https://github.com/tesseract-ocr/tesseract) for image text extraction 
+- [Wikipedia](https://www.wikipedia.org/) for providing the factual information
