@@ -1,0 +1,25 @@
+=== WIKIPEDIA TOOL INTERACTION ===
+
+Timestamp: 20250406_020200
+
+=== INPUT ===
+Query: Extract, transform, load
+
+=== OUTPUT ===
+# Wikipedia: Extract, transform, load
+
+Extract, transform, load (ETL) is a three-phase computing process where data is extracted from an input source, transformed (including cleaning), and loaded into an output data container. The data can be collected from one or more sources and it can also be output to one or more destinations. ETL processing is typically executed using software applications but it can also be done manually by system operators. ETL software typically automates the entire process and can be run manually or on recurring schedules either as single jobs or aggregated into a batch of jobs.
+A properly designed ETL system extracts data from source systems and enforces data type and data validity standards and ensures it conforms structurally to the requirements of the output. Some ETL systems can also deliver data in a presentation-ready format so that application developers can build applications and end users can make decisions.
+The ETL process is often used in data warehousing. ETL systems commonly integrate data from multiple applications (systems), typically developed and supported by different vendors or hosted on separate computer hardware. The separate systems containing the original data are frequently managed and operated by different stakeholders. For example, a cost accounting system may combine data from payroll, sales, and purchasing.
+Data extraction involves extracting data from homogeneous or heterogeneous sources; data transformation processes data by data cleaning and transforming it...
+
+For more information: https://en.wikipedia.org/wiki/Extract,_transform,_load
+
+## Other Relevant Articles
+
+1. Extract, load, transform
+2. Data blending
+3. Data migration
+4. Data loading
+
+

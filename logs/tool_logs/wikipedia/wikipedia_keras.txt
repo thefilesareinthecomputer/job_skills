@@ -1,0 +1,24 @@
+=== WIKIPEDIA TOOL INTERACTION ===
+
+Timestamp: 20250406_020142
+
+=== INPUT ===
+Query: Keras
+
+=== OUTPUT ===
+# Wikipedia: Keras
+
+Keras is an open-source library that provides a Python interface for artificial neural networks. Keras was first independent software, then integrated into the TensorFlow library, and later supporting more. "Keras 3 is a full rewrite of Keras [and can be used] as a low-level cross-framework language to develop custom components such as layers, models, or metrics that can be used in native workflows in JAX, TensorFlow, or PyTorch — with one codebase." Keras 3 will be the default Keras version for TensorFlow 2.16 onwards, but Keras 2 can still be used.
+
+
+
+For more information: https://en.wikipedia.org/wiki/Keras
+
+## Other Relevant Articles
+
+1. Kera
+2. KERA (FM)
+3. Golden Horn
+4. Keras Kardiotissas Monastery
+
+

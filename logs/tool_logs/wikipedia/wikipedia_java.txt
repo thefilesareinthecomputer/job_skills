@@ -1,0 +1,25 @@
+=== WIKIPEDIA TOOL INTERACTION ===
+
+Timestamp: 20250406_015300
+
+=== INPUT ===
+Query: Java
+
+=== OUTPUT ===
+# Wikipedia: Java
+
+Java is one of the Greater Sunda Islands in Indonesia. It is bordered by the Indian Ocean to the south and the Java Sea (a part of Pacific Ocean) to the north. With a population of 156.9 million people, Java is the world's most populous island, home to approximately 55.7% of the Indonesian population. Indonesia's capital city, Jakarta, is on Java's northwestern coast.
+Many of the best known events in Indonesian history took place on Java. It was the centre of powerful Hindu-Buddhist empires, the Islamic sultanates, and the core of the colonial Dutch East Indies. Java was also the center of the Indonesian struggle for independence during the 1930s and 1940s. Java dominates Indonesia politically, economically and culturally. Four of Indonesia's eight UNESCO world heritage sites are located in Java: Ujung Kulon National Park, Borobudur Temple, Prambanan Temple, and Sangiran Early Man Site.
+Java was formed by volcanic eruptions due to geologic subduction of the Australian Plate under the Sunda Plate. It is the 13th largest island in the world and the fifth largest in Indonesia by landmass, at about 132,598.77 square kilometres (51,196.67 sq mi) (including Madura's 5,408.45 square kilometres (2,088.21 sq mi)). A chain of volcanic mountains is the east–west spine of the island.
+Four main languages are spoken on the island: Javanese, Sundanese, Madurese, and Betawi. Javanese and Sundanese are the most spoken. The ethnic groups native to the island are the Javanese in the central and...
+
+For more information: https://en.wikipedia.org/wiki/Java
+
+## Other Relevant Articles
+
+1. Java (programming language)
+2. Sun Microsystems
+3. Java version history
+4. JavaScript
+
+

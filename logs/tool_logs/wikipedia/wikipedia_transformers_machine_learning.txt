@@ -1,0 +1,27 @@
+=== WIKIPEDIA TOOL INTERACTION ===
+
+Timestamp: 20250406_020155
+
+=== INPUT ===
+Query: Transformers (machine learning)
+
+=== OUTPUT ===
+# Wikipedia: Transformer (deep learning architecture)
+
+The transformer is a deep learning architecture that was developed by researchers at Google and is based on the multi-head attention mechanism, which was proposed in the 2017 paper "Attention Is All You Need". Text is converted to numerical representations called tokens, and each token is converted into a vector via lookup from a word embedding table. At each layer, each token is then contextualized within the scope of the context window with other (unmasked) tokens via a parallel multi-head attention mechanism, allowing the signal for key tokens to be amplified and less important tokens to be diminished.
+Transformers have the advantage of having no recurrent units, therefore requiring less training time than earlier recurrent neural architectures (RNNs) such as long short-term memory (LSTM). Later variations have been widely adopted for training large language models (LLM) on large (language) datasets.
+
+Transformers were first developed as an improvement over previous architectures for machine translation, but have found many applications since. They are used in large-scale natural language processing, computer vision (vision transformers), reinforcement learning, audio, multimodal learning, robotics, and even playing chess. It has also led to the development of pre-trained systems, such as generative pre-trained transformers (GPTs) and BERT (bidirectional encoder representations from transformers).
+
+
+
+For more information: https://en.wikipedia.org/wiki/Transformer_(deep_learning_architecture)
+
+## Other Relevant Articles
+
+1. Attention (machine learning)
+2. Mamba (deep learning architecture)
+3. Machine learning
+4. Vision transformer
+
+

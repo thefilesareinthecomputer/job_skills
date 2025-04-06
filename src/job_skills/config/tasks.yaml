@@ -1,96 +1,26 @@
 research_task:
   description: >
     You will curate a comprehensive, thorough, extensive, detailed, and deep list of the most in-demand skills for Artificial Intelligence Engineer and Machine Learning Engineer roles. 
-    The year is 2025. Your report must be up to date with the latest skills and trends in the AI/ML space.
     You will be examining this list, augmenting it with your own recommendations, and then organizing the skills into optimal categories for progressive learning and career advancement.
 
-    You may use the perplexity tool or the Wikipedia Search tool to learn more about a specific skill if you need to. If you do, keep in mind that the year is 2025.
-    The perplexity tool is expensive to use, so prefer the Wikipedia Search tool for background information and definitions, and only use perplexity for current trends and cutting-edge information.
-    The correct imput format for the wikipedia search tool is a dictionary with a key of "query" and a value of the search term.
-    The correcto format for perplexity is the same - a dictionary with a key of "query" and a value of the search term.
-        
-    Your output should include all of these topics and be structured something like this. 
-    These categories and skills are the basis you should begin with, and then augment / append based on your findings.
+    First, group the skills into logical categories.
+    The list should follow a logical progression of skills that an AI/ML Engineer would need to learn, in order, to continually advance in their career.
+    The groups of skills should be listed in the order in which they should be learned, so that foundational skills are listed first, and more complex skills are listed last.
+    
+    Next, use the Wikipedia Search tool to learn more about each of the specific skills in the list above.
+    The correct input format for the wikipedia search tool is a dictionary with a key of "query" and a value of the search term.
+    The wikipedia tool is free to use, so you can use it as many times as you need.
+    You can not submit more than one query at a time. If you need to run multiple queries, you must submit them sequentially, one at a time.
+    Wikipedia should only be used to search for single terms such as "Python" or "Machine Learning" or "Deep Learning" etc.
+    Wikipedia should not be used to search for phrases or questions or compound terms.
+    Wikipedia should only be used to search for definitions of single terms or concepts.
 
-      - Programming Languages:
-        - Python
-        - Java
-        - JavaScript
-        - R
-        - SQL
-        - TypeScript
-        - Rust
-        - C
-        - C#
-        - C++
-
-      - AI/ML Frameworks and Libraries:
-        - TensorFlow
-        - PyTorch
-        - Pandas
-        - Scikit-learn
-        - Keras
-        - Hadoop
-        - Transformers
-        - NLTK
-        - SpaCy
-
-      - Python Frameworks and Libraries:
-        - Flask
-        - Django
-        - FastAPI
-
-      - Frontend Frameworks and Libraries:
-        - React.js
-        - Next.js
-
-      - Data Engineering, ETL, Data Pipeline, and Data Processing Tools:
-        - Extract, Transform, Load (ETL)
-        - Data Engineering
-        - Database Stored Procedures
-        - Database Triggers
-        - Database Indexes
-        - Data Modeling
-        - Data Architecture
-        - Data Governance
-        - Data Quality
-        - Data Pipelines
-        - Data Processing
-        - Data Transformation
-        - Data Loading
-        - Data Automation
-        - Apache Airflow
-        - Informatica
-        - Apache Kafka
-        - Data Warehousing
-        - Data Marts
-        - Data Lakes
-        - Data Processing, Transformation, and Loading
-        
-      - Cloud Platforms:
-        - Amazon Web Services (AWS)
-        - Microsoft Azure
-        - Google Cloud Platform (GCP)
-        - Snowflake
-        - Databricks
-        - Azure Synapse
-        - Azure Data Factory
-        - Azure Data Lake
-        - Azure Data Warehouse
-        - Azure Data Mesh
-
-      - Containerization, Deployment, CI/CD and DevOps Tools:
-        - MLOps
-        - Kubernetes
-        - Docker
-        - Jenkins
-        - Git
-        - GitHub
-        - Vercel
-        - AWS Deployment Tools
-        - Azure Deployment Tools
-        - Google Cloud Deployment Tools
-
+    Next, use the Perplexity tool to include supplemental knowledge about each group of skills.
+    The correct input format for perplexity is the same - a dictionary with a key of "query" and a value of the search term.
+    The perplexity tool is more expensive to use, so you should only use one query for each group / category at a time - i.e. one query per complete group of skills.
+    Perplexity can handle more complex natural language prompts and questions.
+    Your query could look like this: {"query": """
+    Provide a comprehensive overview of the following skills and tehcnologies and how they would be used in an AI/ML Engineer's job:
       - Machine Learning Techniques:
         - Large Language Models (LLMs)
         - Natural Language Processing (NLP)
@@ -113,58 +43,9 @@ research_task:
         - Random Forests
         - Gradient Boosting
         - Deployment Frameworks
-
-      - Artificial Intelligence:
-        - AI Agents
-        - AI Agent Orchestration Frameworks
-        - Chatbot Frameworks
-        - RAG Frameworks
-        - Machine Tools
-        - Transformers
-        - AI Ethics and Bias
-        - Knowledge Graph RAG
-        - Embedding Models
-        - LLM Models
-        - Agentic Chain of Thought
-        - Prompt Engineering
-        - Image Processing
-        - Natural Language Processing
-
-      - Data Science:
-        - Statistics
-        - Data Analysis
-        - JuPyter Notebooks
-        - Data Science Frameworks
-        - Data Visualization
-        - Data Preprocessing
-        - Data Wrangling
-        - Data Cleaning
-        
-      - Software Engineering and Domain Knowledge:
-        - Software Development
-        - Business Intelligence (BI)
-        - Pattern Recognition
-        - Generative AI
-        - Computer Science
-        - Code Reviews
-        - Software Engineering
-        - Embedded Systems
-        - Cloud Computing
-        - Big Data
-        - Distributed Systems
-
-      - Specific Examples of Key Skill Usage in Real-World Projects:
-        - Data Pipeline Implementation
-        - Data Engineering - curating a dataset of home sale price data to trian a machine learning model to predict home prices
-        - Development of Custom ML Models
-        - Machine Learning - using the curated home sale price dataset to train a machine learning model to predict home prices
-        - Deep Learning - using the curated home sale price dataset to train a deep learning model to predict home prices
-        - AI App Development - use the sale price dataset and ML models to develop an AI-powered chat agent app with tools to discuss predictions for home prices with a user
-
-    The list should follow a logical progression of skills that an AI/ML Engineer would need to learn to be successful in their career.
-    The skills hsould be listed in the order in which they should be learned, so that foundational skills are listed first, and more complex skills are listed last.
+    """}
   expected_output: >
-    A grouped list of bullet points containing a comprehensive list of the most relevant and in-demand skills for an AI/ML Engineer.
+    A grouped list of bullet points containing a comprehensive list of essential skills for an AI/ML Engineer.
     The list should follow a logical progression of skills that an AI/ML Engineer would need to learn to be successful in their career.
     The skills should be listed in the order in which they should be learned, so that foundational skills are listed first, and more complex skills are listed last.
 
@@ -320,8 +201,6 @@ research_task:
         - Deep Learning - using the curated home sale price dataset to train a deep learning model to predict home prices
         - AI App Development - use the sale price dataset and ML models to develop an AI-powered chat agent app with tools to discuss predictions for home prices with a user
 
-    The list should follow a logical progression of skills that an AI/ML Engineer would need to learn to be successful in their career.
-    The skills hsould be listed in the order in which they should be learned, so that foundational skills are listed first, and more complex skills are listed last.
   agent: researcher
 
 reporting_task:
@@ -353,20 +232,67 @@ reporting_task:
     If the skill is a technology, provide a link to the official documentation of the skill.
     If the skill is a technology, provide information on how to install it and set it up.
 
-    You may use the perplexity tool or the Wikipedia Search tool to learn more about a specific skill if you need to. If you do, keep in mind that the year is 2025.
-    The perplexity tool is expensive to use, so prefer the Wikipedia Search tool for background information and definitions, and only use perplexity for current trends and cutting-edge information.
-    The correct imput format for the wikipedia search tool is a dictionary with a key of "query" and a value of the search term.
-    The correcto format for perplexity is the same - a dictionary with a key of "query" and a value of the search term.
+    First, group the skills into logical categories.
+    The list should follow a logical progression of skills that an AI/ML Engineer would need to learn, in order, to continually advance in their career.
+    The groups of skills should be listed in the order in which they should be learned, so that foundational skills are listed first, and more complex skills are listed last.
+    
+    Next, use the Wikipedia Search tool to learn more about each of the specific skills in the list above.
+    The correct input format for the wikipedia search tool is a dictionary with a key of "query" and a value of the search term.
+    The wikipedia tool is free to use, so you can use it as many times as you need.
+    You can not submit more than one query at a time. If you need to run multiple queries, you must submit them sequentially, one at a time.
+    Wikipedia should only be used to search for single terms such as "Python" or "Machine Learning" or "Deep Learning" etc.
+    Wikipedia should not be used to search for phrases or questions or compound terms.
+    Wikipedia should only be used to search for definitions of single terms or concepts.
 
-    You may also reference the "AI/ML Skills Dataset" csv tool, which you can use to read our raw list of real skills extracted from job postings. 
-    The data in this csv is the raw data used as the foundation to create the main list of skills.
-    You are being given access to the list as well as the researcher's more thorough list.
-    This dataset also ranks the most in-demand skills by occurrence in job postings. It will show you how polular the skills are in the job market.
-    Review this data carefully to understand the current job market demands.
-    Examine this list alongside the output from the researcher agent on your team.
-    IMPORTANT: 
-    When using the AI/ML Skills Dataset tool, provide your query as a dictionary with a query key, for example: {"query": "list all skills"} or {"query": "top 50"}.
-    The tool will accept the following strings within each query to see the top 50 skills: "list all", "show all", "all skills", "get all", "all", "top 50".
+    Next, use the Perplexity tool to include supplemental knowledge about each group of skills.
+    The correct input format for perplexity is the same - a dictionary with a key of "query" and a value of the search term.
+    The perplexity tool is more expensive to use, so you should only use one query for each group / category at a time - i.e. one query per complete group of skills.
+    Perplexity can handle more complex natural language prompts and questions.
+    Your query could look like this: {"query": """
+    Provide a comprehensive overview of the following skills and tehcnologies and how they would be used in an AI/ML Engineer's job:
+      - Machine Learning Techniques:
+        - Large Language Models (LLMs)
+        - Natural Language Processing (NLP)
+        - Deep Learning Neural Networks
+        - Fine-Tuning Neural Network Parameters
+        - Transfer Learning
+        - Model Training
+        - Model Evaluation
+        - Model Deployment
+        - Model Monitoring
+        - Model Inference
+        - Model Serving
+        - Model Optimization
+        - Computer Vision
+        - Predictive Modeling
+        - Classification Algorithms
+        - Regression Algorithms
+        - Clustering Algorithms
+        - Decision Trees
+        - Random Forests
+        - Gradient Boosting
+        - Deployment Frameworks
+    """}
+  expected_output: >
+    A full report of each skill in the list provided by the previous agent. 
+    The report should include all of the main topics from the researcher agent's output - each skill should be expanded upon with a full section of information (details for the supplementary information are below).
+    For each skill, include details such as:
+    - Technologies in which the skill is used
+    - If the skill is a technology, provide a link to the official documentation of the skill
+    - If the skill is a technology, provide information on how to install it and set it up
+    - If the skill includes programming, include some code examples for commonly used tasks required by the skill
+    - If the skill involves deliverable code, explain how the code would be deployed / hosted / run / executed in production
+    - If the skill involves deliverable code, explain how the developer would go from developing it to deploying it into production    
+    - If the skill involves deliverable code, explain how the developer would test the code and validate it is working as expected
+    - If the skill involves deliverable code, explain how the developer would implement CI/CD for the project
+    - A description of what the skill is and how it is used, both in a general sense in layman's terms and in technical terms that an AI/ML Engineer would use in their work
+    - Examples of how the skill is used in a real-world project
+    - Popular resources for learning the skill
+    - Practical examples of the skill being applied in a real-world project
+    Formatted as markdown
+    You must include all of the skills in the list provided by the researcher.
+    Do not truncate or cut your output short. You need to provide a comprehensive report for each skill. You may group skills together if they are similar or redundant.
+    Make sure you include any interesting and relevant information given the current year is 2025 and the user needs practical real-world examples for using all of these skills as an AI/ML Engineer.
 
     Your output should include all of these topics and be structured something like this. 
     These categories and skills are the basis you should begin with, and then augment / append based on your findings.
@@ -519,29 +445,6 @@ reporting_task:
         - Machine Learning - using the curated home sale price dataset to train a machine learning model to predict home prices
         - Deep Learning - using the curated home sale price dataset to train a deep learning model to predict home prices
         - AI App Development - use the sale price dataset and ML models to develop an AI-powered chat agent app with tools to discuss predictions for home prices with a user
-
-    The list should follow a logical progression of skills that an AI/ML Engineer would need to learn to be successful in their career.
-    The skills hsould be listed in the order in which they should be learned, so that foundational skills are listed first, and more complex skills are listed last.
-  expected_output: >
-    A full report of each skill in the list provided by the previous agent. 
-    The report should include all of the main topics from the researcher agent's output - each skill should be expanded upon with a full section of information (details for the supplementary information are below).
-    For each skill, include details such as:
-    - Technologies in which the skill is used
-    - If the skill is a technology, provide a link to the official documentation of the skill
-    - If the skill is a technology, provide information on how to install it and set it up
-    - If the skill includes programming, include some code examples for commonly used tasks required by the skill
-    - If the skill involves deliverable code, explain how the code would be deployed / hosted / run / executed in production
-    - If the skill involves deliverable code, explain how the developer would go from developing it to deploying it into production    
-    - If the skill involves deliverable code, explain how the developer would test the code and validate it is working as expected
-    - If the skill involves deliverable code, explain how the developer would implement CI/CD for the project
-    - A description of what the skill is and how it is used, both in a general sense in layman's terms and in technical terms that an AI/ML Engineer would use in their work
-    - Examples of how the skill is used in a real-world project
-    - Popular resources for learning the skill
-    - Practical examples of the skill being applied in a real-world project
-    Formatted as markdown
-    You must include all of the skills in the list provided by the researcher.
-    Do not truncate or cut your output short. You need to provide a comprehensive report for each skill. You may group skills together if they are similar or redundant.
-    Make sure you include any interesting and relevant information given the current year is 2025 and the user needs practical real-world examples for using all of these skills as an AI/ML Engineer.
   agent: reporting_analyst
 
 skill_instructor_task:
@@ -591,20 +494,66 @@ skill_instructor_task:
       - Modern deployment and operational considerations
       - Emerging techniques that are gaining industry adoption
 
-    You may use the perplexity tool or the Wikipedia Search tool to learn more about a specific skill if you need to. If you do, keep in mind that the year is 2025.
-    The perplexity tool is expensive to use, so prefer the Wikipedia Search tool for background information and definitions, and only use perplexity for current trends and cutting-edge information.
-    The correct imput format for the wikipedia search tool is a dictionary with a key of "query" and a value of the search term.
-    The correcto format for perplexity is the same - a dictionary with a key of "query" and a value of the search term.
+    First, group the skills into logical categories.
+    The list should follow a logical progression of skills that an AI/ML Engineer would need to learn, in order, to continually advance in their career.
+    The groups of skills should be listed in the order in which they should be learned, so that foundational skills are listed first, and more complex skills are listed last.
+    
+    Next, use the Wikipedia Search tool to learn more about each of the specific skills in the list above.
+    The correct input format for the wikipedia search tool is a dictionary with a key of "query" and a value of the search term.
+    The wikipedia tool is free to use, so you can use it as many times as you need.
+    You can not submit more than one query at a time. If you need to run multiple queries, you must submit them sequentially, one at a time.
+    Wikipedia should only be used to search for single terms such as "Python" or "Machine Learning" or "Deep Learning" etc.
+    Wikipedia should not be used to search for phrases or questions or compound terms.
+    Wikipedia should only be used to search for definitions of single terms or concepts.
 
-    You may also reference the "AI/ML Skills Dataset" csv tool, which you can use to read our raw list of real skills extracted from job postings. 
-    The data in this csv is the raw data used as the foundation to create the main list of skills.
-    You are being given access to the list as well as the researcher's more thorough list.
-    This dataset also ranks the most in-demand skills by occurrence in job postings. It will show you how polular the skills are in the job market.
-    Review this data carefully to understand the current job market demands.
-    Examine this list alongside the output from the researcher agent on your team.
-    IMPORTANT: 
-    When using the AI/ML Skills Dataset tool, provide your query as a dictionary with a query key, for example: {"query": "list all skills"} or {"query": "top 50"}.
-    The tool will accept the following strings within each query to see the top 50 skills: "list all", "show all", "all skills", "get all", "all", "top 50".
+    Next, use the Perplexity tool to include supplemental knowledge about each group of skills.
+    The correct input format for perplexity is the same - a dictionary with a key of "query" and a value of the search term.
+    The perplexity tool is more expensive to use, so you should only use one query for each group / category at a time - i.e. one query per complete group of skills.
+    Perplexity can handle more complex natural language prompts and questions.
+    Your query could look like this: {"query": """
+    Provide a comprehensive overview of the following skills and tehcnologies and how they would be used in an AI/ML Engineer's job:
+      - Machine Learning Techniques:
+        - Large Language Models (LLMs)
+        - Natural Language Processing (NLP)
+        - Deep Learning Neural Networks
+        - Fine-Tuning Neural Network Parameters
+        - Transfer Learning
+        - Model Training
+        - Model Evaluation
+        - Model Deployment
+        - Model Monitoring
+        - Model Inference
+        - Model Serving
+        - Model Optimization
+        - Computer Vision
+        - Predictive Modeling
+        - Classification Algorithms
+        - Regression Algorithms
+        - Clustering Algorithms
+        - Decision Trees
+        - Random Forests
+        - Gradient Boosting
+        - Deployment Frameworks
+    """}
+  expected_output: >
+    A detailed learning / developmentguide for each skill in the research list, formatted as markdown.
+    The guide should include instructions, technical details, and implementation examples for each skill.
+    For each skill, include details such as:
+    - Technologies in which the skill is used
+    - If the skill is a technology, provide a link to the official documentation of the skill
+    - If the skill is a technology, provide information on how to install it and set it up
+    - If the skill includes programming, include some code examples for commonly used tasks required by the skill
+    - If the skill involves deliverable code, explain how the code would be deployed / hosted / run / executed in production
+    - If the skill involves deliverable code, explain how the developer would go from developing it to deploying it into production    
+    - If the skill involves deliverable code, explain how the developer would test the code and validate it is working as expected
+    - If the skill involves deliverable code, explain how the developer would implement CI/CD for the project
+    - A description of what the skill is and how it is used, both in a general sense in layman's terms and in technical terms that an AI/ML Engineer would use in their work
+    - Examples of how the skill is used in a real-world project
+    - Popular resources for learning the skill
+    - Practical examples of the skill being applied in a real-world project
+    Formatted as markdown
+    You must include all of the skills in the list provided by the researcher.
+    Do not truncate or cut your output short. You need to provide a comprehensive report for each skill. You may group skills together if they are similar or redundant.
 
     Your output should include all of these topics and be structured something like this. 
     These categories and skills are the basis you should begin with, and then augment / append based on your findings.
@@ -757,26 +706,4 @@ skill_instructor_task:
         - Machine Learning - using the curated home sale price dataset to train a machine learning model to predict home prices
         - Deep Learning - using the curated home sale price dataset to train a deep learning model to predict home prices
         - AI App Development - use the sale price dataset and ML models to develop an AI-powered chat agent app with tools to discuss predictions for home prices with a user
-
-    The list should follow a logical progression of skills that an AI/ML Engineer would need to learn to be successful in their career.
-    The skills hsould be listed in the order in which they should be learned, so that foundational skills are listed first, and more complex skills are listed last.
-  expected_output: >
-    A detailed learning / developmentguide for each skill in the research list, formatted as markdown.
-    The guide should include instructions, technical details, and implementation examples for each skill.
-    For each skill, include details such as:
-    - Technologies in which the skill is used
-    - If the skill is a technology, provide a link to the official documentation of the skill
-    - If the skill is a technology, provide information on how to install it and set it up
-    - If the skill includes programming, include some code examples for commonly used tasks required by the skill
-    - If the skill involves deliverable code, explain how the code would be deployed / hosted / run / executed in production
-    - If the skill involves deliverable code, explain how the developer would go from developing it to deploying it into production    
-    - If the skill involves deliverable code, explain how the developer would test the code and validate it is working as expected
-    - If the skill involves deliverable code, explain how the developer would implement CI/CD for the project
-    - A description of what the skill is and how it is used, both in a general sense in layman's terms and in technical terms that an AI/ML Engineer would use in their work
-    - Examples of how the skill is used in a real-world project
-    - Popular resources for learning the skill
-    - Practical examples of the skill being applied in a real-world project
-    Formatted as markdown
-    You must include all of the skills in the list provided by the researcher.
-    Do not truncate or cut your output short. You need to provide a comprehensive report for each skill. You may group skills together if they are similar or redundant.
   agent: skill_instructor
