@@ -4,6 +4,7 @@ import os
 from dotenv import load_dotenv
 from job_skills.tools.perplexity_tool import PerplexityTool
 from job_skills.tools.skills_csv_tool import SkillsCSVTool
+from job_skills.tools.wikipedia_tool import WikipediaTool
 
 load_dotenv()
 
@@ -28,7 +29,7 @@ class JobSkills():
         return Agent(
             config=self.agents_config['researcher'],
             verbose=True,
-            tools=[PerplexityTool(),SkillsCSVTool()] 
+            tools=[PerplexityTool(), WikipediaTool()] 
         )
 
     @agent
@@ -36,7 +37,7 @@ class JobSkills():
         return Agent(
             config=self.agents_config['reporting_analyst'],
             verbose=True,
-            tools=[PerplexityTool(), SkillsCSVTool()]
+            tools=[PerplexityTool(), WikipediaTool()]
         )
 
     @agent
@@ -44,7 +45,7 @@ class JobSkills():
         return Agent(
             config=self.agents_config['skill_instructor'],
             verbose=True,
-            tools=[PerplexityTool(), SkillsCSVTool()]
+            tools=[PerplexityTool(), WikipediaTool()]
         )
         
     # To learn more about structured task outputs,

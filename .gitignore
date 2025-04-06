@@ -1,5 +1,6 @@
 venv_job_skills/
 venv/
+.venv/
 __pycache__/
 *.pyc
 */migrations/*
@@ -12,3 +13,4 @@ _archive/
 _notes/
 .DS_Store
 db/
+uv.lock
