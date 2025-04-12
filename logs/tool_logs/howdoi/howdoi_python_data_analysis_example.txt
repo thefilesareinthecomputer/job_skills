@@ -1,0 +1,24 @@
+=== HOWDOI TOOL INTERACTION ===
+
+Timestamp: 20250406_133531
+
+=== INPUT ===
+Query: python data analysis example
+
+=== OUTPUT ===
+# Stack Overflow Solution
+
+Query: 'python data analysis example'
+
+## Solution:
+
+import pandas as pd 
+import numpy as np
+from ast import literal_eval
+
+data = [[12346, '(135:2345678, 212:4354670, 198:9876545)', '(Flag1, Flag2, Flag3)'],
+[12345, '(136:2343678, 212:4354670, 198:9876541, 199:9876535)', '(Flag1, Flag4)']]
+
+df = pd.DataFrame(data,columns=['id','relationships','flags'])
+df = df.set_index('id')
+df

@@ -1,0 +1,32 @@
+=== SERPER TOOL INTERACTION ===
+
+Timestamp: 20250406_112721
+
+=== INPUT ===
+Query: deep learning
+
+=== OUTPUT ===
+# Search Results for: 'deep learning'
+
+## Top Results
+
+### 1. Machine Learning Specialization - DeepLearning.AI
+**Link**: https://www.deeplearning.ai/courses/machine-learning-specialization/
+**Snippet**: In the second course of the Machine Learning Specialization, you will: · Build and train a neural network with TensorFlow to perform multi-class classification.
+
+### 2. DeepLearning.AI: Start or Advance Your Career in AI
+**Link**: https://www.deeplearning.ai/
+**Snippet**: AI Courses and Specializations. Build a foundation of machine learning and AI skills, and understand how to apply them in the real world.
+
+### 3. Deep Learning vs. Machine Learning: A Beginner's Guide - Coursera
+**Link**: https://www.coursera.org/articles/ai-vs-deep-learning-vs-machine-learning-beginners-guide
+**Snippet**: Deep learning is a subset of machine learning that uses artificial neural networks (ANNs) to mimic the learning process of the human brain.
+
+## Related Searches
+
+- Meta AI
+- Deep learning vs machine learning
+- Deep learning ai machine learning free
+- Deep learning ai machine learning courses
+- Deep learning ai machine learning certification
+

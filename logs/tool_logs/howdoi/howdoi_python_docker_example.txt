@@ -1,0 +1,15 @@
+=== HOWDOI TOOL INTERACTION ===
+
+Timestamp: 20250406_121310
+
+=== INPUT ===
+Query: python docker example
+
+=== OUTPUT ===
+# Stack Overflow Solution
+
+Query: 'python docker example'
+
+## Solution:
+
+docker run -it --rm --name my-first-python-script -v /c/Docker/Python:/usr/src/widget_app python:3 python /usr/src/widget_app/my_script.py

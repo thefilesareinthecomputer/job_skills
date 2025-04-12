@@ -1,0 +1,15 @@
+=== HOWDOI TOOL INTERACTION ===
+
+Timestamp: 20250406_114015
+
+=== INPUT ===
+Query: python fastapi endpoint
+
+=== OUTPUT ===
+# Stack Overflow Solution
+
+Query: 'python fastapi endpoint'
+
+## Solution:
+
+ERROR: [91mSorry, couldn't find any help with that topic (use --explain to learn why)[0m

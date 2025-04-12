@@ -1,0 +1,16 @@
+=== HOWDOI TOOL INTERACTION ===
+
+Timestamp: 20250406_114849
+
+=== INPUT ===
+Query: loop over a list in python
+
+=== OUTPUT ===
+# Stack Overflow Solution
+
+Query: 'loop over a list in python'
+
+## Solution:
+
+for elt_id, elt in enumerate(list):
+    # do stuff

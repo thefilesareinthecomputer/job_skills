@@ -1,0 +1,15 @@
+=== HOWDOI TOOL INTERACTION ===
+
+Timestamp: 20250406_123434
+
+=== INPUT ===
+Query: filter array
+
+=== OUTPUT ===
+# Stack Overflow Solution
+
+Query: 'filter array'
+
+## Solution:
+
+ERROR: [91mSorry, couldn't find any help with that topic (use --explain to learn why)[0m

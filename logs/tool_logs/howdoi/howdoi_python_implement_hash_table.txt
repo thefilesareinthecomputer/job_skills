@@ -1,0 +1,31 @@
+=== HOWDOI TOOL INTERACTION ===
+
+Timestamp: 20250406_113934
+
+=== INPUT ===
+Query: python implement hash table
+
+=== OUTPUT ===
+# Stack Overflow Solution
+
+Query: 'python implement hash table'
+
+## Solution:
+
+class HashTable():
+
+    def __init__(self):
+        self.size = 1000
+        self.table = [None] * self.size
+
+    def add(self, item):
+        hashcode = self.hash(item)
+        if hashcode >= self.size:
+            # Resize the table.
+            self.size *= 2
+            # etc.
+        else:
+            self.table[hashcode] = item
+
+    def hash(self, item):
+        # Your implementation of a hash function.

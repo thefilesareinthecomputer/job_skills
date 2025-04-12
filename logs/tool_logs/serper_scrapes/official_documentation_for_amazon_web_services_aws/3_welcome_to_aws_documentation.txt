@@ -1,0 +1,9 @@
+=== SCRAPED CONTENT FROM: Welcome to AWS Documentation ===
+
+URL: https://docs.aws.amazon.com/
+
+CONTENT:
+--------------------------------------------------------------------------------
+Failed to scrape content after 7 attempts. Last error: Content too short
+--------------------------------------------------------------------------------
+

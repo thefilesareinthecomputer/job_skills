@@ -1,0 +1,114 @@
+=== SERPER TOOL INTERACTION ===
+
+Timestamp: 20250406_134314
+
+=== INPUT ===
+Query: official documentation for regression algorithms
+
+=== OUTPUT ===
+# Search Results for: 'official documentation for regression algorithms'
+
+## Top Results
+
+### 1. Understanding Regression Analysis in Machine Learning - H2O.ai
+**Link**: https://h2o.ai/wiki/regression/
+**Snippet**: Regression analysis is a statistical technique used to study the relationship between independent and dependent variables in estimating how one affects the ...
+
+### 2. Linear regression | Machine Learning - Google for Developers
+**Link**: https://developers.google.com/machine-learning/crash-course/linear-regression
+**Snippet**: This course module teaches the fundamentals of linear regression, including linear equations, loss, gradient descent, and hyperparameter tuning.
+
+### 3. 1. Supervised learning — scikit-learn 1.6.1 documentation
+**Link**: https://scikit-learn.org/stable/supervised_learning.html
+**Snippet**: Estimation algorithms · 1.3. Kernel ridge regression · 1.4. Support Vector Machines · 1.4.1. Classification · 1.4.2. Regression · 1.4.3. Density estimation, ...
+
+### 4. Artificial intelligence (AI) algorithms: a complete overview | Tableau
+**Link**: https://www.tableau.com/data-insights/ai/algorithms
+**Snippet**: Linear regression is a supervised learning AI algorithm used for regression modeling. It's mostly used for discovering the relationship between data points, ...
+
+### 5. Neural Network Regression component - machine-learning - GitHub
+**Link**: https://github.com/MicrosoftDocs/azure-ai-docs/blob/main/articles/machine-learning/component-reference/neural-network-regression.md
+**Snippet**: Learn how to use the Neural Network Regression component in Azure Machine Learning to create a regression model using a customizable neural network algorithm..
+
+*Detailed content from all results has been scraped and saved to: /Users/aw/Desktop/github_repositories/job_skills/logs/tool_logs/serper_scrapes/all_scrapes_official_documentation_for_regression_algorithms.txt*
+
+## Extracted Content from Top Results
+
+### Content from Result 1: Understanding Regression Analysis in Machine Learning - H2O.ai
+**Source**: https://h2o.ai/wiki/regression/
+**Content Length**: 10000 characters
+
+```
+Understanding Regression Analysis in Machine Learning X Return to page Platform Generative AI Why H2O.ai End-to-end GenAI platform built for air-gapped, on-premises or cloud VPC deployments. Own every part of the stack--own your data and your prompts. Enterprise h2oGPTe Connect any LLM/embedding model, fully scalable w/K8s, includes guardrails, summarization, cost controls, and customization options. Open Source h2oGPT Customize and deploy open source AI models, create your own digital assistants and business GPTs. H2O Danube3 Open weight SLMs for on-device and offline applications. H2OVL Mississippi Open weight small vision-language models for OCR and Document AI. H2O Model Validation for LLMs Evaluation framework with automated testing, h
+
+[...content truncated...]
+
+earning V Validation Sets Vector W Weights and Biases Word2Vec WordPiece X XGBoost Wiki Topics -Select- H2O Wiki Algorithms Activation Function Confusion Matrix Convolutional Neural Networks Forward Propagation Generative Adversarial Network Gradient Descent Linear Regression Logistic Regression Machine Learning Algorithms Multilayer Perceptron Naive Bayes Neural Networking and Deep Learning RuleFit Stack Ensemble Word2Vec XGBoost Artificial Intelligence AI Engineer AI Ethics AI Governance AI Models AI Risk Management AI Winter AI in Cloud Computing Artificial General Intelligence Document AI Explainable AI NTrees Prediction Validation Sets BERT Attention Mechanism BERT Binary Classification Classify Token ([CLS]) Conversational Response Ge
+```
+
+----------------------------------------
+
+### Content from Result 2: Linear regression | Machine Learning - Google for Developers
+**Source**: https://developers.google.com/machine-learning/crash-course/linear-regression
+**Content Length**: 4634 characters
+
+```
+Home Products Machine Learning ML Concepts Crash Course Send feedback Linear regression Stay organized with collections Save and categorize content based on your preferences. Estimated module length: 70 minutes This module introduces linear regression concepts. Learning objectives: Explain a loss function and how it works. Define and describe how gradient descent finds the optimal model parameters. Describe how to tune hyperparameters to efficiently train a linear model. Prerequisites: This module assumes you are familiar with the concepts covered in the following module: Introduction to Machine Learning Linear regression is a statistical technique used to find the relationship between variables. In an ML context, linear regression finds th
+
+[...content truncated...]
+
+per gallon rating. As a car's acceleration takes longer, the miles per gallon rating generally increases. Figure 8 . A car's horsepower and its miles per gallon rating. As a car's horsepower increases, the miles per gallon rating generally decreases. Exercise: Check your understanding What parts of the linear regression equation are updated during training? The bias and weights During training, the model updates the bias and weights. The prediction Predictions are not updated during training. The feature values Feature values are part of the dataset, so they're not updated during training. Key terms: Bias Feature Label Linear regression Parameter Weight Help Center Previous arrow_back Exercises Next Loss (10 min) arrow_forward Send feedback
+```
+
+----------------------------------------
+
+### Content from Result 3: 1. Supervised learning — scikit-learn 1.6.1 documentation
+**Source**: https://scikit-learn.org/stable/supervised_learning.html
+**Content Length**: 3811 characters
+
+```
+1. Supervised learning # 1.1. Linear Models 1.1.1. Ordinary Least Squares 1.1.2. Ridge regression and classification 1.1.3. Lasso 1.1.4. Multi-task Lasso 1.1.5. Elastic-Net 1.1.6. Multi-task Elastic-Net 1.1.7. Least Angle Regression 1.1.8. LARS Lasso 1.1.9. Orthogonal Matching Pursuit (OMP) 1.1.10. Bayesian Regression 1.1.11. Logistic regression 1.1.12. Generalized Linear Models 1.1.13. Stochastic Gradient Descent - SGD 1.1.14. Perceptron 1.1.15. Passive Aggressive Algorithms 1.1.16. Robustness regression: outliers and modeling errors 1.1.17. Quantile Regression 1.1.18. Polynomial regression: extending linear models with basis functions 1.2. Linear and Quadratic Discriminant Analysis 1.2.1. Dimensionality reduction using Linear Discriminant
+
+[...content truncated...]
+
+ Multioutput regression 1.13. Feature selection 1.13.1. Removing features with low variance 1.13.2. Univariate feature selection 1.13.3. Recursive feature elimination 1.13.4. Feature selection using SelectFromModel 1.13.5. Sequential Feature Selection 1.13.6. Feature selection as part of a pipeline 1.14. Semi-supervised learning 1.14.1. Self Training 1.14.2. Label Propagation 1.15. Isotonic regression 1.16. Probability calibration 1.16.1. Calibration curves 1.16.2. Calibrating a classifier 1.16.3. Usage 1.17. Neural network models (supervised) 1.17.1. Multi-layer Perceptron 1.17.2. Classification 1.17.3. Regression 1.17.4. Regularization 1.17.5. Algorithms 1.17.6. Complexity 1.17.7. Tips on Practical Use 1.17.8. More control with warm_start
+```
+
+----------------------------------------
+
+### Content from Result 4: Artificial intelligence (AI) algorithms: a complete overview | Tableau
+**Source**: https://www.tableau.com/data-insights/ai/algorithms
+**Content Length**: 10000 characters
+
+```
+In this age of rapid technological advancement, most people are familiar with AI. We’ve likely all read the articles about automation destroying jobs, or a future of robots taking over the world. While those articles are more based on science fiction than a tangible future of AI, it certainly keeps interest in AI top-of-mind for many people. There are dozens of examples of AI that everyday consumers may use, such as facial recognition, auto-correct, search engines, or social media algorithms. But have you ever wondered how these programs work? AI runs off of algorithms, but not all AI algorithms are the same. They’re developed with different goals and methods. In this article, we’ll talk about the four major categories of AI algorithms and 
+
+[...content truncated...]
+
+proximity. However, Gaussian models are a little more versatile in the shapes of the clusters they allow. Picture a graph with all your data points plotted out. K-means clustering only allows data to be clustered in circles with the centroid in the center of each cluster. Gaussian mixture can handle data that lands on the graph in more linear patterns, allowing for oblong-shaped clusters. This allows for greater clarity in clustering if one datapoint lands inside the circle of another cluster. Both supervised and unsupervised algorithms Some AI algorithms can use either supervised or unsupervised data input and still function. They might have slightly different applications based on their status. K-nearest neighbor algorithm K-nearest neigh
+```
+
+----------------------------------------
+
+### Content from Result 5: Neural Network Regression component - machine-learning - GitHub
+**Source**: https://github.com/MicrosoftDocs/azure-ai-docs/blob/main/articles/machine-learning/component-reference/neural-network-regression.md
+**Content Length**: 6049 characters
+
+```
+title titleSuffix description services ms.service ms.subservice ms.topic author ms.author ms.date Neural Network Regression: Component Reference Azure Machine Learning Learn how to use the Neural Network Regression component in Azure Machine Learning to create a regression model using a customizable neural network algorithm.. machine-learning azure-machine-learning core reference likebupt keli19 04/22/2020 Neural Network Regression component Creates a regression model using a neural network algorithm Category: Machine Learning / Initialize Model / Regression Component overview This article describes a component in Azure Machine Learning designer. Use this component to create a regression model using a customizable neural network algorithm. 
+
+[...content truncated...]
+
+meter list. If you pass a single set of parameter values to the Tune Model Hyperparameters component, when it expects a range of settings for each parameter, it ignores the values, and uses the default values for the learner. If you select the Parameter Range option and enter a single value for any parameter, that single value you specified is used throughout the sweep, even if other parameters change across a range of values. Submit the pipeline. Results After training is complete: To save a snapshot of the trained model, select the Outputs tab in the right panel of the Train model component. Select the Register dataset icon to save the model as a reusable component. Next steps See the set of components available to Azure Machine Learning.
+```
+
+----------------------------------------
+
+## Related Searches
+
+- Official documentation for regression algorithms ai machine learning python
+- Official documentation for regression algorithms ai machine learning github
+- Official documentation for regression algorithms ai machine learning example
+- Official documentation for regression algorithms ai machine learning geeks
+- Logistic regression machine learning
+

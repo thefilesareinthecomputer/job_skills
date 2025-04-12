@@ -1,0 +1,27 @@
+=== HOWDOI TOOL INTERACTION ===
+
+Timestamp: 20250406_121323
+
+=== INPUT ===
+Query: techniques for natural language processing in python
+
+=== OUTPUT ===
+# Stack Overflow Solution
+
+Query: 'techniques for natural language processing in python'
+
+## Solution:
+
+If I understand you correctly you have a new issue (query) and you want to look up other similar issues (documents) in your database. If so, then what you need is a way to find the similarity between your query and existing documents. And once you have them, you can rank them and select the most relevant ones. One such method that allows you to do this is [Latent Semantic Indexing (LSI)](https://en.wikipedia.org/wiki/Latent_semantic_analysis).
+
+
+
+To do this you'll have to construct a document-term matrix. You'll use your existing document and create a term occurrence matrix across documents. What this means is that you basically record how many times a word appears in a document (or some other complex measure, example- tfidf). This can be done either through a [bag of words](https://en.wikipedia.org/wiki/Bag-of-words_model) representation or a [TFIDF](http://representation) representation. 
+
+
+
+Once you have that, you'll have to process your query so that it is in the same form as your documents. Now that you have your query in usable form, you can calculate the cosine similarity between documents and your query. The one with the highest cosine similarity is the closest match.
+
+
+
+Note: The topic that you may want to read about is Information Retrieval and LSI is just one such method. You should look into other methods as well.

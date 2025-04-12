@@ -1,0 +1,17 @@
+=== HOWDOI TOOL INTERACTION ===
+
+Timestamp: 20250406_113948
+
+=== INPUT ===
+Query: python seaborn heatmap
+
+=== OUTPUT ===
+# Stack Overflow Solution
+
+Query: 'python seaborn heatmap'
+
+## Solution:
+
+import seaborn as sns
+
+sns.heatmap(df.pivot(index='Y', columns='X', values='Z'))

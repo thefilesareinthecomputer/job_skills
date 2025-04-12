@@ -1,0 +1,19 @@
+=== HOWDOI TOOL INTERACTION ===
+
+Timestamp: 20250406_114054
+
+=== INPUT ===
+Query: python numpy matrix multiplication
+
+=== OUTPUT ===
+# Stack Overflow Solution
+
+Query: 'python numpy matrix multiplication'
+
+## Solution:
+
+import numpy as np
+x = np.arange(9).reshape((3,3))
+y = np.arange(3)
+
+print np.dot(x,y)

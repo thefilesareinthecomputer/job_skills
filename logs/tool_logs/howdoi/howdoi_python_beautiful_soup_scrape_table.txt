@@ -1,0 +1,39 @@
+=== HOWDOI TOOL INTERACTION ===
+
+Timestamp: 20250406_114019
+
+=== INPUT ===
+Query: python beautiful soup scrape table
+
+=== OUTPUT ===
+# Stack Overflow Solution
+
+Query: 'python beautiful soup scrape table'
+
+## Solution:
+
+def main():
+
+    import requests
+    from bs4 import BeautifulSoup
+
+    url = "https://www.transfermarkt.de/havard-nordtveit/verletzungen/spieler/192565"
+
+    headers = {
+        "user-agent": "Mozilla/5.0"
+    }
+
+    response = requests.get(url, headers=headers)
+    response.raise_for_status()
+
+    soup = BeautifulSoup(response.content, "html.parser")
+
+    for td in soup.select("td[class='hauptlink']"):
+        print(td.text)
+
+    return 0
+
+
+if __name__ == "__main__":
+    import sys
+    sys.exit(main())

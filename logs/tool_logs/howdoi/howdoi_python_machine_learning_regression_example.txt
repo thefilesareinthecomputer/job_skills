@@ -1,0 +1,24 @@
+=== HOWDOI TOOL INTERACTION ===
+
+Timestamp: 20250406_133515
+
+=== INPUT ===
+Query: python machine learning regression example
+
+=== OUTPUT ===
+# Stack Overflow Solution
+
+Query: 'python machine learning regression example'
+
+## Solution:
+
+Have you considered simply performing separate linear regressions for each dependent variable?
+
+
+Also, you need to decide which inputs are theoretically significant (in terms of explaining the variation in the output) and then test for statistical significance to determine which ones should be retained in the model.
+
+
+Additionally, test for multicollinearity to determine if you have variables which are statistically related and inadvertently influencing the output. Then, test in turn for serial correlation (if the data is a time series) and heteroscedasticity.
+
+
+The approach you are describing of "garbage in, garbage out" risks overfitting - since you don't seem to be screening the inputs themselves for their relevance in predicting the output.

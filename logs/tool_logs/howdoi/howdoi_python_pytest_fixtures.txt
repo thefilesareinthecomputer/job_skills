@@ -1,0 +1,15 @@
+=== HOWDOI TOOL INTERACTION ===
+
+Timestamp: 20250406_114101
+
+=== INPUT ===
+Query: python pytest fixtures
+
+=== OUTPUT ===
+# Stack Overflow Solution
+
+Query: 'python pytest fixtures'
+
+## Solution:
+
+ERROR: [91mSorry, couldn't find any help with that topic (use --explain to learn why)[0m

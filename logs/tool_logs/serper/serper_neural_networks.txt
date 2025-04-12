@@ -1,0 +1,38 @@
+=== SERPER TOOL INTERACTION ===
+
+Timestamp: 20250406_112720
+
+=== INPUT ===
+Query: neural networks
+
+=== OUTPUT ===
+# Search Results for: 'neural networks'
+
+## Top Results
+
+### 1. AI vs. Machine Learning vs. Deep Learning vs. Neural Networks | IBM
+**Link**: https://www.ibm.com/think/topics/ai-vs-machine-learning-vs-deep-learning-vs-neural-networks
+**Snippet**: While artificial intelligence (AI), machine learning (ML), deep learning and neural networks are related technologies, the terms are often used interchangeably.
+
+### 2. What is a Neural Network? - AWS
+**Link**: https://aws.amazon.com/what-is/neural-network/
+**Snippet**: A neural network is a method in artificial intelligence (AI) that teaches computers to process data in a way that is inspired by the human brain.
+
+### 3. Neural network (machine learning) - Wikipedia
+**Link**: https://en.wikipedia.org/wiki/Neural_network_(machine_learning)
+**Snippet**: Artificial neural networks are used for various tasks, including predictive modeling, adaptive control, and solving problems in artificial intelligence. They ...
+
+## Knowledge Graph
+
+**Title**: Neural network
+**Type**: Machine learning
+**Description**: In machine learning, a neural network is a model inspired by the structure and function of biological neural networks in animal brains. A neural network consists of connected units or nodes called artificial neurons, which loosely model the...
+
+## Related Searches
+
+- Artificial intelligence
+- Neural networks ai machine learning tutorial
+- Neural network example
+- What is neural network in machine learning
+- Deep learning
+

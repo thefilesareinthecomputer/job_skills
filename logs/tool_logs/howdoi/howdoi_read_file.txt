@@ -1,0 +1,15 @@
+=== HOWDOI TOOL INTERACTION ===
+
+Timestamp: 20250406_123402
+
+=== INPUT ===
+Query: read file
+
+=== OUTPUT ===
+# Stack Overflow Solution
+
+Query: 'read file'
+
+## Solution:
+
+ERROR: [91mSorry, couldn't find any help with that topic (use --explain to learn why)[0m

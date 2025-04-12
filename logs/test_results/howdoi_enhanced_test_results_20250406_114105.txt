@@ -1,0 +1,799 @@
+HOWDOI TOOL ENHANCED TEST RESULTS
+================================================================================
+
+Overall Success Rate: 100.0% (64/64)
+Queries Returning Code: 18.8% (12/64)
+High Quality Responses: 4.7% (3/64)
+
+DETAILED RESULTS BY CATEGORY:
+
+Category: Basic Programming
+--------------------------------------------------------------------------------
+Query: 'python read file' - SUCCESS
+Code Blocks: 0, Quality: 0.0/10, Length: 158 chars
+Response Preview: # Stack Overflow Solution
+
+Query: 'python read file'
+
+## Solution:
+
+ERROR: [91mSorry, couldn't find any help with that topic (use --explain to learn why)[0m...
+
+Query: 'python write to file' - SUCCESS
+Code Blocks: 0, Quality: 0.0/10, Length: 148 chars
+Response Preview: # Stack Overflow Solution
+
+Query: 'python write to file'
+
+## Solution:
+
+with open("output.txt", "a") as f:
+    for key in atts:
+        f.write(key)...
+
+Query: 'python sort list' - SUCCESS
+Code Blocks: 0, Quality: 0.0/10, Length: 158 chars
+Response Preview: # Stack Overflow Solution
+
+Query: 'python sort list'
+
+## Solution:
+
+ERROR: [91mSorry, couldn't find any help with that topic (use --explain to learn why)[0m...
+
+Query: 'python sort dictionary by value' - SUCCESS
+Code Blocks: 0, Quality: 0.0/10, Length: 219 chars
+Response Preview: # Stack Overflow Solution
+
+Query: 'python sort dictionary by value'
+
+## Solution:
+
+>>> x = {1: 2, 3: 4, 4: 3, 2: 1, 0: 0}
+>>> {k: v for k, v in sorted(x.items(), key=lambda item: item[1])}
+{0: 0, 2: 1...
+
+Query: 'python remove duplicates from list' - SUCCESS
+Code Blocks: 0, Quality: 0.0/10, Length: 220 chars
+Response Preview: # Stack Overflow Solution
+
+Query: 'python remove duplicates from list'
+
+## Solution:
+
+>>> t = [1, 2, 3, 1, 2, 3, 5, 6, 7, 8]
+>>> list(set(t))
+[1, 2, 3, 5, 6, 7, 8]
+>>> s = [1, 2, 3]
+>>> list(set(t) - ...
+
+Query: 'python check if key in dictionary' - SUCCESS
+Code Blocks: 1, Quality: 2.0/10, Length: 216 chars
+Response Preview: # Stack Overflow Solution
+
+Query: 'python check if key in dictionary'
+
+## Solution:
+
+d = {"key1": 10, "key2": 23}
+
+if "key1" in d:
+    print("this will execute")
+
+if "nonexistent key" in d:
+    print(...
+
+Query: 'python convert string to datetime' - SUCCESS
+Code Blocks: 0, Quality: 0.0/10, Length: 220 chars
+Response Preview: # Stack Overflow Solution
+
+Query: 'python convert string to datetime'
+
+## Solution:
+
+>>> from datetime import datetime
+>>> datetime.strptime('Jun 1 2005  1:33PM', '%b %d %Y %I:%M%p')
+datetime.datetime...
+
+Query: 'python regular expression match email' - SUCCESS
+Code Blocks: 0, Quality: 0.0/10, Length: 144 chars
+Response Preview: # Stack Overflow Solution
+
+Query: 'python regular expression match email'
+
+## Solution:
+
+email = re.findall(r'[\w\.-]+@[\w\.-]+(\.[\w]+)+',line)...
+
+
+Category: Data Structures
+--------------------------------------------------------------------------------
+Query: 'python implement queue' - SUCCESS
+Code Blocks: 9, Quality: 6.5/10, Length: 1173 chars
+Response Preview: # Stack Overflow Solution
+
+Query: 'python implement queue'
+
+## Solution:
+
+from collections import deque
+
+class Queue:
+    '''
+    Thread-safe, memory-efficient, maximally-sized queue supporting queuei...
+
+Query: 'python implement stack' - SUCCESS
+Code Blocks: 7, Quality: 7.5/10, Length: 1286 chars
+Response Preview: # Stack Overflow Solution
+
+Query: 'python implement stack'
+
+## Solution:
+
+class myStack:
+     def __init__(self):
+         self.container = []  # You don't want to assign [] to self - when you do that...
+
+Query: 'python implement linked list' - SUCCESS
+Code Blocks: 4, Quality: 7.5/10, Length: 1820 chars
+Response Preview: # Stack Overflow Solution
+
+Query: 'python implement linked list'
+
+## Solution:
+
+class LinkedList:
+    class Node:
+        def __init__(self, value, next=None):
+            self.value = value
+         ...
+
+Query: 'python implement binary tree' - SUCCESS
+Code Blocks: 0, Quality: 0.0/10, Length: 170 chars
+Response Preview: # Stack Overflow Solution
+
+Query: 'python implement binary tree'
+
+## Solution:
+
+ERROR: [91mSorry, couldn't find any help with that topic (use --explain to learn why)[0m...
+
+Query: 'python implement hash table' - SUCCESS
+Code Blocks: 2, Quality: 6.0/10, Length: 491 chars
+Response Preview: # Stack Overflow Solution
+
+Query: 'python implement hash table'
+
+## Solution:
+
+class HashTable():
+
+    def __init__(self):
+        self.size = 1000
+        self.table = [None] * self.size
+
+    def add...
+
+Query: 'python implement graph' - SUCCESS
+Code Blocks: 0, Quality: 0.0/10, Length: 146 chars
+Response Preview: # Stack Overflow Solution
+
+Query: 'python implement graph'
+
+## Solution:
+
+[('A', 'B'), ('B', 'C'), ('B', 'D'), ('C', 'D'), ('E', 'F'), ('F', 'C')]...
+
+Query: 'python implement priority queue' - SUCCESS
+Code Blocks: 0, Quality: 0.0/10, Length: 279 chars
+Response Preview: # Stack Overflow Solution
+
+Query: 'python implement priority queue'
+
+## Solution:
+
+224     def _put(self, item, heappush=heapq.heappush):
+   225         heappush(self.queue, item)
+   226 
+   227     d...
+
+
+Category: Data Science
+--------------------------------------------------------------------------------
+Query: 'python pandas read csv' - SUCCESS
+Code Blocks: 0, Quality: 0.0/10, Length: 149 chars
+Response Preview: # Stack Overflow Solution
+
+Query: 'python pandas read csv'
+
+## Solution:
+
+import pandas as pd SouthKoreaRoads_df = pd.read_csv('SouthKoreaRoads.csv')...
+
+Query: 'python pandas filter dataframe' - SUCCESS
+Code Blocks: 0, Quality: 0.0/10, Length: 155 chars
+Response Preview: # Stack Overflow Solution
+
+Query: 'python pandas filter dataframe'
+
+## Solution:
+
+query = ' & '.join(['{}>{}'.format(k, v) for k, v in limits_dic.items()])...
+
+Query: 'python pandas group by' - SUCCESS
+Code Blocks: 0, Quality: 0.0/10, Length: 328 chars
+Response Preview: # Stack Overflow Solution
+
+Query: 'python pandas group by'
+
+## Solution:
+
+df_gby = pd._testing.makeMixedDataFrame().groupby(["A", "B"])
+
+>>> type(df_gby)
+<pandas.core.groupby.generic.DataFrameGroupBy ...
+
+Query: 'python pandas merge dataframes' - SUCCESS
+Code Blocks: 0, Quality: 0.0/10, Length: 172 chars
+Response Preview: # Stack Overflow Solution
+
+Query: 'python pandas merge dataframes'
+
+## Solution:
+
+ERROR: [91mSorry, couldn't find any help with that topic (use --explain to learn why)[0m...
+
+Query: 'python matplotlib plot bar chart' - SUCCESS
+Code Blocks: 0, Quality: 0.0/10, Length: 146 chars
+Response Preview: # Stack Overflow Solution
+
+Query: 'python matplotlib plot bar chart'
+
+## Solution:
+
+plt.bar(x, [int(i) for i in y], label="Bars 1", color="black")...
+
+Query: 'python seaborn heatmap' - SUCCESS
+Code Blocks: 0, Quality: 0.0/10, Length: 154 chars
+Response Preview: # Stack Overflow Solution
+
+Query: 'python seaborn heatmap'
+
+## Solution:
+
+import seaborn as sns
+
+sns.heatmap(df.pivot(index='Y', columns='X', values='Z'))...
+
+Query: 'python numpy array operations' - SUCCESS
+Code Blocks: 1, Quality: 2.0/10, Length: 194 chars
+Response Preview: # Stack Overflow Solution
+
+Query: 'python numpy array operations'
+
+## Solution:
+
+import numpy as np
+
+lst = [
+    [1, 5, 6],
+    [10, 12, 20]
+]
+
+lst = np.array(lst)
+lst = (lst + 1) * 2
+print(lst)...
+
+
+Category: Machine Learning
+--------------------------------------------------------------------------------
+Query: 'python scikit-learn classification example' - SUCCESS
+Code Blocks: 0, Quality: 0.0/10, Length: 126 chars
+Response Preview: # Stack Overflow Solution
+
+Query: 'python scikit-learn classification example'
+
+## Solution:
+
+scores = ['precision', 'recall']...
+
+Query: 'python scikit-learn regression example' - SUCCESS
+Code Blocks: 0, Quality: 0.0/10, Length: 270 chars
+Response Preview: # Stack Overflow Solution
+
+Query: 'python scikit-learn regression example'
+
+## Solution:
+
+predictions = model1.predict(X)
+order = X[:,0].argsort()
+predictions = predictions[order]
+x = X[:,0][order]
+
+
+...
+
+Query: 'python scikit-learn clustering example' - SUCCESS
+Code Blocks: 0, Quality: 0.0/10, Length: 180 chars
+Response Preview: # Stack Overflow Solution
+
+Query: 'python scikit-learn clustering example'
+
+## Solution:
+
+ERROR: [91mSorry, couldn't find any help with that topic (use --explain to learn why)[0m...
+
+Query: 'python scikit-learn model evaluation' - SUCCESS
+Code Blocks: 0, Quality: 0.0/10, Length: 150 chars
+Response Preview: # Stack Overflow Solution
+
+Query: 'python scikit-learn model evaluation'
+
+## Solution:
+
+sklearn.metrics.precision_score(y_true, model.predict(test_x))...
+
+Query: 'python scikit-learn cross validation' - SUCCESS
+Code Blocks: 0, Quality: 0.0/10, Length: 178 chars
+Response Preview: # Stack Overflow Solution
+
+Query: 'python scikit-learn cross validation'
+
+## Solution:
+
+ERROR: [91mSorry, couldn't find any help with that topic (use --explain to learn why)[0m...
+
+Query: 'python scikit-learn hyperparameter tuning' - SUCCESS
+Code Blocks: 1, Quality: 4.0/10, Length: 1691 chars
+Response Preview: # Stack Overflow Solution
+
+Query: 'python scikit-learn hyperparameter tuning'
+
+## Solution:
+
+import numpy as np
+from sklearn.model_selection import train_test_split
+from sklearn.pipeline import make_p...
+
+
+Category: Deep Learning
+--------------------------------------------------------------------------------
+Query: 'python tensorflow neural network example' - SUCCESS
+Code Blocks: 1, Quality: 4.0/10, Length: 782 chars
+Response Preview: # Stack Overflow Solution
+
+Query: 'python tensorflow neural network example'
+
+## Solution:
+
+import tensorflow as tf
+from tensorflow import keras
+import numpy as np 
+import matplotlib.pyplot as plt 
+im...
+
+Query: 'python pytorch neural network example' - SUCCESS
+Code Blocks: 2, Quality: 6.0/10, Length: 497 chars
+Response Preview: # Stack Overflow Solution
+
+Query: 'python pytorch neural network example'
+
+## Solution:
+
+from torch import nn
+import torch.nn.functional as F
+
+def network(nn.Module):
+    def __init__(self, M):
+      ...
+
+Query: 'python keras lstm example' - SUCCESS
+Code Blocks: 1, Quality: 4.0/10, Length: 524 chars
+Response Preview: # Stack Overflow Solution
+
+Query: 'python keras lstm example'
+
+## Solution:
+
+from keras import Sequential
+from keras.layers import LSTM, Dense
+
+model = Sequential()
+model.add(LSTM(60, input_shape=(1, ...
+
+Query: 'python tensorflow image classification' - SUCCESS
+Code Blocks: 0, Quality: 0.0/10, Length: 703 chars
+Response Preview: # Stack Overflow Solution
+
+Query: 'python tensorflow image classification'
+
+## Solution:
+
+you should use the same preprocessing method  that was used to train your model. If you used tf.keras preproce...
+
+Query: 'python pytorch transfer learning' - SUCCESS
+Code Blocks: 0, Quality: 0.0/10, Length: 729 chars
+Response Preview: # Stack Overflow Solution
+
+Query: 'python pytorch transfer learning'
+
+## Solution:
+
+In the first code snippet, you are downloading a model from TorchVision (with random weights), and then loading your...
+
+Query: 'python keras text classification' - SUCCESS
+Code Blocks: 0, Quality: 0.0/10, Length: 174 chars
+Response Preview: # Stack Overflow Solution
+
+Query: 'python keras text classification'
+
+## Solution:
+
+ERROR: [91mSorry, couldn't find any help with that topic (use --explain to learn why)[0m...
+
+
+Category: Web Development
+--------------------------------------------------------------------------------
+Query: 'python flask hello world' - SUCCESS
+Code Blocks: 0, Quality: 0.0/10, Length: 85 chars
+Response Preview: # Stack Overflow Solution
+
+Query: 'python flask hello world'
+
+## Solution:
+
+app.run()...
+
+Query: 'python django create model' - SUCCESS
+Code Blocks: 0, Quality: 0.0/10, Length: 168 chars
+Response Preview: # Stack Overflow Solution
+
+Query: 'python django create model'
+
+## Solution:
+
+ERROR: [91mSorry, couldn't find any help with that topic (use --explain to learn why)[0m...
+
+Query: 'python fastapi endpoint' - SUCCESS
+Code Blocks: 0, Quality: 0.0/10, Length: 165 chars
+Response Preview: # Stack Overflow Solution
+
+Query: 'python fastapi endpoint'
+
+## Solution:
+
+ERROR: [91mSorry, couldn't find any help with that topic (use --explain to learn why)[0m...
+
+Query: 'python requests post json' - SUCCESS
+Code Blocks: 0, Quality: 0.0/10, Length: 701 chars
+Response Preview: # Stack Overflow Solution
+
+Query: 'python requests post json'
+
+## Solution:
+
+>>> import requests
+>>> r = requests.post('http://httpbin.org/post', json={"key": "value"})
+>>> r.status_code
+200
+>>> r.jso...
+
+Query: 'python beautiful soup scrape table' - SUCCESS
+Code Blocks: 7, Quality: 7.0/10, Length: 595 chars
+Response Preview: # Stack Overflow Solution
+
+Query: 'python beautiful soup scrape table'
+
+## Solution:
+
+def main():
+
+    import requests
+    from bs4 import BeautifulSoup
+
+    url = "https://www.transfermarkt.de/havard...
+
+
+Category: DevOps & Deployment
+--------------------------------------------------------------------------------
+Query: 'python docker example' - SUCCESS
+Code Blocks: 0, Quality: 0.0/10, Length: 211 chars
+Response Preview: # Stack Overflow Solution
+
+Query: 'python docker example'
+
+## Solution:
+
+docker run -it --rm --name my-first-python-script -v /c/Docker/Python:/usr/src/widget_app python:3 python /usr/src/widget_app/m...
+
+Query: 'python kubernetes deployment' - SUCCESS
+Code Blocks: 0, Quality: 0.0/10, Length: 170 chars
+Response Preview: # Stack Overflow Solution
+
+Query: 'python kubernetes deployment'
+
+## Solution:
+
+ERROR: [91mSorry, couldn't find any help with that topic (use --explain to learn why)[0m...
+
+Query: 'python aws lambda function' - SUCCESS
+Code Blocks: 0, Quality: 0.0/10, Length: 168 chars
+Response Preview: # Stack Overflow Solution
+
+Query: 'python aws lambda function'
+
+## Solution:
+
+ERROR: [91mSorry, couldn't find any help with that topic (use --explain to learn why)[0m...
+
+Query: 'python github actions workflow' - SUCCESS
+Code Blocks: 0, Quality: 0.0/10, Length: 172 chars
+Response Preview: # Stack Overflow Solution
+
+Query: 'python github actions workflow'
+
+## Solution:
+
+ERROR: [91mSorry, couldn't find any help with that topic (use --explain to learn why)[0m...
+
+Query: 'python setup logging' - SUCCESS
+Code Blocks: 0, Quality: 0.0/10, Length: 133 chars
+Response Preview: # Stack Overflow Solution
+
+Query: 'python setup logging'
+
+## Solution:
+
+import logging
+  package_logger = logging.getLogger(__name__)...
+
+
+Category: Complex Phrases
+--------------------------------------------------------------------------------
+Query: 'how to implement a neural network from scratch in python' - SUCCESS
+Code Blocks: 0, Quality: 0.0/10, Length: 113 chars
+Response Preview: # Stack Overflow Solution
+
+Query: 'how to implement a neural network from scratch in python'
+
+## Solution:
+
+range...
+
+Query: 'best practices for deploying machine learning models' - SUCCESS
+Code Blocks: 0, Quality: 0.0/10, Length: 498 chars
+Response Preview: # Stack Overflow Solution
+
+Query: 'best practices for deploying machine learning models'
+
+## Solution:
+
+Not to sure what you're looking for here but Google Cloud Platform has some good storage, big da...
+
+Query: 'steps to build a recommendation system in python' - SUCCESS
+Code Blocks: 0, Quality: 0.0/10, Length: 190 chars
+Response Preview: # Stack Overflow Solution
+
+Query: 'steps to build a recommendation system in python'
+
+## Solution:
+
+ERROR: [91mSorry, couldn't find any help with that topic (use --explain to learn why)[0m...
+
+Query: 'techniques for natural language processing in python' - SUCCESS
+Code Blocks: 0, Quality: 0.0/10, Length: 1451 chars
+Response Preview: # Stack Overflow Solution
+
+Query: 'techniques for natural language processing in python'
+
+## Solution:
+
+If I understand you correctly you have a new issue (query) and you want to look up other similar...
+
+Query: 'how to optimize python code for performance' - SUCCESS
+Code Blocks: 0, Quality: 0.0/10, Length: 1117 chars
+Response Preview: # Stack Overflow Solution
+
+Query: 'how to optimize python code for performance'
+
+## Solution:
+
+Regarding "Secondly: When writing a program from scratch in python, what are some good ways to greatly im...
+
+
+Category: Non-Programming Questions
+--------------------------------------------------------------------------------
+Query: 'what is machine learning' - SUCCESS
+Code Blocks: 0, Quality: 0.0/10, Length: 3631 chars
+Response Preview: # Stack Overflow Solution
+
+Query: 'what is machine learning'
+
+## Solution:
+
+What is a machine learning ?
+
+
+
+
+
+Essentially, it is a method of teaching computers to make and improve predictions or behav...
+
+Query: 'difference between AI and ML' - SUCCESS
+Code Blocks: 0, Quality: 0.0/10, Length: 446 chars
+Response Preview: # Stack Overflow Solution
+
+Query: 'difference between AI and ML'
+
+## Solution:
+
+The fundamental difference lies in their approaches. AI is a general term used for the field which is trying to mimic hu...
+
+Query: 'explain deep learning' - SUCCESS
+Code Blocks: 0, Quality: 0.0/10, Length: 163 chars
+Response Preview: # Stack Overflow Solution
+
+Query: 'explain deep learning'
+
+## Solution:
+
+ERROR: [91mSorry, couldn't find any help with that topic (use --explain to learn why)[0m...
+
+Query: 'what is transfer learning' - SUCCESS
+Code Blocks: 0, Quality: 0.0/10, Length: 167 chars
+Response Preview: # Stack Overflow Solution
+
+Query: 'what is transfer learning'
+
+## Solution:
+
+ERROR: [91mSorry, couldn't find any help with that topic (use --explain to learn why)[0m...
+
+Query: 'explain reinforcement learning' - SUCCESS
+Code Blocks: 0, Quality: 0.0/10, Length: 172 chars
+Response Preview: # Stack Overflow Solution
+
+Query: 'explain reinforcement learning'
+
+## Solution:
+
+ERROR: [91mSorry, couldn't find any help with that topic (use --explain to learn why)[0m...
+
+
+Category: Alternative Phrasings
+--------------------------------------------------------------------------------
+Query: 'how do I read a file in python' - SUCCESS
+Code Blocks: 0, Quality: 0.0/10, Length: 118 chars
+Response Preview: # Stack Overflow Solution
+
+Query: 'how do I read a file in python'
+
+## Solution:
+
+with open('x.py') as f: s = f.read()...
+
+Query: 'example of python pandas dataframe' - SUCCESS
+Code Blocks: 0, Quality: 0.0/10, Length: 152 chars
+Response Preview: # Stack Overflow Solution
+
+Query: 'example of python pandas dataframe'
+
+## Solution:
+
+import seaborn as sns
+
+iris = sns.load_dataset('iris')
+iris.head()...
+
+Query: 'code for tensorflow neural network' - SUCCESS
+Code Blocks: 0, Quality: 0.0/10, Length: 176 chars
+Response Preview: # Stack Overflow Solution
+
+Query: 'code for tensorflow neural network'
+
+## Solution:
+
+ERROR: [91mSorry, couldn't find any help with that topic (use --explain to learn why)[0m...
+
+Query: 'implement binary search tree python' - SUCCESS
+Code Blocks: 3, Quality: 6.5/10, Length: 921 chars
+Response Preview: # Stack Overflow Solution
+
+Query: 'implement binary search tree python'
+
+## Solution:
+
+class Node:
+    def __init__(self, val):
+        self.l_child = None
+        self.r_child = None
+        self.dat...
+
+Query: 'python code to scrape website' - SUCCESS
+Code Blocks: 0, Quality: 0.0/10, Length: 171 chars
+Response Preview: # Stack Overflow Solution
+
+Query: 'python code to scrape website'
+
+## Solution:
+
+ERROR: [91mSorry, couldn't find any help with that topic (use --explain to learn why)[0m...
+
+
+Category: Specific Libraries
+--------------------------------------------------------------------------------
+Query: 'python numpy matrix multiplication' - SUCCESS
+Code Blocks: 0, Quality: 0.0/10, Length: 172 chars
+Response Preview: # Stack Overflow Solution
+
+Query: 'python numpy matrix multiplication'
+
+## Solution:
+
+import numpy as np
+x = np.arange(9).reshape((3,3))
+y = np.arange(3)
+
+print np.dot(x,y)...
+
+Query: 'python requests authentication' - SUCCESS
+Code Blocks: 0, Quality: 0.0/10, Length: 253 chars
+Response Preview: # Stack Overflow Solution
+
+Query: 'python requests authentication'
+
+## Solution:
+
+session = requests.Session()
+session.auth = (user, password)
+
+auth = session.post('http://' + hostname)
+response = ses...
+
+Query: 'python sqlalchemy query example' - SUCCESS
+Code Blocks: 0, Quality: 0.0/10, Length: 173 chars
+Response Preview: # Stack Overflow Solution
+
+Query: 'python sqlalchemy query example'
+
+## Solution:
+
+ERROR: [91mSorry, couldn't find any help with that topic (use --explain to learn why)[0m...
+
+Query: 'python pytest fixtures' - SUCCESS
+Code Blocks: 0, Quality: 0.0/10, Length: 164 chars
+Response Preview: # Stack Overflow Solution
+
+Query: 'python pytest fixtures'
+
+## Solution:
+
+ERROR: [91mSorry, couldn't find any help with that topic (use --explain to learn why)[0m...
+
+Query: 'python asyncio example' - SUCCESS
+Code Blocks: 0, Quality: 0.0/10, Length: 164 chars
+Response Preview: # Stack Overflow Solution
+
+Query: 'python asyncio example'
+
+## Solution:
+
+ERROR: [91mSorry, couldn't find any help with that topic (use --explain to learn why)[0m...
+
+
+RECOMMENDATIONS FOR AGENT INSTRUCTIONS:
+--------------------------------------------------------------------------------
+
+When using the HowDoI tool, format your queries as follows:
+
+- Use 'python [library] [specific operation]' format
+- Keep queries concise (3-5 words works best)
+- Specify the library name when possible
+- Focus on implementation tasks, not conceptual questions
+
+Examples of effective queries:
+- python implement stack
+- python implement linked list
+- python beautiful soup scrape table
+- python implement queue
+- implement binary search tree python

@@ -1,0 +1,15 @@
+=== HOWDOI TOOL INTERACTION ===
+
+Timestamp: 20250406_114023
+
+=== INPUT ===
+Query: python aws lambda function
+
+=== OUTPUT ===
+# Stack Overflow Solution
+
+Query: 'python aws lambda function'
+
+## Solution:
+
+ERROR: [91mSorry, couldn't find any help with that topic (use --explain to learn why)[0m

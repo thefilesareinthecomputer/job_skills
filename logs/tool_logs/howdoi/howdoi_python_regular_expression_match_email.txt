@@ -1,0 +1,15 @@
+=== HOWDOI TOOL INTERACTION ===
+
+Timestamp: 20250406_121215
+
+=== INPUT ===
+Query: python regular expression match email
+
+=== OUTPUT ===
+# Stack Overflow Solution
+
+Query: 'python regular expression match email'
+
+## Solution:
+
+email = re.findall(r'[\w\.-]+@[\w\.-]+(\.[\w]+)+',line)

@@ -1,0 +1,15 @@
+=== HOWDOI TOOL INTERACTION ===
+
+Timestamp: 20250406_113946
+
+=== INPUT ===
+Query: python matplotlib plot bar chart
+
+=== OUTPUT ===
+# Stack Overflow Solution
+
+Query: 'python matplotlib plot bar chart'
+
+## Solution:
+
+plt.bar(x, [int(i) for i in y], label="Bars 1", color="black")

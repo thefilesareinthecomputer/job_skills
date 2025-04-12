@@ -1,0 +1,18 @@
+=== HOWDOI TOOL INTERACTION ===
+
+Timestamp: 20250406_114046
+
+=== INPUT ===
+Query: example of python pandas dataframe
+
+=== OUTPUT ===
+# Stack Overflow Solution
+
+Query: 'example of python pandas dataframe'
+
+## Solution:
+
+import seaborn as sns
+
+iris = sns.load_dataset('iris')
+iris.head()

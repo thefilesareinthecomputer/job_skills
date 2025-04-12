@@ -6,6 +6,8 @@ from job_skills.tools.perplexity_tool import PerplexityTool
 from job_skills.tools.skills_csv_tool import SkillsCSVTool
 from job_skills.tools.wikipedia_tool import WikipediaTool
 from job_skills.tools.howdoi_tool import HowDoITool
+from job_skills.tools.serper_tool import SerperTool
+from job_skills.tools.web_scraper_tool import WebScraperTool
 
 load_dotenv()
 
@@ -31,7 +33,7 @@ class JobSkills():
             config=self.agents_config['reporting_analyst'],
             verbose=True,
             # allow_delegation=True,
-            tools=[HowDoITool(), WikipediaTool(), PerplexityTool()]
+            tools=[HowDoITool(), WikipediaTool(), PerplexityTool(), SerperTool(), WebScraperTool()]
         )
         
     @agent
@@ -40,7 +42,7 @@ class JobSkills():
             config=self.agents_config['researcher'],
             verbose=True,
             # allow_delegation=True,
-            tools=[HowDoITool(), WikipediaTool(), PerplexityTool()] 
+            tools=[HowDoITool(), WikipediaTool(), PerplexityTool(), SerperTool(), WebScraperTool()] 
         )
 
     @agent
@@ -49,7 +51,7 @@ class JobSkills():
             config=self.agents_config['skill_instructor'],
             verbose=True,
             # allow_delegation=True,
-            tools=[HowDoITool(), WikipediaTool(), PerplexityTool()]
+            tools=[HowDoITool(), WikipediaTool(), PerplexityTool(), SerperTool(), WebScraperTool()]
         )
         
     # To learn more about structured task outputs,

@@ -1,0 +1,23 @@
+=== WIKIPEDIA TOOL INTERACTION ===
+
+Timestamp: 20250406_134222
+
+=== INPUT ===
+Query: Regression algorithms
+
+=== OUTPUT ===
+# Wikipedia: Conformal prediction
+
+Conformal prediction (CP) is a machine learning framework for uncertainty quantification that produces statistically valid prediction regions (prediction intervals) for any underlying point predictor (whether statistical, machine, or deep learning) only assuming exchangeability of the data. CP works by computing nonconformity scores on previously labeled data, and using these to create prediction sets on a new (unlabeled) test data point. A transductive version of CP was first proposed in 1998 by Gammerman, Vovk, and Vapnik, and since, several variants of conformal prediction have been developed with different computational complexities, formal guarantees, and practical applications.
+Conformal prediction requires a user-specified significance level for which the algorithm should produce its predictions. This significance level restricts the frequency of errors that the algorithm is allowed to make. For example, a significance level of 0.1 means that the algorithm can make at most 10% erroneous predictions. To meet this requirement, the output is a set prediction, instead of a point prediction produced by standard supervised machine learning models. For classification tasks, this means that predictions are not a single class, for example 'cat', but instead a set like {'cat', 'dog'}. Depending on how good the underlying model is (how well it can discern between cats, dogs and other animals) and the specified significance level, these sets can be smaller or larger. For regressio...
+
+For more information: https://en.wikipedia.org/wiki/Conformal_prediction
+
+## Other Relevant Articles
+
+1. Nonparametric regression
+2. Isotonic regression
+3. Symbolic regression
+4. Multinomial logistic regression
+
+

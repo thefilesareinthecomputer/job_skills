@@ -1,0 +1,15 @@
+=== HOWDOI TOOL INTERACTION ===
+
+Timestamp: 20250406_121229
+
+=== INPUT ===
+Query: python pandas filter dataframe
+
+=== OUTPUT ===
+# Stack Overflow Solution
+
+Query: 'python pandas filter dataframe'
+
+## Solution:
+
+query = ' & '.join(['{}>{}'.format(k, v) for k, v in limits_dic.items()])

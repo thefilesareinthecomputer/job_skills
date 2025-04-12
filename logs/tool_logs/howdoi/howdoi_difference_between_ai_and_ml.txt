@@ -1,0 +1,19 @@
+=== HOWDOI TOOL INTERACTION ===
+
+Timestamp: 20250406_121328
+
+=== INPUT ===
+Query: difference between AI and ML
+
+=== OUTPUT ===
+# Stack Overflow Solution
+
+Query: 'difference between AI and ML'
+
+## Solution:
+
+The fundamental difference lies in their approaches. AI is a general term used for the field which is trying to mimic human behaviour and its intelligence. Any method or approach which is capable of doing this comes under AI. 
+
+
+
+Machine learning is a subset of AI which implements AI by learning patterns from data and then make predictions based on these patterns.

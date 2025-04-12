@@ -1,16 +1,11 @@
 reporting_task:
   description: >
-    You are a reporting analyst.
-    Congratulations! You have been tasked with leading a team who is reporting on the skills of an Artificial Intelligence Engineer / Machine Learning Engineer.
-    You will be given a list of skills that you will need to report on.
-    You will delegate research tasks to the researcher agent.
-    You will review the research provided by the researcher agent and expand on the skills that are most in demand for Artificial Intelligence Engineer and Machine Learning Engineer roles.
-    You will delegate skills instruction tasks to the skill instructor agent.
-    You will review the skills instruction provided by the skill instructor agent and provide a final report on the skills that are most in demand for Artificial Intelligence Engineer and Machine Learning Engineer roles.
-    For each skill in the provided list, you will include concrete definitions of the skill / technology, examples of how the skill is used in practice, and resources for the reader to learn about each skill and improve their expertise in each area.
-    You will examine large amounts of data and provide insights on what skills are most in demand for Artificial Intelligence Engineer and Machine Learning Engineer roles. 
+    Congratulations! You have been tasked with leading a research project on the essential skills for an Artificial Intelligence Engineer / Machine Learning Engineer.
+    You are a reporting analyst. You will be given a list of skills that you will need to report on.
+    For each skill in the provided list, you will use your tools to gain information about all of the skills.
+    You will then use that information to create a comprehensive report that includes concrete definitions of the skill / technology, examples of how the skill is used in practice, and resources for the reader to learn about each skill and improve their expertise in each area.
     You will go beyond a surface level overview and provide a deep dive into each of the skills that are most in demand. 
-    You will also provide advice for job seekers on to understand each of the skills and be able to professionally discuss them in interviews. 
+    You will also provide advice for the user to understand each of the skills and be able to professionally discuss each skill in interviews. 
     For each skill in the report, you will provide a definition, examples, practical use cases, and resources for the job seeker to learn about each skill and improve their expertise in each area. 
     For each skill identified in the research:
       1. You provide a clear, concise definition of the skill, containing a high level of technical detail explaining the skill and its practical importance to the AI/ML Engineer job role
@@ -20,44 +15,46 @@ reporting_task:
       5. You suggest methods to demonstrate proficiency to potential employers (portfolio projects, GitHub contributions, etc.)
     You will teach the user what each skill is and how it is used in the real world, and how to use it to advance their career.
 
-    Review the context (the list of skills provided) and expand each skill into a full section of information (more instructions below).
     For all skills in the report, provide specific examples of how the skill is used in a real-world project. 
     Make sure to provide examples of the most common technologies and tools used to execute each skill. 
     Some skills are the names of technologies - i.e. "Python" or "SQL" or "AWS" - and you should provide examples of how the skill is used in a real-world project.
     Some skills are more complex than others, and you should provide examples of how the skill is used in a real-world project.
     For each skill, provide a list of accessible resources (documentation, courses, projects, certifications) for learning the skill.
-    This report should function as a comprehensive guide for the user to learn the most in-demand skills for an Artificial Intelligence Engineer / Machine Learning Engineer. 
-    This report should also function as a learning resource for the user to prepare for interviews. 
-    Direct the reader to the official documentation of the skill if available. 
-    Direct the reader to the most popular resources for learning the skill if available.  
+    This report should function as a comprehensive instructional guide and learning resource for the user to learn the most in-demand skills for an Artificial Intelligence Engineer / Machine Learning Engineer. 
+    Direct the reader to the official documentation for each skill if available. 
+    Direct the reader to the most popular resources for learning each skill if available.  
     Tell the reader how to demonstrate proficiency in the skill.
     If the skill is a technology, provide a link to the official documentation of the skill.
     If the skill is a technology, provide information on how to install it and set it up.
 
-    First, group the skills into logical categories.
-    The list should follow a logical progression of skills that an AI/ML Engineer would need to learn, in order, to continually advance in their career.
-    The groups of skills should be listed in the order in which they should be learned, so that foundational skills are listed first, and more complex skills are listed last.
+    In order to achieve this, you have access to a few tools that are described below.
+    You can use these tools as many times as you need to.
+    You can not submit more than one query at a time. If you need to run multiple queries, you must submit them sequentially, one at a time.
+    The groups of skills should be sorted into the order in which they should be learned, so that foundational skills are listed first, and more complex skills are listed last.
 
-    Next, use the HowDoI tool to find programming solutions for each of the specific skills in the list.
+    You may use the HowDoI tool to find code solutions and examples for each of the skills in the list.
     The HowDoI tool provides code examples from Stack Overflow that demonstrate how to implement various programming techniques.
-    For each programming skill you identify, use the HowDoI tool to find practical code examples.
-    For each programming language or framework identified, use the HowDoI tool to find examples of:
+    The correct input format for the HowDoI tool is a dictionary with a key of "query" and a value of the search term like this Query: 'python sort dictionary by value'.
+    The howdoi tool is free to use, so you can use it as many times as you need.
+    You can not submit more than one query at a time. If you need to run multiple queries, you must submit them sequentially, one at a time.
+    HowDoI should only be used to search for relatively simple programming terms or phrases like Query: 'python sort dictionary by value' or 'python implement a queue' or 'python convert dictionary to json' etc.
+    HowDoI should be used to search for programming solutions or technical answers to coding questions.
+    You should use the HowDoI tool to find programming solutions for each of the specific skills in the list.
+    For each programming task required for each of these skills, use the HowDoI tool to find practical code examples.
+    For each programming language, framework, or technology identified, use the HowDoI tool to find examples of:
     1. How to implement basic data structures
     2. How to perform common operations
     3. How to optimize code for performance
     4. How to handle errors and exceptions
-    HowDoI is a package that displays Stack Overflow code solutions for programming questions.
-    The correct input format for the howdoi tool is a dictionary with a key of "query" and a value of the search term like this Query: 'python sort dictionary by value'.
-    The howdoi tool is free to use, so you can use it as many times as you need.
-    You can not submit more than one query at a time. If you need to run multiple queries, you must submit them sequentially, one at a time.
-    HowDoI should only be used to search for relatibely simple programming terms or phrases like Query: 'python sort dictionary by value' etc.
-    HowDoI should only be used to search for programming solutions or technical answers to questions.
-    It would be helpful to use howdoi to find programming solutions for each of the specific skills in the list.
-    You should ask it questions like "Query": "feed forward neural network for predicting stock prices" or "Query": "deep learning neural nerwork for predicting home prices" etc.
-    You can also search for things like "Query": "clustering algorithm for customer segmentation" or "Query": "decision tree algorithm for predicting stock prices" etc.
-    You can ask simplet things too, such as "Query": "python sort dictionary by value" or "Query": "python implement a queue" etc.
+    5. How to write code to solve the task
+    All queries sent to howdoi begin with the command word "howdoi " - meaning a query can look like "howdoi loop over a list of files in python" or something like that, but the tool itself already begins each query with the howdoi command.
+    So, all queries to howdoi should consider this format assuming they're all prefeixed with the "howdoi " command.
+    You should ask it questions like "Query": "make neural network for predicting stock prices" or "Query": "make neural network for predicting home prices" etc.
+    You can also search for things like "Query": "write algorithm for customer segmentation" or "Query": "create algorithm for predicting stock prices" etc.
+    You can ask simple things too, such as "Query": "sort dictionary by value in python" or "Query": "implement a queue in python" etc.
+    HowDoI responds best to simple queries like "Query": "python sort dictionary by value" or "Query": "python implement a queue" etc.
 
-    Next, use the Wikipedia Search tool to learn more about each of the specific skills in the list.
+    You may use the Wikipedia Search tool to reference the definition of the specific skills in the list.
     The correct input format for the wikipedia search tool is a dictionary with a key of "query" and a value of the search term.
     The wikipedia tool is free to use, so you can use it as many times as you need.
     You can not submit more than one query at a time. If you need to run multiple queries, you must submit them sequentially, one at a time.
@@ -65,12 +62,28 @@ reporting_task:
     Wikipedia should not be used to search for phrases or questions or compound terms.
     Wikipedia should only be used to search for definitions of single terms or concepts.
 
+    You may use the AI/ML Search Engine tool to use the serper api to search the web. 
+    You can use this tool tosearch the web to find official documentation and up-to-date information about each skill in the list.
+    This tool is particularly useful for finding links to official documentation, tutorials, and recent developments for each skill.
+    For each skill in your list, use this tool to search for terms like "official documentation for [skill]" or "[skill] tutorial" or "[skill] best practices" or "[skill] API reference" or "[skill] website".
+    The tool will return both search results and a summary ofthe actual content from the top websites, giving you comprehensive information.
+    Use this tool to gather high-level summary information directly from official sources rather than relying on general knowledge.
+    The tool works best with specific, focused queries rather than broad questions.
+    For programming languages and frameworks, search for their official documentation, API references, and getting started guides.
+    For concepts and methodologies, search for academic papers, industry standards, and best practice guides.
+    The information retrieved from this tool should be used to provide accurate, up-to-date details about each skill in your report.
+
     Next, use the Perplexity tool to include supplemental knowledge about each group of skills.
-    The correct input format for perplexity is the same - a dictionary with a key of "query" and a value of the search term.
+    For each category / group of skills, pass the entire list to perplexity and have perplexity teach you a comprehensive lesson on how these grouped skills are all used together.
+    The correct input format for perplexity is a dictionary with a key of "query" and a value of the search term.
     The perplexity tool is more expensive to use, so you should only use one query for each group / category at a time - i.e. one query per complete group of skills.
+    The output from perplexity is a long paragraph of text that you should use to augment the report for each skill, and to provide more context for how these skills are used together.
     Perplexity can handle more complex natural language prompts and questions.
     Your query could look like this: {"query": """
-    Provide a comprehensive overview of the following skills and tehcnologies and how they would be used in an AI/ML Engineer's job:
+    Provide a detailed explanation of the following skills and technologies. 
+    Thoroughly describe how they would be used in an AI/ML Engineer's job.
+    Include practical examples of how each of these skills work together, the order in which they're used, how they interact, and how they're used in real-world projects.
+    If any terms in this list are redundant or serve the exact same purpose, indicate that in your response.
       - Machine Learning Techniques:
         - Large Language Models (LLMs)
         - Natural Language Processing (NLP)
@@ -93,10 +106,14 @@ reporting_task:
         - Random Forests
         - Gradient Boosting
         - Deployment Frameworks
+        - Building neural networks with PyTorch
+        - Building neural networks with TensorFlow
+        - Building neural networks with Keras
+        - Building neural networks with Scikit-learn
     """}
   expected_output: >
-    A full report of each skill in the list provided by the previous agent. 
-    The report should include all of the main topics from the researcher agent's output - each skill should be expanded upon with a full section of information (details for the supplementary information are below).
+    A full report of each skill in the list. 
+    The report should include all of the main topics from the list - each skill should be expanded upon with a full section of information (details for the required information are below).
     For each skill, include details such as:
     - Technologies in which the skill is used
     - If the skill is a technology, provide a link to the official documentation of the skill
@@ -110,7 +127,7 @@ reporting_task:
     - Examples of how the skill is used in a real-world project
     - Popular resources for learning the skill
     - Practical examples of the skill being applied in a real-world project
-    Formatted as markdown
+    The report should be formatted as markdown
     You must include all of the skills in the list provided by the researcher.
     Do not truncate or cut your output short. You need to provide a comprehensive report for each skill. You may group skills together if they are similar or redundant.
     Make sure you include any interesting and relevant information given the current year is 2025 and the user needs practical real-world examples for using all of these skills as an AI/ML Engineer.
@@ -201,7 +218,7 @@ reporting_task:
         - Large Language Models (LLMs)
         - Natural Language Processing (NLP)
         - Deep Learning Neural Networks
-        - Fine-Tuning Neural Network Parameters
+        - Fine-Tuning Neural Network Hyperparameters
         - Transfer Learning
         - Model Training
         - Model Evaluation
@@ -219,6 +236,10 @@ reporting_task:
         - Random Forests
         - Gradient Boosting
         - Deployment Frameworks
+        - Building neural networks with PyTorch
+        - Building neural networks with TensorFlow
+        - Building neural networks with Keras
+        - Building neural networks with Scikit-learn
 
       - Artificial Intelligence:
         - AI Agents
@@ -271,32 +292,35 @@ reporting_task:
 research_task:
   description: >
     You will curate a comprehensive, thorough, extensive, detailed, and deep list of the most in-demand skills for Artificial Intelligence Engineer and Machine Learning Engineer roles. 
-    You will be examining this list, augmenting it with your own recommendations, and then organizing the skills into optimal categories for progressive learning and career advancement.
+    You will be examining the existing list, augmenting it with your own recommendations, and then organizing the skills into optimal categories for progressive learning and career advancement.
 
     First, group the skills into logical categories.
     The list should follow a logical progression of skills that an AI/ML Engineer would need to learn, in order, to continually advance in their career.
     The groups of skills should be listed in the order in which they should be learned, so that foundational skills are listed first, and more complex skills are listed last.
-    
-    Next, use the HowDoI tool to find programming solutions for each of the specific skills in the list.
+
+    Next, use the HowDoI tool to find code solutions and examples for each of the skills in the list.
     The HowDoI tool provides code examples from Stack Overflow that demonstrate how to implement various programming techniques.
-    For each programming skill you identify, use the HowDoI tool to find practical code examples.
-    For each programming language or framework identified, use the HowDoI tool to find examples of:
+    The correct input format for the HowDoI tool is a dictionary with a key of "query" and a value of the search term like this Query: 'python sort dictionary by value'.
+    The howdoi tool is free to use, so you can use it as many times as you need.
+    You can not submit more than one query at a time. If you need to run multiple queries, you must submit them sequentially, one at a time.
+    HowDoI should only be used to search for relatively simple programming terms or phrases like Query: 'python sort dictionary by value' or 'python implement a queue' or 'python convert dictionary to json' etc.
+    HowDoI should be used to search for programming solutions or technical answers to coding questions.
+    You should use the HowDoI tool to find programming solutions for each of the specific skills in the list.
+    For each programming task required for each of these skills, use the HowDoI tool to find practical code examples.
+    For each programming language, framework, or technology identified, use the HowDoI tool to find examples of:
     1. How to implement basic data structures
     2. How to perform common operations
     3. How to optimize code for performance
     4. How to handle errors and exceptions
-    HowDoI is a package that displays Stack Overflow code solutions for programming questions.
-    The correct input format for the howdoi tool is a dictionary with a key of "query" and a value of the search term like this Query: 'python sort dictionary by value'.
-    The howdoi tool is free to use, so you can use it as many times as you need.
-    You can not submit more than one query at a time. If you need to run multiple queries, you must submit them sequentially, one at a time.
-    HowDoI should only be used to search for relatibely simple programming terms or phrases like Query: 'python sort dictionary by value' etc.
-    HowDoI should only be used to search for programming solutions or technical answers to questions.
-    It would be helpful to use howdoi to find programming solutions for each of the specific skills in the list.
-    You should ask it questions like "Query": "feed forward neural network for predicting stock prices" or "Query": "deep learning neural nerwork for predicting home prices" etc.
-    You can also search for things like "Query": "clustering algorithm for customer segmentation" or "Query": "decision tree algorithm for predicting stock prices" etc.
-    You can ask simplet things too, such as "Query": "python sort dictionary by value" or "Query": "python implement a queue" etc.
+    5. How to write code to solve the task
+    All queries sent to howdoi begin with the command word "howdoi " - meaning a query can look like "howdoi loop over a list of files in python" or something like that, but the tool itself already begins each query with the howdoi command.
+    So, all queries to howdoi should consider this format assuming they're all prefeixed with the "howdoi " command.
+    You should ask it questions like "Query": "make neural network for predicting stock prices" or "Query": "make neural network for predicting home prices" etc.
+    You can also search for things like "Query": "write algorithm for customer segmentation" or "Query": "create algorithm for predicting stock prices" etc.
+    You can ask simple things too, such as "Query": "sort dictionary by value in python" or "Query": "implement a queue in python" etc.
+    HowDoI responds best to simple queries like "Query": "python sort dictionary by value" or "Query": "python implement a queue" etc.
 
-    Next, use the Wikipedia Search tool to learn more about each of the specific skills in the list.
+    Next, use the Wikipedia Search tool to reference the definition of the specific skills in the list.
     The correct input format for the wikipedia search tool is a dictionary with a key of "query" and a value of the search term.
     The wikipedia tool is free to use, so you can use it as many times as you need.
     You can not submit more than one query at a time. If you need to run multiple queries, you must submit them sequentially, one at a time.
@@ -304,12 +328,28 @@ research_task:
     Wikipedia should not be used to search for phrases or questions or compound terms.
     Wikipedia should only be used to search for definitions of single terms or concepts.
 
+    Next, use the AI/ML Search Engine tool to use the serper api to find official documentation and up-to-date information about each skill in the list.
+    The AI/ML Search Engine tool searches the web for information about AI/ML topics, technologies, frameworks, and concepts.
+    This tool is particularly useful for finding official documentation, tutorials, and recent developments for each skill.
+    For each skill in your list, use this tool to search for terms like "official documentation for [skill]" or "[skill] tutorial" or "[skill] best practices".
+    The tool will return both search results and the actual content from the top websites, giving you comprehensive information.
+    Use this tool to gather authoritative information directly from official sources rather than relying on general knowledge.
+    The tool works best with specific, focused queries rather than broad questions.
+    For programming languages and frameworks, search for their official documentation, API references, and getting started guides.
+    For concepts and methodologies, search for academic papers, industry standards, and best practice guides.
+    The information retrieved from this tool should be used to provide accurate, up-to-date details about each skill in your report.
+
     Next, use the Perplexity tool to include supplemental knowledge about each group of skills.
-    The correct input format for perplexity is the same - a dictionary with a key of "query" and a value of the search term.
+    For each category / group of skills, pass the entire list to perplexity and have perplexity teach you a comprehensive lesson on how these grouped skills are all used together.
+    The correct input format for perplexity is a dictionary with a key of "query" and a value of the search term.
     The perplexity tool is more expensive to use, so you should only use one query for each group / category at a time - i.e. one query per complete group of skills.
+    The output from perplexity is a long paragraph of text that you should use to augment the report for each skill, and to provide more context for how these skills are used together.
     Perplexity can handle more complex natural language prompts and questions.
     Your query could look like this: {"query": """
-    Provide a comprehensive overview of the following skills and tehcnologies and how they would be used in an AI/ML Engineer's job:
+    Provide a detailed explanation of the following skills and technologies. 
+    Thoroughly describe how they would be used in an AI/ML Engineer's job.
+    Include practical examples of how each of these skills work together, the order in which they're used, how they interact, and how they're used in real-world projects.
+    If any terms in this list are redundant or serve the exact same purpose, indicate that in your response.
       - Machine Learning Techniques:
         - Large Language Models (LLMs)
         - Natural Language Processing (NLP)
@@ -332,6 +372,10 @@ research_task:
         - Random Forests
         - Gradient Boosting
         - Deployment Frameworks
+        - Building neural networks with PyTorch
+        - Building neural networks with TensorFlow
+        - Building neural networks with Keras
+        - Building neural networks with Scikit-learn
     """}
   expected_output: >
     A grouped list of bullet points containing a comprehensive list of essential skills for an AI/ML Engineer.
@@ -424,7 +468,7 @@ research_task:
         - Large Language Models (LLMs)
         - Natural Language Processing (NLP)
         - Deep Learning Neural Networks
-        - Fine-Tuning Neural Network Parameters
+        - Fine-Tuning Neural Network Hyperparameters
         - Transfer Learning
         - Model Training
         - Model Evaluation
@@ -489,7 +533,6 @@ research_task:
         - Machine Learning - using the curated home sale price dataset to train a machine learning model to predict home prices
         - Deep Learning - using the curated home sale price dataset to train a deep learning model to predict home prices
         - AI App Development - use the sale price dataset and ML models to develop an AI-powered chat agent app with tools to discuss predictions for home prices with a user
-
   agent: researcher
 
 skill_instructor_task:
@@ -542,27 +585,30 @@ skill_instructor_task:
     First, group the skills into logical categories.
     The list should follow a logical progression of skills that an AI/ML Engineer would need to learn, in order, to continually advance in their career.
     The groups of skills should be listed in the order in which they should be learned, so that foundational skills are listed first, and more complex skills are listed last.
-    
-    Next, use the HowDoI tool to find programming solutions for each of the specific skills in the list.
+
+    Next, use the HowDoI tool to find code solutions and examples for each of the skills in the list.
     The HowDoI tool provides code examples from Stack Overflow that demonstrate how to implement various programming techniques.
-    For each programming skill you identify, use the HowDoI tool to find practical code examples.
-    For each programming language or framework identified, use the HowDoI tool to find examples of:
+    The correct input format for the HowDoI tool is a dictionary with a key of "query" and a value of the search term like this Query: 'python sort dictionary by value'.
+    The howdoi tool is free to use, so you can use it as many times as you need.
+    You can not submit more than one query at a time. If you need to run multiple queries, you must submit them sequentially, one at a time.
+    HowDoI should only be used to search for relatively simple programming terms or phrases like Query: 'python sort dictionary by value' or 'python implement a queue' or 'python convert dictionary to json' etc.
+    HowDoI should be used to search for programming solutions or technical answers to coding questions.
+    You should use the HowDoI tool to find programming solutions for each of the specific skills in the list.
+    For each programming task required for each of these skills, use the HowDoI tool to find practical code examples.
+    For each programming language, framework, or technology identified, use the HowDoI tool to find examples of:
     1. How to implement basic data structures
     2. How to perform common operations
     3. How to optimize code for performance
     4. How to handle errors and exceptions
-    HowDoI is a package that displays Stack Overflow code solutions for programming questions.
-    The correct input format for the howdoi tool is a dictionary with a key of "query" and a value of the search term like this Query: 'python sort dictionary by value'.
-    The howdoi tool is free to use, so you can use it as many times as you need.
-    You can not submit more than one query at a time. If you need to run multiple queries, you must submit them sequentially, one at a time.
-    HowDoI should only be used to search for relatibely simple programming terms or phrases like Query: 'python sort dictionary by value' etc.
-    HowDoI should only be used to search for programming solutions or technical answers to questions.
-    It would be helpful to use howdoi to find programming solutions for each of the specific skills in the list.
-    You should ask it questions like "Query": "feed forward neural network for predicting stock prices" or "Query": "deep learning neural nerwork for predicting home prices" etc.
-    You can also search for things like "Query": "clustering algorithm for customer segmentation" or "Query": "decision tree algorithm for predicting stock prices" etc.
-    You can ask simplet things too, such as "Query": "python sort dictionary by value" or "Query": "python implement a queue" etc.
+    5. How to write code to solve the task
+    All queries sent to howdoi begin with the command word "howdoi " - meaning a query can look like "howdoi loop over a list of files in python" or something like that, but the tool itself already begins each query with the howdoi command.
+    So, all queries to howdoi should consider this format assuming they're all prefeixed with the "howdoi " command.
+    You should ask it questions like "Query": "make neural network for predicting stock prices" or "Query": "make neural network for predicting home prices" etc.
+    You can also search for things like "Query": "write algorithm for customer segmentation" or "Query": "create algorithm for predicting stock prices" etc.
+    You can ask simple things too, such as "Query": "sort dictionary by value in python" or "Query": "implement a queue in python" etc.
+    HowDoI responds best to simple queries like "Query": "python sort dictionary by value" or "Query": "python implement a queue" etc.
 
-    Next, use the Wikipedia Search tool to learn more about each of the specific skills in the list.
+    Next, use the Wikipedia Search tool to reference the definition of the specific skills in the list.
     The correct input format for the wikipedia search tool is a dictionary with a key of "query" and a value of the search term.
     The wikipedia tool is free to use, so you can use it as many times as you need.
     You can not submit more than one query at a time. If you need to run multiple queries, you must submit them sequentially, one at a time.
@@ -570,12 +616,28 @@ skill_instructor_task:
     Wikipedia should not be used to search for phrases or questions or compound terms.
     Wikipedia should only be used to search for definitions of single terms or concepts.
 
+    Next, use the AI/ML Search Engine tool to use the serper api to find official documentation and up-to-date information about each skill in the list.
+    The AI/ML Search Engine tool searches the web for information about AI/ML topics, technologies, frameworks, and concepts.
+    This tool is particularly useful for finding official documentation, tutorials, and recent developments for each skill.
+    For each skill in your list, use this tool to search for terms like "official documentation for [skill]" or "[skill] tutorial" or "[skill] best practices".
+    The tool will return both search results and the actual content from the top websites, giving you comprehensive information.
+    Use this tool to gather authoritative information directly from official sources rather than relying on general knowledge.
+    The tool works best with specific, focused queries rather than broad questions.
+    For programming languages and frameworks, search for their official documentation, API references, and getting started guides.
+    For concepts and methodologies, search for academic papers, industry standards, and best practice guides.
+    The information retrieved from this tool should be used to provide accurate, up-to-date details about each skill in your report.
+
     Next, use the Perplexity tool to include supplemental knowledge about each group of skills.
-    The correct input format for perplexity is the same - a dictionary with a key of "query" and a value of the search term.
+    For each category / group of skills, pass the entire list to perplexity and have perplexity teach you a comprehensive lesson on how these grouped skills are all used together.
+    The correct input format for perplexity is a dictionary with a key of "query" and a value of the search term.
     The perplexity tool is more expensive to use, so you should only use one query for each group / category at a time - i.e. one query per complete group of skills.
+    The output from perplexity is a long paragraph of text that you should use to augment the report for each skill, and to provide more context for how these skills are used together.
     Perplexity can handle more complex natural language prompts and questions.
     Your query could look like this: {"query": """
-    Provide a comprehensive overview of the following skills and tehcnologies and how they would be used in an AI/ML Engineer's job:
+    Provide a detailed explanation of the following skills and technologies. 
+    Thoroughly describe how they would be used in an AI/ML Engineer's job.
+    Include practical examples of how each of these skills work together, the order in which they're used, how they interact, and how they're used in real-world projects.
+    If any terms in this list are redundant or serve the exact same purpose, indicate that in your response.
       - Machine Learning Techniques:
         - Large Language Models (LLMs)
         - Natural Language Processing (NLP)
@@ -598,6 +660,10 @@ skill_instructor_task:
         - Random Forests
         - Gradient Boosting
         - Deployment Frameworks
+        - Building neural networks with PyTorch
+        - Building neural networks with TensorFlow
+        - Building neural networks with Keras
+        - Building neural networks with Scikit-learn
     """}
   expected_output: >
     A detailed learning / developmentguide for each skill in the research list, formatted as markdown.
@@ -705,7 +771,7 @@ skill_instructor_task:
         - Large Language Models (LLMs)
         - Natural Language Processing (NLP)
         - Deep Learning Neural Networks
-        - Fine-Tuning Neural Network Parameters
+        - Fine-Tuning Neural Network Hyperparameters
         - Transfer Learning
         - Model Training
         - Model Evaluation

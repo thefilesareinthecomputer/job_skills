@@ -1,0 +1,17 @@
+=== HOWDOI TOOL INTERACTION ===
+
+Timestamp: 20250406_121213
+
+=== INPUT ===
+Query: python convert string to datetime
+
+=== OUTPUT ===
+# Stack Overflow Solution
+
+Query: 'python convert string to datetime'
+
+## Solution:
+
+>>> from datetime import datetime
+>>> datetime.strptime('Jun 1 2005  1:33PM', '%b %d %Y %I:%M%p')
+datetime.datetime(2005, 6, 1, 13, 33)

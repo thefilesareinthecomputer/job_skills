@@ -1,0 +1,18 @@
+=== HOWDOI TOOL INTERACTION ===
+
+Timestamp: 20250406_114007
+
+=== INPUT ===
+Query: python tensorflow image classification
+
+=== OUTPUT ===
+# Stack Overflow Solution
+
+Query: 'python tensorflow image classification'
+
+## Solution:
+
+you should use the same preprocessing method  that was used to train your model. If you used tf.keras preprocessing then you should use tf.keras.preprocessing.image.load_img. If you used numpy then your inference script should also use numpy preprocessing.
+
+
+lets suppose while training you are using the flag "interpolation=lanczos" in your ImageDataGenerator or image_dataset_from_directory then while inference you should use the same flag i.e " interpolation=lanczos" in tf.keras.preprocessinh.image.load_img . when you don't mention the interpolation while training, the default interpolation method is used.

@@ -1,0 +1,32 @@
+=== HOWDOI TOOL INTERACTION ===
+
+Timestamp: 20250406_121249
+
+=== INPUT ===
+Query: python tensorflow neural network example
+
+=== OUTPUT ===
+# Stack Overflow Solution
+
+Query: 'python tensorflow neural network example'
+
+## Solution:
+
+import tensorflow as tf
+from tensorflow import keras
+import numpy as np 
+import matplotlib.pyplot as plt 
+import pandas as pd 
+from sklearn.model_selection import train_test_split
+from sklearn.linear_model import LinearRegression
+import pickle
+
+column_names = ['Reynolds Number', 'Blockage Ratio', 'Prandtl Number', 'Nusselt Number', 'Drag Coefficient']        
+dataset = pd.read_csv('WW.csv', names=column_names, skipinitialspace=True)      
+train_dataset = dataset.sample(frac=0.9,random_state=0)
+test_dataset = dataset.drop(train_dataset.index)    
+train_labels = train_dataset.iloc[:, 3:].values
+test_labels = test_dataset.iloc[:, 3:].values   
+
+print(train_dataset)
+print(test_dataset)

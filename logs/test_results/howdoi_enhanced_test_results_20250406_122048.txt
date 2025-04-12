@@ -1,0 +1,331 @@
+HOWDOI TOOL ENHANCED TEST RESULTS
+================================================================================
+
+Overall Success Rate: 100.0% (30/30)
+Queries Returning Code: 6.7% (2/30)
+High Quality Responses: 0.0% (0/30)
+
+DETAILED RESULTS BY CATEGORY:
+
+Category: Basic Programming
+--------------------------------------------------------------------------------
+Query: 'howdoi sort list' - SUCCESS
+Code Blocks: 2, Quality: 1.5/10, Length: 155 chars
+Response Preview: # Stack Overflow Solution
+
+Query: 'sort list'
+
+## Solution:
+
+>>> lis = [1,-5,10,6,3,-4,-9]
+>>> sorted(lis, key=abs, reverse=True)
+[10, -9, 6, -5, -4, 3, 1]...
+
+Query: 'howdoi sort list in python' - SUCCESS
+Code Blocks: 2, Quality: 1.5/10, Length: 165 chars
+Response Preview: # Stack Overflow Solution
+
+Query: 'sort list in python'
+
+## Solution:
+
+>>> lis = [1,-5,10,6,3,-4,-9]
+>>> sorted(lis, key=abs, reverse=True)
+[10, -9, 6, -5, -4, 3, 1]...
+
+Query: 'howdoi sort list in javascript' - SUCCESS
+Code Blocks: 0, Quality: 0.0/10, Length: 165 chars
+Response Preview: # Stack Overflow Solution
+
+Query: 'sort list in javascript'
+
+## Solution:
+
+ERROR: [91mSorry, couldn't find any help with that topic (use --explain to learn why)[0m...
+
+Query: 'howdoi read file' - SUCCESS
+Code Blocks: 0, Quality: 0.0/10, Length: 151 chars
+Response Preview: # Stack Overflow Solution
+
+Query: 'read file'
+
+## Solution:
+
+ERROR: [91mSorry, couldn't find any help with that topic (use --explain to learn why)[0m...
+
+Query: 'howdoi open file' - SUCCESS
+Code Blocks: 0, Quality: 0.0/10, Length: 151 chars
+Response Preview: # Stack Overflow Solution
+
+Query: 'open file'
+
+## Solution:
+
+ERROR: [91mSorry, couldn't find any help with that topic (use --explain to learn why)[0m...
+
+Query: 'howdoi open file in python' - SUCCESS
+Code Blocks: 0, Quality: 0.0/10, Length: 161 chars
+Response Preview: # Stack Overflow Solution
+
+Query: 'open file in python'
+
+## Solution:
+
+ERROR: [91mSorry, couldn't find any help with that topic (use --explain to learn why)[0m...
+
+Query: 'howdoi write to file' - SUCCESS
+Code Blocks: 0, Quality: 0.0/10, Length: 155 chars
+Response Preview: # Stack Overflow Solution
+
+Query: 'write to file'
+
+## Solution:
+
+ERROR: [91mSorry, couldn't find any help with that topic (use --explain to learn why)[0m...
+
+Query: 'howdoi loop over list' - SUCCESS
+Code Blocks: 0, Quality: 0.0/10, Length: 156 chars
+Response Preview: # Stack Overflow Solution
+
+Query: 'loop over list'
+
+## Solution:
+
+ERROR: [91mSorry, couldn't find any help with that topic (use --explain to learn why)[0m...
+
+Query: 'howdoi create dictionary' - SUCCESS
+Code Blocks: 0, Quality: 0.0/10, Length: 159 chars
+Response Preview: # Stack Overflow Solution
+
+Query: 'create dictionary'
+
+## Solution:
+
+ERROR: [91mSorry, couldn't find any help with that topic (use --explain to learn why)[0m...
+
+Query: 'howdoi create dictionary in python' - SUCCESS
+Code Blocks: 0, Quality: 0.0/10, Length: 169 chars
+Response Preview: # Stack Overflow Solution
+
+Query: 'create dictionary in python'
+
+## Solution:
+
+ERROR: [91mSorry, couldn't find any help with that topic (use --explain to learn why)[0m...
+
+Query: 'howdoi create dictionary in javascript' - SUCCESS
+Code Blocks: 0, Quality: 0.0/10, Length: 173 chars
+Response Preview: # Stack Overflow Solution
+
+Query: 'create dictionary in javascript'
+
+## Solution:
+
+ERROR: [91mSorry, couldn't find any help with that topic (use --explain to learn why)[0m...
+
+Query: 'howdoi create list' - SUCCESS
+Code Blocks: 0, Quality: 0.0/10, Length: 153 chars
+Response Preview: # Stack Overflow Solution
+
+Query: 'create list'
+
+## Solution:
+
+ERROR: [91mSorry, couldn't find any help with that topic (use --explain to learn why)[0m...
+
+Query: 'howdoi create list in python' - SUCCESS
+Code Blocks: 0, Quality: 0.0/10, Length: 163 chars
+Response Preview: # Stack Overflow Solution
+
+Query: 'create list in python'
+
+## Solution:
+
+ERROR: [91mSorry, couldn't find any help with that topic (use --explain to learn why)[0m...
+
+Query: 'howdoi create list in javascript' - SUCCESS
+Code Blocks: 0, Quality: 0.0/10, Length: 167 chars
+Response Preview: # Stack Overflow Solution
+
+Query: 'create list in javascript'
+
+## Solution:
+
+ERROR: [91mSorry, couldn't find any help with that topic (use --explain to learn why)[0m...
+
+Query: 'howdoi sort dictionary by value' - SUCCESS
+Code Blocks: 0, Quality: 0.0/10, Length: 166 chars
+Response Preview: # Stack Overflow Solution
+
+Query: 'sort dictionary by value'
+
+## Solution:
+
+ERROR: [91mSorry, couldn't find any help with that topic (use --explain to learn why)[0m...
+
+Query: 'howdoi check if key in dictionary' - SUCCESS
+Code Blocks: 0, Quality: 0.0/10, Length: 168 chars
+Response Preview: # Stack Overflow Solution
+
+Query: 'check if key in dictionary'
+
+## Solution:
+
+ERROR: [91mSorry, couldn't find any help with that topic (use --explain to learn why)[0m...
+
+Query: 'howdoi convert string to datetime' - SUCCESS
+Code Blocks: 0, Quality: 0.0/10, Length: 168 chars
+Response Preview: # Stack Overflow Solution
+
+Query: 'convert string to datetime'
+
+## Solution:
+
+ERROR: [91mSorry, couldn't find any help with that topic (use --explain to learn why)[0m...
+
+
+Category: Data Structures
+--------------------------------------------------------------------------------
+Query: 'howdoi implement queue' - SUCCESS
+Code Blocks: 0, Quality: 0.0/10, Length: 157 chars
+Response Preview: # Stack Overflow Solution
+
+Query: 'implement queue'
+
+## Solution:
+
+ERROR: [91mSorry, couldn't find any help with that topic (use --explain to learn why)[0m...
+
+Query: 'howdoi implement stack' - SUCCESS
+Code Blocks: 0, Quality: 0.0/10, Length: 157 chars
+Response Preview: # Stack Overflow Solution
+
+Query: 'implement stack'
+
+## Solution:
+
+ERROR: [91mSorry, couldn't find any help with that topic (use --explain to learn why)[0m...
+
+Query: 'howdoi implement linked list' - SUCCESS
+Code Blocks: 0, Quality: 0.0/10, Length: 163 chars
+Response Preview: # Stack Overflow Solution
+
+Query: 'implement linked list'
+
+## Solution:
+
+ERROR: [91mSorry, couldn't find any help with that topic (use --explain to learn why)[0m...
+
+Query: 'howdoi remove duplicates from list' - SUCCESS
+Code Blocks: 0, Quality: 0.0/10, Length: 169 chars
+Response Preview: # Stack Overflow Solution
+
+Query: 'remove duplicates from list'
+
+## Solution:
+
+ERROR: [91mSorry, couldn't find any help with that topic (use --explain to learn why)[0m...
+
+
+Category: Data Science
+--------------------------------------------------------------------------------
+Query: 'howdoi pandas read csv' - SUCCESS
+Code Blocks: 0, Quality: 0.0/10, Length: 157 chars
+Response Preview: # Stack Overflow Solution
+
+Query: 'pandas read csv'
+
+## Solution:
+
+ERROR: [91mSorry, couldn't find any help with that topic (use --explain to learn why)[0m...
+
+Query: 'howdoi pandas filter dataframe' - SUCCESS
+Code Blocks: 0, Quality: 0.0/10, Length: 165 chars
+Response Preview: # Stack Overflow Solution
+
+Query: 'pandas filter dataframe'
+
+## Solution:
+
+ERROR: [91mSorry, couldn't find any help with that topic (use --explain to learn why)[0m...
+
+Query: 'howdoi matplotlib plot bar chart' - SUCCESS
+Code Blocks: 0, Quality: 0.0/10, Length: 167 chars
+Response Preview: # Stack Overflow Solution
+
+Query: 'matplotlib plot bar chart'
+
+## Solution:
+
+ERROR: [91mSorry, couldn't find any help with that topic (use --explain to learn why)[0m...
+
+
+Category: Machine Learning
+--------------------------------------------------------------------------------
+Query: 'howdoi scikit-learn classification example' - SUCCESS
+Code Blocks: 0, Quality: 0.0/10, Length: 177 chars
+Response Preview: # Stack Overflow Solution
+
+Query: 'scikit-learn classification example'
+
+## Solution:
+
+ERROR: [91mSorry, couldn't find any help with that topic (use --explain to learn why)[0m...
+
+Query: 'howdoi scikit-learn regression example' - SUCCESS
+Code Blocks: 0, Quality: 0.0/10, Length: 173 chars
+Response Preview: # Stack Overflow Solution
+
+Query: 'scikit-learn regression example'
+
+## Solution:
+
+ERROR: [91mSorry, couldn't find any help with that topic (use --explain to learn why)[0m...
+
+
+Category: Web Development
+--------------------------------------------------------------------------------
+Query: 'howdoi flask hello world' - SUCCESS
+Code Blocks: 0, Quality: 0.0/10, Length: 159 chars
+Response Preview: # Stack Overflow Solution
+
+Query: 'flask hello world'
+
+## Solution:
+
+ERROR: [91mSorry, couldn't find any help with that topic (use --explain to learn why)[0m...
+
+Query: 'howdoi requests post json' - SUCCESS
+Code Blocks: 0, Quality: 0.0/10, Length: 160 chars
+Response Preview: # Stack Overflow Solution
+
+Query: 'requests post json'
+
+## Solution:
+
+ERROR: [91mSorry, couldn't find any help with that topic (use --explain to learn why)[0m...
+
+
+Category: Query Format Variations
+--------------------------------------------------------------------------------
+Query: 'howdoi python pandas read csv' - SUCCESS
+Code Blocks: 0, Quality: 0.0/10, Length: 164 chars
+Response Preview: # Stack Overflow Solution
+
+Query: 'python pandas read csv'
+
+## Solution:
+
+ERROR: [91mSorry, couldn't find any help with that topic (use --explain to learn why)[0m...
+
+Query: 'howdoi how do I read a file in python' - SUCCESS
+Code Blocks: 0, Quality: 0.0/10, Length: 118 chars
+Response Preview: # Stack Overflow Solution
+
+Query: 'how do I read a file in python'
+
+## Solution:
+
+with open('x.py') as f: s = f.read()...
+
+

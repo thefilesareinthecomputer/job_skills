@@ -1,0 +1,31 @@
+=== HOWDOI TOOL INTERACTION ===
+
+Timestamp: 20250406_114006
+
+=== INPUT ===
+Query: python keras lstm example
+
+=== OUTPUT ===
+# Stack Overflow Solution
+
+Query: 'python keras lstm example'
+
+## Solution:
+
+from keras import Sequential
+from keras.layers import LSTM, Dense
+
+model = Sequential()
+model.add(LSTM(60, input_shape=(1, 6),
+               activation='softmax'))
+model.add(Dense(2))
+
+# write out model architecture
+model.summary()
+
+# Graphical plot
+from IPython.display import SVG
+from keras.utils import model_to_dot
+
+iv1_dot = model_to_dot(model, show_shapes=True, show_layer_names=True, dpi=60)
+SVG(iv1_dot.create(prog=['dot'], format='svg'))

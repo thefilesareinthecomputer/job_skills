@@ -1,0 +1,15 @@
+=== HOWDOI TOOL INTERACTION ===
+
+Timestamp: 20250406_123421
+
+=== INPUT ===
+Query: create dictionary
+
+=== OUTPUT ===
+# Stack Overflow Solution
+
+Query: 'create dictionary'
+
+## Solution:
+
+ERROR: [91mSorry, couldn't find any help with that topic (use --explain to learn why)[0m

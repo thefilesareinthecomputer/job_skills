@@ -1,6 +1,6 @@
 === HOWDOI TOOL INTERACTION ===
 
-Timestamp: 20250406_022414
+Timestamp: 20250406_121210
 
 === INPUT ===
 Query: python sort dictionary by value
@@ -12,21 +12,6 @@ Query: 'python sort dictionary by value'
 
 ## Solution:
 
-★  Answer from https://stackoverflow.com/questions/613183/how-do-i-sort-a-dictionary-by-value ★
 >>> x = {1: 2, 3: 4, 4: 3, 2: 1, 0: 0}
 >>> {k: v for k, v in sorted(x.items(), key=lambda item: item[1])}
 {0: 0, 2: 1, 1: 2, 4: 3, 3: 4}
-
-================================================================================
-
-★  Answer from https://stackoverflow.com/questions/9919342/sorting-a-dictionary-by-value-then-key ★
->>> [v[0] for v in sorted(d.iteritems(), key=lambda(k, v): (-v, k))]
-['peach', 'banana', 'beetroot', 'almond', 'apple']
-
-================================================================================
-
-★  Answer from https://stackoverflow.com/questions/15371691/how-to-sort-a-dictionary-by-value-desc-then-by-key-asc ★
-In [1]: d = {'banana': 3, 'orange': 5, 'apple': 5}
-
-In [2]: sorted(d.items(), key=lambda x: (-x[1], x[0]))
-Out[2]: [('apple', 5), ('orange', 5), ('banana', 3)]

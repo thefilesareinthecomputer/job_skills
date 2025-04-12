@@ -1,0 +1,79 @@
+=== HOWDOI TOOL INTERACTION ===
+
+Timestamp: 20250406_113932
+
+=== INPUT ===
+Query: python implement linked list
+
+=== OUTPUT ===
+# Stack Overflow Solution
+
+Query: 'python implement linked list'
+
+## Solution:
+
+class LinkedList:
+    class Node:
+        def __init__(self, value, next=None):
+            self.value = value
+            self.next = next
+    
+        def get(self, index):
+            if index >= 0:
+                for _ in range(index):
+                    self = self.next
+                    if not self:
+                        break
+                return self
+    
+    def __init__(self, *values):
+        self._head = None
+        for value in reversed(values):
+            self.push(value)
+
+    def isempty(self):
+        return not self._head
+    
+    def push(self, value):
+        self._head = self.Node(value, self._head)
+
+    def pop(self):
+        if not self.isempty():
+            value = self._head.value
+            self._head = self._head.next
+            return value
+
+    def insert(self, index, value):
+        if index == 0:
+            return self.push(value)
+        prev = self._head.get(index - 1)
+        if prev:
+            prev.next = self.Node(value, prev.next)
+        
+    def delete(self, index):
+        if index == 0:
+            return self.pop()
+        prev = self._head.get(index - 1)
+        if prev and prev.next:
+            value = prev.next.value
+            prev.next = prev.next.next
+            return value
+        
+    def __iter__(self):
+        node = self._head
+        while node:
+            yield node.value  # don't expose nodes; only values
+            node = node.next
+
+
+lst = LinkedList(10, 20, 30, 40)
+print(lst.pop())       # 10
+print(*lst)            # 20 30 40
+lst.insert(1, 10)
+print(*lst)            # 20 10 30 40
+lst.insert(4, 50)
+print(*lst)            # 20 10 30 40 50
+lst.delete(4)
+print(*lst)            # 20 10 30 40
+lst.delete(0)
+print(*lst)            # 10 30 40

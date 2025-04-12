@@ -1,0 +1,15 @@
+=== HOWDOI TOOL INTERACTION ===
+
+Timestamp: 20250406_133524
+
+=== INPUT ===
+Query: sql select distinct rows example
+
+=== OUTPUT ===
+# Stack Overflow Solution
+
+Query: 'sql select distinct rows example'
+
+## Solution:
+
+ERROR: [91mSorry, couldn't find any help with that topic (use --explain to learn why)[0m

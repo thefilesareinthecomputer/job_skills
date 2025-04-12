@@ -1,0 +1,17 @@
+=== HOWDOI TOOL INTERACTION ===
+
+Timestamp: 20250406_120552
+
+=== INPUT ===
+Query: write to file in python
+
+=== OUTPUT ===
+# Stack Overflow Solution
+
+Query: 'write to file in python'
+
+## Solution:
+
+with open("output.txt", "a") as f:
+    for key in atts:
+        f.write(key)

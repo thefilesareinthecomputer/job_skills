@@ -1,0 +1,16 @@
+=== HOWDOI TOOL INTERACTION ===
+
+Timestamp: 20250406_121317
+
+=== INPUT ===
+Query: python setup logging
+
+=== OUTPUT ===
+# Stack Overflow Solution
+
+Query: 'python setup logging'
+
+## Solution:
+
+import logging
+  package_logger = logging.getLogger(__name__)

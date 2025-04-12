@@ -1,0 +1,28 @@
+=== HOWDOI TOOL INTERACTION ===
+
+Timestamp: 20250406_133527
+
+=== INPUT ===
+Query: sql select example
+
+=== OUTPUT ===
+# Stack Overflow Solution
+
+Query: 'sql select example'
+
+## Solution:
+
+with t as
+(
+    select  dvd_name, book_name  , count(*) nb
+    from usr 
+    inner join book on usr_book_id  = book_id 
+    inner join dvd on dvd_id = usr_dvd_id
+    group by dvd_name, book_name 
+    having count(*) > 1
+)
+
+select  top 10 usr_smthg,  t.book_name,dvd_name
+from t
+inner join book b on b.book_name = t.book_name
+inner join usr on usr_book_id  = book_id

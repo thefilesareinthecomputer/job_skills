@@ -1,0 +1,32 @@
+=== SERPER TOOL INTERACTION ===
+
+Timestamp: 20250406_112720
+
+=== INPUT ===
+Query: artificial intelligence
+
+=== OUTPUT ===
+# Search Results for: 'artificial intelligence'
+
+## Top Results
+
+### 1. AI vs. Machine Learning: How Do They Differ? | Google Cloud
+**Link**: https://cloud.google.com/learn/artificial-intelligence-vs-machine-learning
+**Snippet**: Machine learning is a subset of artificial intelligence that automatically enables a machine or system to learn and improve from experience.
+
+### 2. Artificial Intelligence (AI) vs. Machine Learning | Columbia AI
+**Link**: https://ai.engineering.columbia.edu/ai-vs-machine-learning/
+**Snippet**: Artificial intelligence (AI) and machine learning are often used interchangeably, but machine learning is a subset of the broader category of AI.
+
+### 3. Artificial intelligence (AI) vs. machine learning (ML) - Microsoft Azure
+**Link**: https://azure.microsoft.com/en-us/resources/cloud-computing-dictionary/artificial-intelligence-vs-machine-learning
+**Snippet**: An “intelligent” computer uses AI to think like a human and perform tasks on its own. Machine learning is how a computer system develops its intelligence.
+
+## Related Searches
+
+- Artificial intelligence ai machine learning tutorial
+- Artificial intelligence ai machine learning examples
+- Artificial Intelligence and machine learning PDF
+- Is ChatGPT AI or machine learning
+- Artificial intelligence and machine learning examples
+

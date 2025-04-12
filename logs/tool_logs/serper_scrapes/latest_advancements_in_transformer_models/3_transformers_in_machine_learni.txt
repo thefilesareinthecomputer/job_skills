@@ -1,0 +1,9 @@
+=== SCRAPED CONTENT FROM: Transformers in Machine Learning: A Guide to the Game-Changing ... ===
+
+URL: https://www.udacity.com/blog/2025/01/transformers-in-machine-learning-a-guide-to-the-game-changing-model.html
+
+CONTENT:
+--------------------------------------------------------------------------------
+Failed to scrape content after 7 attempts. Last error: HTTP 403
+--------------------------------------------------------------------------------
+

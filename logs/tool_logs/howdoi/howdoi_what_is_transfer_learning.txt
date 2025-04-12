@@ -1,0 +1,15 @@
+=== HOWDOI TOOL INTERACTION ===
+
+Timestamp: 20250406_114040
+
+=== INPUT ===
+Query: what is transfer learning
+
+=== OUTPUT ===
+# Stack Overflow Solution
+
+Query: 'what is transfer learning'
+
+## Solution:
+
+ERROR: [91mSorry, couldn't find any help with that topic (use --explain to learn why)[0m

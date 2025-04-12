@@ -1,0 +1,24 @@
+=== HOWDOI TOOL INTERACTION ===
+
+Timestamp: 20250406_113944
+
+=== INPUT ===
+Query: python pandas group by
+
+=== OUTPUT ===
+# Stack Overflow Solution
+
+Query: 'python pandas group by'
+
+## Solution:
+
+df_gby = pd._testing.makeMixedDataFrame().groupby(["A", "B"])
+
+>>> type(df_gby)
+<pandas.core.groupby.generic.DataFrameGroupBy object at 0x0000017665493250>
+
+>>> type(df_gby.grouper)
+pandas.core.groupby.ops.BaseGrouper
+
+>>> df_gby.grouper.names
+['A', 'B']

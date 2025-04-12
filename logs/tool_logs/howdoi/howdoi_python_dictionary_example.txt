@@ -1,0 +1,15 @@
+=== HOWDOI TOOL INTERACTION ===
+
+Timestamp: 20250406_123507
+
+=== INPUT ===
+Query: python dictionary example
+
+=== OUTPUT ===
+# Stack Overflow Solution
+
+Query: 'python dictionary example'
+
+## Solution:
+
+ERROR: [91mSorry, couldn't find any help with that topic (use --explain to learn why)[0m

@@ -1,0 +1,16 @@
+=== HOWDOI TOOL INTERACTION ===
+
+Timestamp: 20250406_120028
+
+=== INPUT ===
+Query: create a file in python
+
+=== OUTPUT ===
+# Stack Overflow Solution
+
+Query: 'create a file in python'
+
+## Solution:
+
+with open("copy.txt", "w") as file:
+    file.write("Your text goes here")

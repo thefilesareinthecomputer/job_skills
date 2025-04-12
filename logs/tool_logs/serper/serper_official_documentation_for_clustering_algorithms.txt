@@ -1,0 +1,114 @@
+=== SERPER TOOL INTERACTION ===
+
+Timestamp: 20250406_134328
+
+=== INPUT ===
+Query: official documentation for clustering algorithms
+
+=== OUTPUT ===
+# Search Results for: 'official documentation for clustering algorithms'
+
+## Top Results
+
+### 1. 2.3. Clustering — scikit-learn 1.6.1 documentation
+**Link**: https://scikit-learn.org/stable/modules/clustering.html
+**Snippet**: Clustering of unlabeled data can be performed with the module sklearn.cluster. Each clustering algorithm comes in two variants.
+
+### 2. Clustering algorithms | Machine Learning - Google for Developers
+**Link**: https://developers.google.com/machine-learning/clustering/clustering-algorithms
+**Snippet**: Many clustering algorithms compute the similarity between all pairs of examples, which means their runtime increases as the square of the number of examples.
+
+### 3. Clustering Algorithms in Machine Learning: A Practical Guide
+**Link**: https://procogia.com/exploring-clustering-in-machine-learning/
+**Snippet**: Explore clustering in machine learning—group data, uncover patterns, and choose the right algorithm for your projects.
+
+### 4. Clustering - H2O.ai
+**Link**: https://h2o.ai/wiki/clustering/
+**Snippet**: Clustering is the act of organizing similar objects into groups within a machine learning algorithm. Assigning related objects into clusters is beneficial for ...
+
+### 5. Clustering Algorithms & Classification Techniques - Lucidworks
+**Link**: https://lucidworks.com/ai-powered-search/clustering-algorithm/
+**Snippet**: Clustering and classification are machine learning methods for finding the similarities – and differences – in a set of data or documents.
+
+*Detailed content from all results has been scraped and saved to: /Users/aw/Desktop/github_repositories/job_skills/logs/tool_logs/serper_scrapes/all_scrapes_official_documentation_for_clustering_algorithms.txt*
+
+## Extracted Content from Top Results
+
+### Content from Result 1: 2.3. Clustering — scikit-learn 1.6.1 documentation
+**Source**: https://scikit-learn.org/stable/modules/clustering.html
+**Content Length**: 10000 characters
+
+```
+2.3. Clustering # Clustering of unlabeled data can be performed with the module sklearn.cluster . Each clustering algorithm comes in two variants: a class, that implements the fit method to learn the clusters on train data, and a function, that, given train data, returns an array of integer labels corresponding to the different clusters. For the class, the labels over the training data can be found in the labels_ attribute. Input data One important thing to note is that the algorithms implemented in this module can take different kinds of matrix as input. All the methods accept standard data matrices of shape (n_samples, n_features) . These can be obtained from the classes in the sklearn.feature_extraction module. For AffinityPropagation , 
+
+[...content truncated...]
+
+eeding” Arthur, David, and Sergei Vassilvitskii, Proceedings of the eighteenth annual ACM-SIAM symposium on Discrete algorithms , Society for Industrial and Applied Mathematics (2007) 2.3.2.2. Mini Batch K-Means # The MiniBatchKMeans is a variant of the KMeans algorithm which uses mini-batches to reduce the computation time, while still attempting to optimise the same objective function. Mini-batches are subsets of the input data, randomly sampled in each training iteration. These mini-batches drastically reduce the amount of computation required to converge to a local solution. In contrast to other algorithms that reduce the convergence time of k-means, mini-batch k-means produces results that are generally only slightly worse than the sta
+```
+
+----------------------------------------
+
+### Content from Result 2: Clustering algorithms | Machine Learning - Google for Developers
+**Source**: https://developers.google.com/machine-learning/clustering/clustering-algorithms
+**Content Length**: 3072 characters
+
+```
+Home Products Machine Learning Advanced courses Clustering Send feedback Clustering algorithms Stay organized with collections Save and categorize content based on your preferences. Machine learning datasets can have millions of examples, but not all clustering algorithms scale efficiently. Many clustering algorithms compute the similarity between all pairs of examples, which means their runtime increases as the square of the number of examples \(n\), denoted as \(O(n^2)\) in complexity notation. \(O(n^2)\) algorithms are not practical for datasets with millions of examples. The k-means algorithm has a complexity of \(O(n)\), meaning that the algorithm scales linearly with \(n\). This algorithm will be the focus of this course. Types of clu
+
+[...content truncated...]
+
+fortable assuming a particular underlying distribution of the data, you should use a different algorithm. Figure 3: Example of distribution-based clustering. Hierarchical clustering Hierarchical clustering creates a tree of clusters. Hierarchical clustering, not surprisingly, is well suited to hierarchical data, such as taxonomies. See Comparison of 61 Sequenced Escherichia coli Genomes by Oksana Lukjancenko, Trudy Wassenaar & Dave Ussery for an example. Any number of clusters can be chosen by cutting the tree at the right level. Figure 4: Example of a hierarchical tree clustering animals. Key terms: k-means algorithm centroid Gaussian distributions Previous arrow_back What is clustering? Next Clustering workflow arrow_forward Send feedback
+```
+
+----------------------------------------
+
+### Content from Result 3: Clustering Algorithms in Machine Learning: A Practical Guide
+**Source**: https://procogia.com/exploring-clustering-in-machine-learning/
+**Content Length**: 10000 characters
+
+```
+Clustering Algorithms in Machine Learning: A Practical Guide Skip to content Capabilities Data Engineering Data Pipeline Development Data Warehousing Solutions Data Lake Solutions Data Quality & Integrity Management Compliance & Data Security Data Science Generative Artificial Intelligence Machine Learning / Modeling DataOps and MLOps AI Governance/Responsible AI Data Analysis Open Source Development Business intelligence & Dashboarding Bioinformatics Solutions Validated Environment Solutions Data Consultancy Data & Cloud Strategy Code Migrations Services Data Governance Data Architecture Featured Solutions SentimentIQ Read More InfoIQ Read More QueryIQ Read More Resources Case Studies Life Sciences Tech, Telecom, & Media CPG & Retail Finan
+
+[...content truncated...]
+
+for understanding diseases and developing treatments. This can lead to breakthroughs in personalized medicine, where treatments are tailored to the genetic profiles of individual patients. Clustering Algorithms Demystified: An Overview Let’s dive into some of the most popular clustering algorithms. Each has its own strengths and weaknesses, so understanding how they work is key to choosing the right tool for your data. K-means Clustering K-means is one of the simplest and most widely used clustering algorithms. It partitions data into K clusters, where K is a number you specify in advance. Each data point is assigned to the cluster with the nearest mean. Since K-means relies on Euclidean distance, it can only be used with numerical, not cat
+```
+
+----------------------------------------
+
+### Content from Result 4: Clustering - H2O.ai
+**Source**: https://h2o.ai/wiki/clustering/
+**Content Length**: 10000 characters
+
+```
+Clustering X Return to page Platform Generative AI Why H2O.ai End-to-end GenAI platform built for air-gapped, on-premises or cloud VPC deployments. Own every part of the stack--own your data and your prompts. Enterprise h2oGPTe Connect any LLM/embedding model, fully scalable w/K8s, includes guardrails, summarization, cost controls, and customization options. Open Source h2oGPT Customize and deploy open source AI models, create your own digital assistants and business GPTs. H2O Danube3 Open weight SLMs for on-device and offline applications. H2OVL Mississippi Open weight small vision-language models for OCR and Document AI. H2O Model Validation for LLMs Evaluation framework with automated testing, human calibration, bias detection, explainab
+
+[...content truncated...]
+
+and Biases Word2Vec WordPiece X XGBoost Wiki Topics -Select- H2O Wiki Algorithms Activation Function Confusion Matrix Convolutional Neural Networks Forward Propagation Generative Adversarial Network Gradient Descent Linear Regression Logistic Regression Machine Learning Algorithms Multilayer Perceptron Naive Bayes Neural Networking and Deep Learning RuleFit Stack Ensemble Word2Vec XGBoost Artificial Intelligence AI Engineer AI Ethics AI Governance AI Models AI Risk Management AI Winter AI in Cloud Computing Artificial General Intelligence Document AI Explainable AI NTrees Prediction Validation Sets BERT Attention Mechanism BERT Binary Classification Classify Token ([CLS]) Conversational Response Generation GLUE (General Language Understandi
+```
+
+----------------------------------------
+
+### Content from Result 5: Clustering Algorithms & Classification Techniques - Lucidworks
+**Source**: https://lucidworks.com/ai-powered-search/clustering-algorithm/
+**Content Length**: 7859 characters
+
+```
+Clustering Algorithms & Classification Techniques | Lucidworks Skip to Main Content Only 1 in 4 AI initiatives succeed. Be the exception with Lucidworks AI Orchestration Engine. See how it works → Close Message Toggle Mobile Menu Toggle Dropdown Platform Lucidworks Platform Overview Explore the robust offerings of the world’s most open search and discovery software platform Lucidworks Platform Pricing Lucidworks pricing is the industry benchmark for ease and value AI Hub Lucidworks-based AI solutions and Gen AI/LLM content and best practices Lucidworks Features and capabilities | Lucidworks Studios Product Discovery Improve search and browse experiences for customers and partners Searchandising Personalize and dynamically curate shopper exp
+
+[...content truncated...]
+
+ organizations 5 out of 10 50% of the top U.S. online retailers use Lucidworks Make Search A Superpower Lucidworks uses advanced search and deep learning to make data easily accessible, helping people find what they need and discover even more. Contact us today to learn how Lucidworks can create a best-in-class experience for your customers, employees, and support agents. Let's Connect 235 Montgomery St. Suite 500 San Francisco, CA 94104 Facebook LinkedIn Instagram Twitter YouTube Github © 2025 Lucidworks Legal Agreements Privacy Policy Company Press Careers Contact Lucidworks Platform Customers Partners Technical Support Blog Documentation Compliance and Security System Status let's connect © 2025 Lucidworks Legal Agreements Privacy Policy
+```
+
+----------------------------------------
+
+## Related Searches
+
+- Official documentation for clustering algorithms ai machine learning python
+- Official documentation for clustering algorithms ai machine learning example
+- Clustering algorithms in machine learning
+- K-means clustering
+- Types of clustering algorithms in machine learning
+

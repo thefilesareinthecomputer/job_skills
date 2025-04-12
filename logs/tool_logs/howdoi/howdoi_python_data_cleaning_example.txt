@@ -1,0 +1,16 @@
+=== HOWDOI TOOL INTERACTION ===
+
+Timestamp: 20250406_133520
+
+=== INPUT ===
+Query: python data cleaning example
+
+=== OUTPUT ===
+# Stack Overflow Solution
+
+Query: 'python data cleaning example'
+
+## Solution:
+
+import pandas as pd
+df = pd.read_csv('data.csv') # or whatever source

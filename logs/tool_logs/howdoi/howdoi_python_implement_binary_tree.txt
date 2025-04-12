@@ -1,0 +1,15 @@
+=== HOWDOI TOOL INTERACTION ===
+
+Timestamp: 20250406_113933
+
+=== INPUT ===
+Query: python implement binary tree
+
+=== OUTPUT ===
+# Stack Overflow Solution
+
+Query: 'python implement binary tree'
+
+## Solution:
+
+ERROR: [91mSorry, couldn't find any help with that topic (use --explain to learn why)[0m

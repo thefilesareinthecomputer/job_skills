@@ -1,0 +1,607 @@
+HOWDOI TOOL TEST RESULTS
+================================================================================
+
+Overall Success Rate: 100.0% (54/54)
+
+DETAILED RESULTS BY CATEGORY:
+
+Category: Basic Programming
+--------------------------------------------------------------------------------
+Query: 'python read file' - SUCCESS
+Code Blocks: 0, Length: 158 chars
+Response Preview: # Stack Overflow Solution
+
+Query: 'python read file'
+
+## Solution:
+
+ERROR: [91mSorry, couldn't find any help with that topic (use --explain to learn why)[0m...
+
+Query: 'python write to file' - SUCCESS
+Code Blocks: 0, Length: 162 chars
+Response Preview: # Stack Overflow Solution
+
+Query: 'python write to file'
+
+## Solution:
+
+ERROR: [91mSorry, couldn't find any help with that topic (use --explain to learn why)[0m...
+
+Query: 'python sort list' - SUCCESS
+Code Blocks: 0, Length: 162 chars
+Response Preview: # Stack Overflow Solution
+
+Query: 'python sort list'
+
+## Solution:
+
+>>> lis = [1,-5,10,6,3,-4,-9]
+>>> sorted(lis, key=abs, reverse=True)
+[10, -9, 6, -5, -4, 3, 1]...
+
+Query: 'python sort dictionary by value' - SUCCESS
+Code Blocks: 0, Length: 219 chars
+Response Preview: # Stack Overflow Solution
+
+Query: 'python sort dictionary by value'
+
+## Solution:
+
+>>> x = {1: 2, 3: 4, 4: 3, 2: 1, 0: 0}
+>>> {k: v for k, v in sorted(x.items(), key=lambda item: item[1])}
+{0: 0, 2: 1...
+
+Query: 'python remove duplicates from list' - SUCCESS
+Code Blocks: 0, Length: 220 chars
+Response Preview: # Stack Overflow Solution
+
+Query: 'python remove duplicates from list'
+
+## Solution:
+
+>>> t = [1, 2, 3, 1, 2, 3, 5, 6, 7, 8]
+>>> list(set(t))
+[1, 2, 3, 5, 6, 7, 8]
+>>> s = [1, 2, 3]
+>>> list(set(t) - ...
+
+Query: 'python check if key in dictionary' - SUCCESS
+Code Blocks: 0, Length: 216 chars
+Response Preview: # Stack Overflow Solution
+
+Query: 'python check if key in dictionary'
+
+## Solution:
+
+d = {"key1": 10, "key2": 23}
+
+if "key1" in d:
+    print("this will execute")
+
+if "nonexistent key" in d:
+    print(...
+
+Query: 'python convert string to datetime' - SUCCESS
+Code Blocks: 0, Length: 220 chars
+Response Preview: # Stack Overflow Solution
+
+Query: 'python convert string to datetime'
+
+## Solution:
+
+>>> from datetime import datetime
+>>> datetime.strptime('Jun 1 2005  1:33PM', '%b %d %Y %I:%M%p')
+datetime.datetime...
+
+Query: 'python regular expression match email' - SUCCESS
+Code Blocks: 0, Length: 144 chars
+Response Preview: # Stack Overflow Solution
+
+Query: 'python regular expression match email'
+
+## Solution:
+
+email = re.findall(r'[\w\.-]+@[\w\.-]+(\.[\w]+)+',line)...
+
+
+Category: Data Structures
+--------------------------------------------------------------------------------
+Query: 'python implement queue' - SUCCESS
+Code Blocks: 10, Length: 1173 chars
+Response Preview: # Stack Overflow Solution
+
+Query: 'python implement queue'
+
+## Solution:
+
+from collections import deque
+
+class Queue:
+    '''
+    Thread-safe, memory-efficient, maximally-sized queue supporting queuei...
+
+Query: 'python implement stack' - SUCCESS
+Code Blocks: 0, Length: 164 chars
+Response Preview: # Stack Overflow Solution
+
+Query: 'python implement stack'
+
+## Solution:
+
+ERROR: [91mSorry, couldn't find any help with that topic (use --explain to learn why)[0m...
+
+Query: 'python implement linked list' - SUCCESS
+Code Blocks: 0, Length: 170 chars
+Response Preview: # Stack Overflow Solution
+
+Query: 'python implement linked list'
+
+## Solution:
+
+ERROR: [91mSorry, couldn't find any help with that topic (use --explain to learn why)[0m...
+
+Query: 'python implement binary tree' - SUCCESS
+Code Blocks: 0, Length: 170 chars
+Response Preview: # Stack Overflow Solution
+
+Query: 'python implement binary tree'
+
+## Solution:
+
+ERROR: [91mSorry, couldn't find any help with that topic (use --explain to learn why)[0m...
+
+Query: 'python implement hash table' - SUCCESS
+Code Blocks: 0, Length: 169 chars
+Response Preview: # Stack Overflow Solution
+
+Query: 'python implement hash table'
+
+## Solution:
+
+ERROR: [91mSorry, couldn't find any help with that topic (use --explain to learn why)[0m...
+
+Query: 'python implement graph' - SUCCESS
+Code Blocks: 0, Length: 164 chars
+Response Preview: # Stack Overflow Solution
+
+Query: 'python implement graph'
+
+## Solution:
+
+ERROR: [91mSorry, couldn't find any help with that topic (use --explain to learn why)[0m...
+
+Query: 'python implement priority queue' - SUCCESS
+Code Blocks: 0, Length: 279 chars
+Response Preview: # Stack Overflow Solution
+
+Query: 'python implement priority queue'
+
+## Solution:
+
+224     def _put(self, item, heappush=heapq.heappush):
+   225         heappush(self.queue, item)
+   226 
+   227     d...
+
+
+Category: Data Science
+--------------------------------------------------------------------------------
+Query: 'python pandas read csv' - SUCCESS
+Code Blocks: 0, Length: 164 chars
+Response Preview: # Stack Overflow Solution
+
+Query: 'python pandas read csv'
+
+## Solution:
+
+ERROR: [91mSorry, couldn't find any help with that topic (use --explain to learn why)[0m...
+
+Query: 'python pandas filter dataframe' - SUCCESS
+Code Blocks: 0, Length: 155 chars
+Response Preview: # Stack Overflow Solution
+
+Query: 'python pandas filter dataframe'
+
+## Solution:
+
+query = ' & '.join(['{}>{}'.format(k, v) for k, v in limits_dic.items()])...
+
+Query: 'python pandas group by' - SUCCESS
+Code Blocks: 0, Length: 164 chars
+Response Preview: # Stack Overflow Solution
+
+Query: 'python pandas group by'
+
+## Solution:
+
+ERROR: [91mSorry, couldn't find any help with that topic (use --explain to learn why)[0m...
+
+Query: 'python pandas merge dataframes' - SUCCESS
+Code Blocks: 0, Length: 172 chars
+Response Preview: # Stack Overflow Solution
+
+Query: 'python pandas merge dataframes'
+
+## Solution:
+
+ERROR: [91mSorry, couldn't find any help with that topic (use --explain to learn why)[0m...
+
+Query: 'python matplotlib plot bar chart' - SUCCESS
+Code Blocks: 0, Length: 174 chars
+Response Preview: # Stack Overflow Solution
+
+Query: 'python matplotlib plot bar chart'
+
+## Solution:
+
+ERROR: [91mSorry, couldn't find any help with that topic (use --explain to learn why)[0m...
+
+Query: 'python seaborn heatmap' - SUCCESS
+Code Blocks: 0, Length: 164 chars
+Response Preview: # Stack Overflow Solution
+
+Query: 'python seaborn heatmap'
+
+## Solution:
+
+ERROR: [91mSorry, couldn't find any help with that topic (use --explain to learn why)[0m...
+
+Query: 'python numpy array operations' - SUCCESS
+Code Blocks: 0, Length: 171 chars
+Response Preview: # Stack Overflow Solution
+
+Query: 'python numpy array operations'
+
+## Solution:
+
+ERROR: [91mSorry, couldn't find any help with that topic (use --explain to learn why)[0m...
+
+
+Category: Machine Learning
+--------------------------------------------------------------------------------
+Query: 'python scikit-learn classification example' - SUCCESS
+Code Blocks: 0, Length: 126 chars
+Response Preview: # Stack Overflow Solution
+
+Query: 'python scikit-learn classification example'
+
+## Solution:
+
+scores = ['precision', 'recall']...
+
+Query: 'python scikit-learn regression example' - SUCCESS
+Code Blocks: 0, Length: 180 chars
+Response Preview: # Stack Overflow Solution
+
+Query: 'python scikit-learn regression example'
+
+## Solution:
+
+ERROR: [91mSorry, couldn't find any help with that topic (use --explain to learn why)[0m...
+
+Query: 'python scikit-learn clustering example' - SUCCESS
+Code Blocks: 0, Length: 180 chars
+Response Preview: # Stack Overflow Solution
+
+Query: 'python scikit-learn clustering example'
+
+## Solution:
+
+ERROR: [91mSorry, couldn't find any help with that topic (use --explain to learn why)[0m...
+
+Query: 'python scikit-learn model evaluation' - SUCCESS
+Code Blocks: 0, Length: 178 chars
+Response Preview: # Stack Overflow Solution
+
+Query: 'python scikit-learn model evaluation'
+
+## Solution:
+
+ERROR: [91mSorry, couldn't find any help with that topic (use --explain to learn why)[0m...
+
+Query: 'python scikit-learn cross validation' - SUCCESS
+Code Blocks: 0, Length: 178 chars
+Response Preview: # Stack Overflow Solution
+
+Query: 'python scikit-learn cross validation'
+
+## Solution:
+
+ERROR: [91mSorry, couldn't find any help with that topic (use --explain to learn why)[0m...
+
+Query: 'python scikit-learn hyperparameter tuning' - SUCCESS
+Code Blocks: 0, Length: 183 chars
+Response Preview: # Stack Overflow Solution
+
+Query: 'python scikit-learn hyperparameter tuning'
+
+## Solution:
+
+ERROR: [91mSorry, couldn't find any help with that topic (use --explain to learn why)[0m...
+
+
+Category: Deep Learning
+--------------------------------------------------------------------------------
+Query: 'python tensorflow neural network example' - SUCCESS
+Code Blocks: 0, Length: 782 chars
+Response Preview: # Stack Overflow Solution
+
+Query: 'python tensorflow neural network example'
+
+## Solution:
+
+import tensorflow as tf
+from tensorflow import keras
+import numpy as np 
+import matplotlib.pyplot as plt 
+im...
+
+Query: 'python pytorch neural network example' - SUCCESS
+Code Blocks: 2, Length: 497 chars
+Response Preview: # Stack Overflow Solution
+
+Query: 'python pytorch neural network example'
+
+## Solution:
+
+from torch import nn
+import torch.nn.functional as F
+
+def network(nn.Module):
+    def __init__(self, M):
+      ...
+
+Query: 'python keras lstm example' - SUCCESS
+Code Blocks: 0, Length: 167 chars
+Response Preview: # Stack Overflow Solution
+
+Query: 'python keras lstm example'
+
+## Solution:
+
+ERROR: [91mSorry, couldn't find any help with that topic (use --explain to learn why)[0m...
+
+Query: 'python tensorflow image classification' - SUCCESS
+Code Blocks: 0, Length: 180 chars
+Response Preview: # Stack Overflow Solution
+
+Query: 'python tensorflow image classification'
+
+## Solution:
+
+ERROR: [91mSorry, couldn't find any help with that topic (use --explain to learn why)[0m...
+
+Query: 'python pytorch transfer learning' - SUCCESS
+Code Blocks: 0, Length: 729 chars
+Response Preview: # Stack Overflow Solution
+
+Query: 'python pytorch transfer learning'
+
+## Solution:
+
+In the first code snippet, you are downloading a model from TorchVision (with random weights), and then loading your...
+
+Query: 'python keras text classification' - SUCCESS
+Code Blocks: 0, Length: 174 chars
+Response Preview: # Stack Overflow Solution
+
+Query: 'python keras text classification'
+
+## Solution:
+
+ERROR: [91mSorry, couldn't find any help with that topic (use --explain to learn why)[0m...
+
+
+Category: Web Development
+--------------------------------------------------------------------------------
+Query: 'python flask hello world' - SUCCESS
+Code Blocks: 0, Length: 85 chars
+Response Preview: # Stack Overflow Solution
+
+Query: 'python flask hello world'
+
+## Solution:
+
+app.run()...
+
+Query: 'python django create model' - SUCCESS
+Code Blocks: 0, Length: 168 chars
+Response Preview: # Stack Overflow Solution
+
+Query: 'python django create model'
+
+## Solution:
+
+ERROR: [91mSorry, couldn't find any help with that topic (use --explain to learn why)[0m...
+
+Query: 'python fastapi endpoint' - SUCCESS
+Code Blocks: 0, Length: 165 chars
+Response Preview: # Stack Overflow Solution
+
+Query: 'python fastapi endpoint'
+
+## Solution:
+
+ERROR: [91mSorry, couldn't find any help with that topic (use --explain to learn why)[0m...
+
+Query: 'python requests post json' - SUCCESS
+Code Blocks: 0, Length: 167 chars
+Response Preview: # Stack Overflow Solution
+
+Query: 'python requests post json'
+
+## Solution:
+
+ERROR: [91mSorry, couldn't find any help with that topic (use --explain to learn why)[0m...
+
+Query: 'python beautiful soup scrape table' - SUCCESS
+Code Blocks: 0, Length: 176 chars
+Response Preview: # Stack Overflow Solution
+
+Query: 'python beautiful soup scrape table'
+
+## Solution:
+
+ERROR: [91mSorry, couldn't find any help with that topic (use --explain to learn why)[0m...
+
+
+Category: DevOps & Deployment
+--------------------------------------------------------------------------------
+Query: 'python docker example' - SUCCESS
+Code Blocks: 0, Length: 211 chars
+Response Preview: # Stack Overflow Solution
+
+Query: 'python docker example'
+
+## Solution:
+
+docker run -it --rm --name my-first-python-script -v /c/Docker/Python:/usr/src/widget_app python:3 python /usr/src/widget_app/m...
+
+Query: 'python kubernetes deployment' - SUCCESS
+Code Blocks: 0, Length: 170 chars
+Response Preview: # Stack Overflow Solution
+
+Query: 'python kubernetes deployment'
+
+## Solution:
+
+ERROR: [91mSorry, couldn't find any help with that topic (use --explain to learn why)[0m...
+
+Query: 'python aws lambda function' - SUCCESS
+Code Blocks: 0, Length: 168 chars
+Response Preview: # Stack Overflow Solution
+
+Query: 'python aws lambda function'
+
+## Solution:
+
+ERROR: [91mSorry, couldn't find any help with that topic (use --explain to learn why)[0m...
+
+Query: 'python github actions workflow' - SUCCESS
+Code Blocks: 0, Length: 172 chars
+Response Preview: # Stack Overflow Solution
+
+Query: 'python github actions workflow'
+
+## Solution:
+
+ERROR: [91mSorry, couldn't find any help with that topic (use --explain to learn why)[0m...
+
+Query: 'python setup logging' - SUCCESS
+Code Blocks: 0, Length: 133 chars
+Response Preview: # Stack Overflow Solution
+
+Query: 'python setup logging'
+
+## Solution:
+
+import logging
+  package_logger = logging.getLogger(__name__)...
+
+
+Category: Complex Phrases
+--------------------------------------------------------------------------------
+Query: 'how to implement a neural network from scratch in python' - SUCCESS
+Code Blocks: 0, Length: 198 chars
+Response Preview: # Stack Overflow Solution
+
+Query: 'how to implement a neural network from scratch in python'
+
+## Solution:
+
+ERROR: [91mSorry, couldn't find any help with that topic (use --explain to learn why)[0m...
+
+Query: 'best practices for deploying machine learning models' - SUCCESS
+Code Blocks: 0, Length: 498 chars
+Response Preview: # Stack Overflow Solution
+
+Query: 'best practices for deploying machine learning models'
+
+## Solution:
+
+Not to sure what you're looking for here but Google Cloud Platform has some good storage, big da...
+
+Query: 'steps to build a recommendation system in python' - SUCCESS
+Code Blocks: 0, Length: 190 chars
+Response Preview: # Stack Overflow Solution
+
+Query: 'steps to build a recommendation system in python'
+
+## Solution:
+
+ERROR: [91mSorry, couldn't find any help with that topic (use --explain to learn why)[0m...
+
+Query: 'techniques for natural language processing in python' - SUCCESS
+Code Blocks: 0, Length: 1451 chars
+Response Preview: # Stack Overflow Solution
+
+Query: 'techniques for natural language processing in python'
+
+## Solution:
+
+If I understand you correctly you have a new issue (query) and you want to look up other similar...
+
+Query: 'how to optimize python code for performance' - SUCCESS
+Code Blocks: 0, Length: 185 chars
+Response Preview: # Stack Overflow Solution
+
+Query: 'how to optimize python code for performance'
+
+## Solution:
+
+ERROR: [91mSorry, couldn't find any help with that topic (use --explain to learn why)[0m...
+
+
+Category: Non-Programming Questions
+--------------------------------------------------------------------------------
+Query: 'what is machine learning' - SUCCESS
+Code Blocks: 0, Length: 166 chars
+Response Preview: # Stack Overflow Solution
+
+Query: 'what is machine learning'
+
+## Solution:
+
+ERROR: [91mSorry, couldn't find any help with that topic (use --explain to learn why)[0m...
+
+Query: 'difference between AI and ML' - SUCCESS
+Code Blocks: 0, Length: 446 chars
+Response Preview: # Stack Overflow Solution
+
+Query: 'difference between AI and ML'
+
+## Solution:
+
+The fundamental difference lies in their approaches. AI is a general term used for the field which is trying to mimic hu...
+
+Query: 'explain deep learning' - SUCCESS
+Code Blocks: 0, Length: 163 chars
+Response Preview: # Stack Overflow Solution
+
+Query: 'explain deep learning'
+
+## Solution:
+
+ERROR: [91mSorry, couldn't find any help with that topic (use --explain to learn why)[0m...
+
+Query: 'what is transfer learning' - SUCCESS
+Code Blocks: 0, Length: 167 chars
+Response Preview: # Stack Overflow Solution
+
+Query: 'what is transfer learning'
+
+## Solution:
+
+ERROR: [91mSorry, couldn't find any help with that topic (use --explain to learn why)[0m...
+
+Query: 'explain reinforcement learning' - SUCCESS
+Code Blocks: 0, Length: 172 chars
+Response Preview: # Stack Overflow Solution
+
+Query: 'explain reinforcement learning'
+
+## Solution:
+
+ERROR: [91mSorry, couldn't find any help with that topic (use --explain to learn why)[0m...
+
+

@@ -1,0 +1,24 @@
+=== WIKIPEDIA TOOL INTERACTION ===
+
+Timestamp: 20250406_133449
+
+=== INPUT ===
+Query: Structured Query Language (SQL)
+
+=== OUTPUT ===
+# Wikipedia: Data definition language
+
+In  the context of SQL, data definition or data description language (DDL) is a syntax for creating and modifying database objects such as tables, indices, and users. DDL statements are similar to a computer programming language for defining data structures, especially database schemas. Common examples of DDL statements include CREATE, ALTER, and DROP. If you see a .ddl file, that means the file contains a statement to create a table. Oracle SQL Developer contains the ability to export from an ERD generated with Data Modeler to either a .sql file or a .ddl file.
+
+
+
+For more information: https://en.wikipedia.org/wiki/Data_definition_language
+
+## Other Relevant Articles
+
+1. SQL
+2. Query language
+3. Data manipulation language
+4. SQL:2023
+
+

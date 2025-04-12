@@ -1,0 +1,15 @@
+=== HOWDOI TOOL INTERACTION ===
+
+Timestamp: 20250406_122907
+
+=== INPUT ===
+Query: sort list in javascript
+
+=== OUTPUT ===
+# Stack Overflow Solution
+
+Query: 'sort list in javascript'
+
+## Solution:
+
+ERROR: [91mSorry, couldn't find any help with that topic (use --explain to learn why)[0m

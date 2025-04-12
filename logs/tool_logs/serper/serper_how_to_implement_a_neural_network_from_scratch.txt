@@ -1,0 +1,74 @@
+=== SERPER TOOL INTERACTION ===
+
+Timestamp: 20250406_132817
+
+=== INPUT ===
+Query: how to implement a neural network from scratch
+
+=== OUTPUT ===
+# Search Results for: 'how to implement a neural network from scratch'
+
+## Top Results
+
+### 1. Learn to Build a Neural Network From Scratch — Yes, Really.
+**Link**: https://medium.com/@waadlingaadil/learn-to-build-a-neural-network-from-scratch-yes-really-cac4ca457efc
+**Snippet**: In this massive 76 minute tutorial, we're going to build a neural network from scratch and understand all the math along the way.
+
+### 2. Building a neural network FROM SCRATCH (no Tensorflow/Pytorch ...
+**Link**: https://www.youtube.com/watch?v=w8yWXqWQYmU
+**Snippet**: ... how to make a neural network ON scratch. 18:40 · Go to channel. But what is a neural network? | Deep learning chapter 1 ... AI [AlexNet]. Welch ...
+
+### 3. Constructing Neural Networks From Scratch: Part 1 | DigitalOcean
+**Link**: https://www.digitalocean.com/community/tutorials/constructing-neural-networks-from-scratch
+**Snippet**: We will implement some neural networks designed to solve a fairly simplistic task with the help of these neural nets built from scratch.
+
+*Detailed content from all results has been scraped and saved to: /Users/aw/Desktop/github_repositories/job_skills/logs/tool_logs/serper_scrapes/all_scrapes_how_to_implement_a_neural_network_from_scratch.txt*
+
+## Extracted Content from Top Results
+
+### Content from Result 1: Learn to Build a Neural Network From Scratch — Yes, Really.
+**Source**: https://medium.com/@waadlingaadil/learn-to-build-a-neural-network-from-scratch-yes-really-cac4ca457efc
+**Content Length**: 10000 characters
+
+```
+Learn to Build a Neural Network From Scratch — Yes, Really. Aadil Mallick · Follow 77 min read · Sep 18, 2024 -- 14 Listen Share What the notation for a neural network looks like In this massive 76 minute tutorial, we’re going to build a neural network from scratch and understand all the math along the way. I’ve made this guide free because it’s what my younger self would have wanted. This article is meant for all kinds of people. Whether you’re interested in machine learning yet never coded a day in your life, a seasoned expert in deep learning yet never got down to the nitty gritty, or even a parrot — ok, maybe not that one — today you’ll finally learn to build a neural network. Building a neural network from scratch is the one coding exe
+
+[...content truncated...]
+
+emely helpful): Learn about what vectors represent here Matrices are more complicated. They are 2-dimensional, and can have many rows and columns. Here is an example of a matrix: A matrix with 2 rows and 2 columns So let’s review terminology: When you think of a scalar, think of a single number. When you think of a vector, think of a list of numbers. When you think of a matrix, think of a table of numbers . Why do we care so much about matrices? Because matrix multiplication can turn a lot of number crunching into simple expressions. For example, what if I want to multiply a lot of numbers together, but I don’t one final sum — I want a new matrix as a result? An example of multiplying two matrices together Matrix multiplication works as fol
+```
+
+----------------------------------------
+
+### Content from Result 2: Building a neural network FROM SCRATCH (no Tensorflow/Pytorch ...
+**Source**: https://www.youtube.com/watch?v=w8yWXqWQYmU
+**Content Length**: 256 characters
+
+```
+Building a neural network FROM SCRATCH (no Tensorflow/Pytorch, just numpy & math) - YouTube About Press Copyright Contact us Creators Advertise Developers Terms Privacy Policy & Safety How YouTube works Test new features NFL Sunday Ticket © 2025 Google LLC
+```
+
+----------------------------------------
+
+### Content from Result 3: Constructing Neural Networks From Scratch: Part 1 | DigitalOcean
+**Source**: https://www.digitalocean.com/community/tutorials/constructing-neural-networks-from-scratch
+**Content Length**: 10000 characters
+
+```
+DigitalOcean vs. AWS Lightsail: Which Cloud Platform is Right for You? With the presence of popular deep learning frameworks such as TensorFlow, Keras, PyTorch, and other similar libraries, it has become much easier for a novice in the field to pick up the subject of neural networks at a faster pace. Although these frameworks provide you a path to solving the most complex computations within a few minutes, they donât require you to understand the true core concepts and intuition behind all the requirements. If you have the knowledge of how a specific function works, and how exactly you can make use of that function within your code block, you will solve most problems without too much difficulty. However, for anyone to truly appreciate the
+
+[...content truncated...]
+
+a specific number of epochs. Let us describe the inputs of the truth table and the expected output for the XOR gate. The readers can choose to work on different gates and experiment accordingly (Note that sometimes you not might get the desired results). Below is the code snippet for the input variables and expected outcome for the XOR gate. Let us combine the inputs together into a single array entity so that we have one total input array and one output array for the neural network to learn. This combining process can be done in a couple of ways. In the below code block, we are using a list to combine the two arrays and then converting the final list back into the numpy array format. In the next section, I have also mentioned another metho
+```
+
+----------------------------------------
+
+## Related Searches
+
+- How to implement a neural network from scratch ai machine learning python
+- How to implement a neural network from scratch ai machine learning example
+- building a neural network from scratch using python (part 1)
+- Neural Networks from scratch PDF
+- Neural network from scratch github
+

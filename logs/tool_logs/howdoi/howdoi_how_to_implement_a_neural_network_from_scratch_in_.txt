@@ -1,0 +1,15 @@
+=== HOWDOI TOOL INTERACTION ===
+
+Timestamp: 20250406_114026
+
+=== INPUT ===
+Query: how to implement a neural network from scratch in python
+
+=== OUTPUT ===
+# Stack Overflow Solution
+
+Query: 'how to implement a neural network from scratch in python'
+
+## Solution:
+
+range

@@ -1,0 +1,1 @@
+{"sort list in python": ">>> lis = [1,-5,10,6,3,-4,-9]\n>>> sorted(lis, key=abs, reverse=True)\n[10, -9, 6, -5, -4, 3, 1]"}

@@ -1,0 +1,17 @@
+=== HOWDOI TOOL INTERACTION ===
+
+Timestamp: 20250406_122902
+
+=== INPUT ===
+Query: sort list in python
+
+=== OUTPUT ===
+# Stack Overflow Solution
+
+Query: 'sort list in python'
+
+## Solution:
+
+>>> lis = [1,-5,10,6,3,-4,-9]
+>>> sorted(lis, key=abs, reverse=True)
+[10, -9, 6, -5, -4, 3, 1]

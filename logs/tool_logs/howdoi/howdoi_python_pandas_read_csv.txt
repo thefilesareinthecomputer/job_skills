@@ -1,0 +1,15 @@
+=== HOWDOI TOOL INTERACTION ===
+
+Timestamp: 20250406_113939
+
+=== INPUT ===
+Query: python pandas read csv
+
+=== OUTPUT ===
+# Stack Overflow Solution
+
+Query: 'python pandas read csv'
+
+## Solution:
+
+import pandas as pd SouthKoreaRoads_df = pd.read_csv('SouthKoreaRoads.csv')

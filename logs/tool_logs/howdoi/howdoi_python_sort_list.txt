@@ -1,0 +1,15 @@
+=== HOWDOI TOOL INTERACTION ===
+
+Timestamp: 20250406_123452
+
+=== INPUT ===
+Query: python sort list
+
+=== OUTPUT ===
+# Stack Overflow Solution
+
+Query: 'python sort list'
+
+## Solution:
+
+ERROR: [91mSorry, couldn't find any help with that topic (use --explain to learn why)[0m

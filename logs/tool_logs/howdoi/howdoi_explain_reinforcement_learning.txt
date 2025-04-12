@@ -1,0 +1,15 @@
+=== HOWDOI TOOL INTERACTION ===
+
+Timestamp: 20250406_114041
+
+=== INPUT ===
+Query: explain reinforcement learning
+
+=== OUTPUT ===
+# Stack Overflow Solution
+
+Query: 'explain reinforcement learning'
+
+## Solution:
+
+ERROR: [91mSorry, couldn't find any help with that topic (use --explain to learn why)[0m

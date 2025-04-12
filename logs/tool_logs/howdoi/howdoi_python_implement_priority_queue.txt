@@ -1,0 +1,19 @@
+=== HOWDOI TOOL INTERACTION ===
+
+Timestamp: 20250406_121226
+
+=== INPUT ===
+Query: python implement priority queue
+
+=== OUTPUT ===
+# Stack Overflow Solution
+
+Query: 'python implement priority queue'
+
+## Solution:
+
+224     def _put(self, item, heappush=heapq.heappush):
+   225         heappush(self.queue, item)
+   226 
+   227     def _get(self, heappop=heapq.heappop):
+   228         return heappop(self.queue)

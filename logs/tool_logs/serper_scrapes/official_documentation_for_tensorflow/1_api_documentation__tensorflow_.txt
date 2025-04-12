@@ -1,0 +1,9 @@
+=== SCRAPED CONTENT FROM: API Documentation | TensorFlow v2.16.1 ===
+
+URL: https://www.tensorflow.org/api_docs
+
+CONTENT:
+--------------------------------------------------------------------------------
+TensorFlow API TensorFlow v2.16.1 API Documentation Stay organized with collections Save and categorize content based on your preferences. TensorFlow has APIs available in several languages both for constructing and executing a TensorFlow graph. The Python API is at present the most complete and the easiest to use, but other language APIs may be easier to integrate into projects and may offer some performance advantages in graph execution. A word of caution: the APIs in languages other than Python are not yet covered by the API stability promises . Python JavaScript C++ Java We encourage the community to develop and maintain support for other languages with the approach recommended by the TensorFlow maintainers . For example, see the bindings for: C#: TensorFlowSharp and TensorFlow.NET , Haskell , Julia , MATLAB , R , Ruby , Rust , Scala , and Perl . We also provide the C++ API reference for TensorFlow Serving: TensorFlow Serving There are also some archived or unsupported language bindings: Go
+--------------------------------------------------------------------------------
+

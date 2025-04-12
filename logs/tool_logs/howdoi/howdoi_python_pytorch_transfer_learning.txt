@@ -1,0 +1,21 @@
+=== HOWDOI TOOL INTERACTION ===
+
+Timestamp: 20250406_121258
+
+=== INPUT ===
+Query: python pytorch transfer learning
+
+=== OUTPUT ===
+# Stack Overflow Solution
+
+Query: 'python pytorch transfer learning'
+
+## Solution:
+
+In the first code snippet, you are downloading a model from TorchVision (with random weights), and then loading your (locally stored) weights to it.
+
+
+In the second example you are loading a locally stored model (and its weights).
+
+
+The former will be slower since you need to connect to the server hosting the model and download it, as opposed to a local file, but it is more reproduceable not relying on your local file. Also, the time difference should be a one-off initialisation, and they should have the same time complexity (as by the point you are performing inference the model has already been loaded in both, and they are equivalent).

@@ -1,0 +1,32 @@
+=== SERPER TOOL INTERACTION ===
+
+Timestamp: 20250406_112717
+
+=== INPUT ===
+Query: PyTorch
+
+=== OUTPUT ===
+# Search Results for: 'PyTorch'
+
+## Top Results
+
+### 1. PyTorch - Meta AI
+**Link**: https://ai.meta.com/tools/pytorch/
+**Snippet**: PyTorch is an open source deep learning framework built to be flexible and modular for research, with the stability and support needed for production...
+
+### 2. Learning PyTorch with Examples
+**Link**: https://pytorch.org/tutorials/beginner/pytorch_with_examples.html
+**Snippet**: This tutorial introduces the fundamental concepts of PyTorch through self-contained examples. At its core, PyTorch provides two main features.
+
+### 3. PyTorch for Deep Learning & Machine Learning – Full Course
+**Link**: https://www.youtube.com/watch?v=V_xro1bcAuA
+**Snippet**: Learn PyTorch for deep learning in this comprehensive course for beginners. PyTorch is a machine learning framework written in Python.
+
+## Related Searches
+
+- scikit-learn
+- Pytorch ai machine learning tutorial
+- Pytorch ai machine learning github
+- Pytorch ai machine learning review
+- PyTorch vs TensorFlow
+

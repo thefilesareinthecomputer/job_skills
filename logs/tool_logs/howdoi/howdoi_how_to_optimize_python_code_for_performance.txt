@@ -1,0 +1,79 @@
+=== HOWDOI TOOL INTERACTION ===
+
+Timestamp: 20250406_114034
+
+=== INPUT ===
+Query: how to optimize python code for performance
+
+=== OUTPUT ===
+# Stack Overflow Solution
+
+Query: 'how to optimize python code for performance'
+
+## Solution:
+
+Regarding "Secondly: When writing a program from scratch in python, what are some good ways to greatly improve performance?"
+
+
+
+Remember the Jackson rules of optimization: 
+
+
+
+
+
+Rule 1: Don't do it.
+
+
+Rule 2 (for experts only): Don't do it yet.
+
+
+
+
+
+And the Knuth rule:
+
+
+
+
+
+"Premature optimization is the root of all evil."
+
+
+
+
+
+The more useful rules are in the [General Rules for Optimization](http://www.cs.cmu.edu/~jch/java/rules.html).
+
+
+
+
+
+
+Don't optimize as you go.  First get it right.  Then get it fast.  Optimizing a wrong program is still wrong.
+
+
+
+
+Remember the 80/20 rule.
+
+
+
+
+Always run "before" and "after" benchmarks.  Otherwise, you won't know if you've found the 80%.
+
+
+
+
+Use the right algorithms and data structures.  This rule should be first.  Nothing matters as much as algorithm and data structure.
+
+
+
+
+
+
+Bottom Line
+
+
+
+You can't prevent or avoid the "optimize this program" effort.  It's part of the job.  You have to plan for it and do it carefully, just like the design, code and test activities.

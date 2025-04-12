@@ -1,0 +1,15 @@
+=== HOWDOI TOOL INTERACTION ===
+
+Timestamp: 20250406_114053
+
+=== INPUT ===
+Query: python code to scrape website
+
+=== OUTPUT ===
+# Stack Overflow Solution
+
+Query: 'python code to scrape website'
+
+## Solution:
+
+ERROR: [91mSorry, couldn't find any help with that topic (use --explain to learn why)[0m

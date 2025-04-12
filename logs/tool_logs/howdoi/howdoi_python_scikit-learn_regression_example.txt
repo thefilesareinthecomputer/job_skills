@@ -1,0 +1,23 @@
+=== HOWDOI TOOL INTERACTION ===
+
+Timestamp: 20250406_113951
+
+=== INPUT ===
+Query: python scikit-learn regression example
+
+=== OUTPUT ===
+# Stack Overflow Solution
+
+Query: 'python scikit-learn regression example'
+
+## Solution:
+
+predictions = model1.predict(X)
+order = X[:,0].argsort()
+predictions = predictions[order]
+x = X[:,0][order]
+
+
+plt.plot(x,predictions)
+plt.scatter(X[:,0],y,color = 'red')
+plt.show()

@@ -1,0 +1,15 @@
+=== HOWDOI TOOL INTERACTION ===
+
+Timestamp: 20250406_113954
+
+=== INPUT ===
+Query: python scikit-learn model evaluation
+
+=== OUTPUT ===
+# Stack Overflow Solution
+
+Query: 'python scikit-learn model evaluation'
+
+## Solution:
+
+sklearn.metrics.precision_score(y_true, model.predict(test_x))

@@ -1,0 +1,100 @@
+=== HOWDOI TOOL INTERACTION ===
+
+Timestamp: 20250406_134202
+
+=== INPUT ===
+Query: howdoi make a simple classification algorithm in Python
+
+=== OUTPUT ===
+# Stack Overflow Solution
+
+Query: 'howdoi make a simple classification algorithm in Python'
+
+## Solution:
+
+You are indeed describing a classification problem, which can be solved with machine learning.
+
+
+
+In this problem, your features are the words in the description. You should use the [Bag Of Words](http://en.wikipedia.org/wiki/Bag-of-words_model) model - which basically says that the words and their number of occurrences for each word is what matters to the classification process.
+
+
+
+To solve your problem, here are the steps you should do:
+
+
+
+
+
+Create a feature extractor - that given a description of a restaurant, returns the "features" (under the Bag Of Words model explained above) of this restaurant (denoted as example in the literature).
+
+
+Manually label a set of examples, each will be labeled with the desired class (Chinese, Belgian, Junk food,...)
+
+
+Feed your labeled examples into a learning algorithm. It will generate a classifier. From personal experience, [SVM](http://en.wikipedia.org/wiki/Support_vector_machine) usually gives the best results, but there are other choices such as [Naive Bayes](http://en.wikipedia.org/wiki/Naive_Bayes_classifier), [Neural Networks](http://en.wikipedia.org/wiki/Artificial_neural_network) and [Decision Trees](http://en.wikipedia.org/wiki/Decision_tree_learning) (usually [C4.5](http://en.wikipedia.org/wiki/C4.5_algorithm) is used), each has its own advantage.
+
+
+When a new (unlabeled) example (restaurant) comes - extract the features and feed it to your classifier - it will tell you what it thinks it is (and usually - what is the probability the classifier is correct).
+
+
+
+
+
+
+
+
+
+Evaluation:
+
+Evaluation of your algorithm can be done with [cross-validation](http://en.wikipedia.org/wiki/Cross-validation_%28statistics%29), or seperating a test set out of your labeled examples that will be used only for evaluating how accurate the algorithm is.
+
+
+
+
+
+
+
+Optimizations:
+
+
+
+From personal experience - here are some optimizations I found helpful for the feature extraction:
+
+
+
+
+
+[Stemming](http://en.wikipedia.org/wiki/Stemming) and eliminating [stop words](http://en.wikipedia.org/wiki/Stop_words) usually helps a lot.
+
+
+Using [Bi-Grams](http://en.wikipedia.org/wiki/Bigram) tends to improve accuracy (though increases the feature space significantly).
+
+
+Some classifiers are prone to large feature space (SVM not included), there are some ways to overcome it, such as decreasing the dimensionality of your features. [PCA](http://en.wikipedia.org/wiki/Principal_component_analysis) is one thing that can help you with it. [Genethic Algorithms](http://en.wikipedia.org/wiki/Genetic_algorithm) are also (empirically) pretty good for subset selection.
+
+
+
+
+
+
+
+
+
+Libraries:
+
+
+
+Unfortunately, I am not fluent enough with python, but here are some libraries that might be helpful:
+
+
+
+
+
+[Lucene](http://lucene.apache.org/core/) might help you a lot with the text analysis, for example - stemming can be done with [EnglishAnalyzer](http://lucene.apache.org/core/old_versioned_docs/versions/3_1_0/api/all/org/apache/lucene/analysis/en/EnglishAnalyzer.html). There is a python version of lucene called [PyLucene](http://lucene.apache.org/pylucene/), which I believe might help you out.
+
+
+[Weka](http://www.cs.waikato.ac.nz/ml/weka/) is an open source library that implements a lot of useful things for Machine Learning - many classifiers and feature selectors included.
+
+
+[Libsvm](http://www.csie.ntu.edu.tw/~cjlin/libsvm/) is a library that implements the SVM algorithm.

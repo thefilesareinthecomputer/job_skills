@@ -1,0 +1,15 @@
+=== HOWDOI TOOL INTERACTION ===
+
+Timestamp: 20250406_122043
+
+=== INPUT ===
+Query: how do I read a file in python
+
+=== OUTPUT ===
+# Stack Overflow Solution
+
+Query: 'how do I read a file in python'
+
+## Solution:
+
+with open('x.py') as f: s = f.read()

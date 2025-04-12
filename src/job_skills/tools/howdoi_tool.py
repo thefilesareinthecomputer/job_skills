@@ -1,9 +1,10 @@
 from crewai.tools import BaseTool
-from typing import Type, Optional
+from typing import Type
 from pydantic import BaseModel, Field, PrivateAttr
 import subprocess
 import os
 import datetime
+import time
 from pathlib import Path
 from dotenv import load_dotenv
 load_dotenv()
@@ -64,7 +65,6 @@ class HowDoITool(BaseTool):
             if len(safe_query) > 50:
                 safe_query = safe_query[:50]
             
-            # Use the same format as Wikipedia tool (no timestamp in filename)
             log_file = self._log_dir / f"howdoi_{safe_query}.txt"
             
             with open(log_file, "w", encoding="utf-8") as f:
@@ -79,32 +79,23 @@ class HowDoITool(BaseTool):
             return log_file
         except Exception as e:
             print(f"Error writing HowDoI log file: {e}")
-            # Try writing to a different location as fallback
-            try:
-                fallback_file = Path.home() / f"howdoi_{safe_query}.txt"
-                with open(fallback_file, "w", encoding="utf-8") as f:
-                    f.write("=== HOWDOI TOOL INTERACTION ===\n\n")
-                    f.write(f"Timestamp: {timestamp}\n\n")
-                    f.write("=== INPUT ===\n")
-                    f.write(f"Query: {query}\n\n")
-                    f.write("=== OUTPUT ===\n")
-                    f.write(f"{response}\n")
-                print(f"Wrote HowDoI log to fallback location: {fallback_file}")
-                return fallback_file
-            except Exception as e2:
-                print(f"Failed to write HowDoI log to fallback location: {e2}")
-                return None
+            return None
 
     def _run(self, query: str, num_answers: int = 1) -> str:
         """Run the HowDoI tool."""
         timestamp = datetime.datetime.now().strftime("%Y%m%d_%H%M%S")
         
+        # Add a small delay to prevent rate limiting
+        time.sleep(1)
+        
         try:
             # Ensure num_answers is within valid range
             num_answers = max(1, min(5, num_answers))
             
-            # Build the command
-            cmd = ["howdoi", query, "-n", str(num_answers)]
+            # Build the command with the -n flag for multiple answers
+            cmd = ["howdoi", query]
+            if num_answers > 1:
+                cmd.extend(["-n", str(num_answers)])
             
             # Run the command
             result = subprocess.run(cmd, capture_output=True, text=True)
@@ -115,6 +106,12 @@ class HowDoITool(BaseTool):
                     response = "No answer found on Stack Overflow for this query."
             else:
                 response = f"Error running howdoi: {result.stderr}"
+            
+            # Print the raw response for debugging
+            print("\nRAW RESPONSE:")
+            print("-" * 40)
+            print(response)
+            print("-" * 40)
             
             # Format the response
             formatted_response = f"# Stack Overflow Solution\n\n"
@@ -129,5 +126,4 @@ class HowDoITool(BaseTool):
             
         except Exception as e:
             error_msg = f"Error using HowDoI: {str(e)}"
-            self._log_interaction(query, error_msg, timestamp)
             return error_msg 

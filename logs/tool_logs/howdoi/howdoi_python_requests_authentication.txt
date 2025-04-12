@@ -1,0 +1,19 @@
+=== HOWDOI TOOL INTERACTION ===
+
+Timestamp: 20250406_114057
+
+=== INPUT ===
+Query: python requests authentication
+
+=== OUTPUT ===
+# Stack Overflow Solution
+
+Query: 'python requests authentication'
+
+## Solution:
+
+session = requests.Session()
+session.auth = (user, password)
+
+auth = session.post('http://' + hostname)
+response = session.get('http://' + hostname + '/rest/applications')
